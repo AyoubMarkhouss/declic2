@@ -45,14 +45,14 @@ const Casablancabeer = () => {
       <Header open={open} setOpen={setOpen} />
       <div className={`${open ? "" : "block"}`}>
         <div className="pt-20  overflow-x-hidden">
-          <TextAnimate
+          {/* <TextAnimate
             animation="blurInUp"
             by="character"
-            className="fontmed laptop:text-7xl text-redeclic fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+            className="fontmed laptop:text-7xl bg-redeclic fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
           >
             Casablanca Beer
-          </TextAnimate>
-          <div className="w-screen relative h-[calc(100vh_-_176px)] flex justify-center items-center">
+          </TextAnimate> */}
+          <div className="w-screen relative h-[calc(100vh_-_80px)] flex justify-center items-center">
             <Image
               alt="d"
               src="/Casablancabeer/Slider.jpg"
@@ -122,7 +122,7 @@ const Casablancabeer = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl text-redeclic  fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
         >
           Master Visual
         </TextAnimate>
@@ -162,22 +162,19 @@ const Casablancabeer = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  text-redeclic  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
           Social Media
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col text-justify laptop:text-start gap-y-5">
-              <h1 className="fontmed text-center laptop:text-start text-4xl text-redeclic">
-                Feel The Spirit of Morocco
-              </h1>
-              <p className="laptop:text-md desktop:text-xl">
+              <p className="laptop:text-lg desktop:text-xl">
                 To accompany the launch of "Feel The Spirit of Morocco," we
                 carried out a massive digital deployment aimed at engaging our
                 community and maximizing the campaign's impact.
               </p>
-              <p className="laptop:text-md desktop:text-xl">
+              <p className="laptop:text-lg desktop:text-xl">
                 Captivating content was created to tell the story of the
                 campaign, showcase our collaborations with ambassadors, and
                 bring Morocco's essence to life through striking visuals. We
@@ -185,7 +182,7 @@ const Casablancabeer = () => {
                 chance to win limited editions, exclusive goodies, and even
                 invitations to prestigious events.
               </p>
-              <p className="laptop:text-md desktop:text-xl">
+              <p className="laptop:text-lg desktop:text-xl">
                 This digital rollout was designed to reach as many people as
                 possible, creating moments of sharing and discovery while
                 strengthening the connection between our brand and the consumer.
@@ -249,13 +246,18 @@ const Casablancabeer = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-20">
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+        >
+          The Aftermovie
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify laptop:text-start gap-y-5">
-              <h1 className="fontmed text-center laptop:text-start text-4xl text-redeclic">
-                The Aftermovie
-              </h1>
-              <p className="laptop:text-md desktop:text-xl laptop:max-w-lg desktop:w-full">
+              
+              <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
                 Relive the highlights of our launch event, "Feel The Spirit of
                 Morocco," through this exclusive aftermovie. Immerse yourself in
                 a unique experience where art, music, gastronomy, and Moroccan
