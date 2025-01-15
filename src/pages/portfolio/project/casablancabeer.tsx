@@ -226,7 +226,7 @@ const Casablancabeer = () => {
             </div>
             <div className="flex items-center justify-center">
               <Iphone15Pro
-                className="hidden laptop:block h-[500px]"
+                className="hidden laptop:block h-[500px] desktop:h-[550px]"
                 iframevid="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
               />
               {/* <iframe
