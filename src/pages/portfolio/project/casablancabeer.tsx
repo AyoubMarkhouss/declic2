@@ -55,7 +55,7 @@ const Casablancabeer = () => {
           <div className="w-screen relative h-[calc(100vh_-_80px)] flex justify-center items-center">
             <Image
               alt="d"
-              src="/Casablancabeer/Slider.jpg"
+              src="/Casablancabeer/Slider-min.webp"
               height={2000}
               width={2000}
               className="w-screen h-full object-cover "
@@ -256,7 +256,6 @@ const Casablancabeer = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify laptop:text-start gap-y-5">
-              
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
                 Relive the highlights of our launch event, "Feel The Spirit of
                 Morocco," through this exclusive aftermovie. Immerse yourself in
@@ -288,11 +287,12 @@ const Casablancabeer = () => {
 export default Casablancabeer;
 
 const affiches = [
-  { id: 1, content: "Item 1", image: "/Casablancabeer/master-visual/1.jpg" },
-  { id: 2, content: "Item 2", image: "/Casablancabeer/master-visual/2.jpg" },
-  { id: 3, content: "Item 3", image: "/Casablancabeer/master-visual/3.jpg" },
-  { id: 4, content: "Item 4", image: "/Casablancabeer/master-visual/4.jpg" },
-  { id: 5, content: "Item 5", image: "/Casablancabeer/master-visual/5.jpg" },
+  { id: 1, content: "Item 1", image: "/Casablancabeer/master-visual/1.webp" },
+  { id: 2, content: "Item 2", image: "/Casablancabeer/master-visual/2.webp" },
+  // { id: 3, content: "Item 3", image: "/Casablancabeer/master-visual/3.webp" },
+  { id: 4, content: "Item 4", image: "/Casablancabeer/master-visual/4.webp" },
+  { id: 5, content: "Item 5", image: "/Casablancabeer/master-visual/5.webp" },
+  { id: 6, content: "Item 6", image: "/Casablancabeer/master-visual/6.webp" },
   // { id: 6, content: "Item 6", image: "/Casablancabeer/master-visual/Principal.jpg" },
 ];
 
