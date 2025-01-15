@@ -297,22 +297,24 @@ const affiches = [
 ];
 
 const staticimg = [
-  { img: "/Casablancabeer/static-posts/CASA_PE_AOUT_freshness.jpg" },
-  { img: "/Casablancabeer/static-posts/CASA_PE_AOUT_Grab.jpg" },
+  { img: "/Casablancabeer/static-posts/CASA_PE_AOUT_freshness-min.jpg" },
+  { img: "/Casablancabeer/static-posts/CASA_PE_AOUT_Grab-min.jpg" },
   {
-    img: "/Casablancabeer/static-posts/CASA_PE_AOUT_vibrant freshness.jpg",
+    img: "/Casablancabeer/static-posts/CASA_PE_AOUT_vibrant freshness-min.jpg",
   },
-  { img: "/Casablancabeer/static-posts/CASA_PE_JUIN_berrad.jpg" },
-  { img: "/Casablancabeer/static-posts/CASA_PE_SEP_Cheers.jpg" },
-  { img: "/Casablancabeer/static-posts/CASA_PE_SEP_Savor.jpg" },
-  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_1.jpg" },
-  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_2.jpg" },
-  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_3.jpg" },
-  { img: "/Casablancabeer/static-posts/Casablanca_Post_Bilzzart_2.jpg" },
-  { img: "/Casablancabeer/static-posts/Casablanca_Post_SKU Bottle_Citron.jpg" },
+  { img: "/Casablancabeer/static-posts/CASA_PE_JUIN_berrad-min.jpg" },
+  { img: "/Casablancabeer/static-posts/CASA_PE_SEP_Cheers-min.jpg" },
+  { img: "/Casablancabeer/static-posts/CASA_PE_SEP_Savor-min.jpg" },
+  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_1-min.jpg" },
+  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_2-min.jpg" },
+  { img: "/Casablancabeer/static-posts/Casablanca_Post_Baya_3-min.jpg" },
+  { img: "/Casablancabeer/static-posts/Casablanca_Post_Bilzzart_2-min.jpg" },
   {
-    img: "/Casablancabeer/static-posts/Casablanca_Post_SKU Bottle_Citron2.jpg",
+    img: "/Casablancabeer/static-posts/Casablanca_Post_SKU Bottle_Citron-min.jpg",
   },
-  { img: "/Casablancabeer/static-posts/CasaXSecretEvent_Giveaway2.jpg" },
-  { img: "/Casablancabeer/static-posts/CasaXTime_Giveaway.jpg" },
+  {
+    img: "/Casablancabeer/static-posts/Casablanca_Post_SKU Bottle_Citron2-min.jpg",
+  },
+  { img: "/Casablancabeer/static-posts/CasaXSecretEvent_Giveaway2-min.jpg" },
+  { img: "/Casablancabeer/static-posts/CasaXTime_Giveaway-min.jpg" },
 ];
