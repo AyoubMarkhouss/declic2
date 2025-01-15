@@ -48,7 +48,7 @@ const Casablancabeer = () => {
           <TextAnimate
             animation="blurInUp"
             by="character"
-            className="fontmed laptop:text-7xl  bg-gradient-to-r from-redeclic to-[#b0011c] fontmed justify-center tablet:justify-start text-4xl w-full text-white h-24  px-20 flex  items-center"
+            className="fontmed laptop:text-7xl text-redeclic fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
           >
             Casablanca Beer
           </TextAnimate>
@@ -65,27 +65,21 @@ const Casablancabeer = () => {
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Lorem ipsum dolor sit amet consectetur
+            Feel The Spirit of Morocco
           </h1>
           <p className=" tablet:text-lg text-justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-            voluptate consectetur doloremque, dolor aut repellendus labore velit
-            pariatur aliquam quo provident necessitatibus aliquid at ratione
-            magnam laudantium sunt, omnis nesciunt. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Totam voluptate consectetur
-            doloremque, dolor aut repellendus labore velit pariatur aliquam quo
-            provident necessitatibus aliquid at ratione magnam laudantium sunt,
-            omnis nesciunt.
+            "Feel The Spirit of Morocco" is an immersive celebration of Moroccan
+            soul, blending authenticity and modernity through a unique
+            multisensory campaign. Driven by exclusive collaborations with
+            exceptional ambassadors – artist Blizzart for the limited-edition
+            design, chef Baya for inspired recipes, and musician ReqTeq for the
+            track and playlist "Spirits of Morocco" – this initiative embodies
+            Morocco's richness and diversity. From visual art to gastronomy and
+            music, each collaboration amplifies the essence of the country,
+            offering a holistic experience that unites local craftsmanship and
+            cultural authenticity.
           </p>
-          <p className=" tablet:text-lg text-justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam
-            voluptate consectetur doloremque, dolor aut repellendus labore velit
-            pariatur aliquam quo provident necessitatibus aliquid at ratione
-            magnam laudantium sunt, omnis nesciunt. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Totam voluptate consectetur
-            doloremque, dolor aut repellendus labore velit pariatur aliquam quo
-            provident necessitatibus aliquid
-          </p>
+
           <div className="grid grid-cols-3 pt-10">
             <motion.div
               ref={ref}
@@ -96,7 +90,7 @@ const Casablancabeer = () => {
             >
               <p className="text-lg">Category</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Alcohol
+                Beverages
               </p>
             </motion.div>
             <motion.div
@@ -108,7 +102,7 @@ const Casablancabeer = () => {
             >
               <p className="text-lg">Client</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                SBM
+                Société des Boissons du Maroc
               </p>
             </motion.div>
             <motion.div
@@ -128,42 +122,17 @@ const Casablancabeer = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-gradient-to-r from-redeclic to-[#b0011c] fontmed justify-center tablet:justify-start text-4xl w-full text-white h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl text-redeclic  fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
         >
           Master Visual
         </TextAnimate>
-        {/* <div className="flex px-20 py-20">
-          <div className="grid grid-cols-3 gap-10">
-            <Image
-              alt="d"
-              src="/casablancabeer.jpg"
-              height={2000}
-              width={2000}
-              className="w-full object-cover "
-            />
-            <Image
-              alt="d"
-              src="/casablancabeer.jpg"
-              height={2000}
-              width={2000}
-              className="w-full object-cover  "
-            />
 
-            <Image
-              alt="d"
-              src="/casablancabeer.jpg"
-              height={2000}
-              width={2000}
-              className="w-full object-cover  "
-            />
-          </div>
-        </div> */}
         <Carousel
           opts={{
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-6xl my-20 pl-3 tablet:pl-0 mx-auto"
+          className="w-full max-w-6xl my-10 pl-3 tablet:pl-0 mx-auto"
           setApi={setApi}
         >
           <CarouselContent className="">
@@ -193,7 +162,7 @@ const Casablancabeer = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-gradient-to-r from-redeclic to-[#b0011c] fontmed justify-center tablet:justify-start text-4xl w-full text-white h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  text-redeclic  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
           Social Media
         </TextAnimate>
@@ -201,33 +170,31 @@ const Casablancabeer = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col text-justify laptop:text-start gap-y-5">
               <h1 className="fontmed text-center laptop:text-start text-4xl text-redeclic">
-                The Moroccan Spirit
+                Feel The Spirit of Morocco
               </h1>
-              <p className="text-xl">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis obcaecati reiciendis nostrum voluptatum omnis,
-                doloremque inventore explicabo labore qui reprehenderit vitae
+              <p className="laptop:text-md desktop:text-xl">
+                To accompany the launch of "Feel The Spirit of Morocco," we
+                carried out a massive digital deployment aimed at engaging our
+                community and maximizing the campaign's impact.
               </p>
-              <p className="text-xl">
-                {" "}
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis obcaecati reiciendis nostrum voluptatum omnis,
-                doloremque inventore explicabo labore qui reprehenderit vitae
-                animi quisquam, adipisci repellat quae itaque similique fugit
+              <p className="laptop:text-md desktop:text-xl">
+                Captivating content was created to tell the story of the
+                campaign, showcase our collaborations with ambassadors, and
+                bring Morocco's essence to life through striking visuals. We
+                also organized interactive contests, giving the audience a
+                chance to win limited editions, exclusive goodies, and even
+                invitations to prestigious events.
               </p>
-              <p className="text-xl">
-                {" "}
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perferendis obcaecati reiciendis nostrum voluptatum omnis,
-                doloremque inventore explicabo labore qui reprehenderit vitae
-                animi quisquam, adipisci repellat quae itaque similique fugit
-                numquam!
+              <p className="laptop:text-md desktop:text-xl">
+                This digital rollout was designed to reach as many people as
+                possible, creating moments of sharing and discovery while
+                strengthening the connection between our brand and the consumer.
               </p>
             </div>
             <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                iframevid="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
               />
               {/* <iframe
                 className="laptop:hidden object-cover w-full overflow-hidden "
@@ -239,7 +206,7 @@ const Casablancabeer = () => {
               /> */}
               <iframe
                 className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                src="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -279,6 +246,34 @@ const Casablancabeer = () => {
                   {current} / {count}
                 </div>
               </Carousel>
+            </div>
+          </div>
+        </div>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-20">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
+            <div className="flex flex-col text-justify laptop:text-start gap-y-5">
+              <h1 className="fontmed text-center laptop:text-start text-4xl text-redeclic">
+                The Aftermovie
+              </h1>
+              <p className="laptop:text-md desktop:text-xl laptop:max-w-lg desktop:w-full">
+                Relive the highlights of our launch event, "Feel The Spirit of
+                Morocco," through this exclusive aftermovie. Immerse yourself in
+                a unique experience where art, music, gastronomy, and Moroccan
+                authenticity came together in an exceptional setting. Discover
+                the key moments, shared emotions, and inspiring collaborations
+                that brought Morocco's essence to life. A complete immersion in
+                a universe where every detail tells a story.
+              </p>
+            </div>
+            <div className=" laptop:col-span-1">
+              <iframe
+                className=" object-cover h-[300px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/PxgHWFfXnFc?si=DgMSvOoacOO5nvJe?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>
