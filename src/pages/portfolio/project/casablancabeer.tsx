@@ -227,15 +227,23 @@ const Casablancabeer = () => {
             <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px]"
-                iframevid="https://www.youtube.com/embed/_5EVk40zITs?si=BIWnpEQ4mYfxs3Qv&amp;controls=0"
+                iframevid="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
               />
-              <video
+              {/* <iframe
                 className="laptop:hidden object-cover w-full overflow-hidden "
-                src="https://www.youtube.com/embed/_5EVk40zITs?si=BIWnpEQ4mYfxs3Qv&amp;controls=0"
+                src="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
                 autoPlay
                 loop
                 muted
                 playsInline
+              /> */}
+              <iframe
+                className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
+                src="https://www.youtube.com/embed/_5EVk40zITs?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
               />
             </div>
 

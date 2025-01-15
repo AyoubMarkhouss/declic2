@@ -85,12 +85,11 @@ export default function Iphone15Pro({
       {iframevid && (
         <foreignObject x="21.25" y="19.25" width="389.5" height="843.5">
           <iframe
-            className="rounded-[55.75px] object-cover h-full w-full overflow-hidden"
+            className=" rounded-[55.75px] object-cover h-full w-full overflow-hidden"
             src={iframevid}
             title="Dailymotion video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
+            frameBorder={0}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
         </foreignObject>
