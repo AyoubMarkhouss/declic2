@@ -162,8 +162,8 @@ const Porschefestival = () => {
           The Porsche experience
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5">
-            <div className="flex flex-col gap-y-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-10 desktop:gap-x-0 gap-y-5">
+            <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
                 Relive the best moments in images from this exceptional day.
                 From workshops to encounters, each moment was captured to keep a
@@ -230,7 +230,7 @@ const Porschefestival = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify laptop:text-start gap-y-5">
+            <div className="flex flex-col text-justify justify-center laptop:text-start gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
                 A day full of experiences and sharing. Participants had the
                 chance to discover and enjoy various workshops, indulge in tasty

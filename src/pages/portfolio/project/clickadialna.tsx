@@ -165,7 +165,7 @@ const Clickadialna = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-5">
-            <div className="flex flex-col gap-y-5">
+            <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
                 Dive into the behind-the-scenes of CLICKA DIALNA, where laughter
                 and surprises were the main attraction! Discover exclusive

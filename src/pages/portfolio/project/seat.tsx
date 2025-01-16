@@ -120,6 +120,48 @@ const Seat = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+        >
+          Led Display
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-10 gap-x-10">
+            <div className="col-span-1 laptop:col-span-2">
+              <p className="text-justify laptop:text-start">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatem deserunt accusantium doloribus molestiae provident,
+                recusandae velit, maxime ipsum sapiente modi voluptatibus
+                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
+                nihil!
+              </p>
+            </div>
+
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/-hlGPjv3OoE?si=Wx2wt7dYbPt8Xwh5?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/GOxkhr-Ke34?si=saRCtkYtC_T4HL0z?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+        {/* <TextAnimate
+          animation="blurInUp"
+          by="character"
           className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
         >
           Master Visual
@@ -156,18 +198,66 @@ const Seat = () => {
           <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
             {current} / {count}
           </div>
-        </Carousel>
+        </Carousel> */}
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+        >
+          Press
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
+          <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-10">
+            <div className="col-span-1 flex items-center ">
+              <p className="text-justify laptop:text-start">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Voluptatem deserunt accusantium doloribus molestiae provident,
+                recusandae velit, maxime ipsum sapiente modi voluptatibus
+                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
+                nihil, Lorem ipsum dolor, sit amet consectetur adipisicing elit.{" "}
+                <br /> <br />
+                Voluptatem deserunt accusantium doloribus molestiae provident,
+                recusandae velit, maxime ipsum sapiente modi voluptatibus
+                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
+                nihil!
+                <br /> <br />
+                Voluptatem deserunt accusantium doloribus molestiae provident,
+                recusandae velit, maxime ipsum sapiente modi voluptatibus
+                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
+                nihil!
+              </p>
+            </div>
+
+            <div className=" laptop:col-span-1 h-fit laptop:h-fit">
+              <Image
+                alt="hh"
+                src="/Seat/master-visuals/3.webp"
+                width={2000}
+                height={2000}
+              />
+            </div>
+            <div className=" laptop:col-span-1 h-fit laptop:h-fit">
+              <Image
+                alt="hh"
+                src="/Seat/master-visuals/1.webp"
+                width={2000}
+                height={2000}
+              />
+            </div>
+          </div>
+        </div>
+
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
           Social Media
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
-            <div className="flex flex-col gap-y-5">
-              <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
+            <div className="flex flex-col justify-center gap-y-5">
+              <p className=" text-justify  laptop:text-start laptop:text-lg desktop:text-xl">
                 The SEAT Attitude campaign gained even greater momentum through
                 a strategic rollout on social media and a powerful advertising
                 campaign. Through interactive challenges, immersive videos, and
@@ -180,12 +270,12 @@ const Seat = () => {
             <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                // iframevid=" ?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                iframevid="https://www.youtube.com/embed/Jm-tqD731KE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=Jm-tqD731KE"
               />
 
               <iframe
                 className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                // src="?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                src="https://www.youtube.com/embed/Jm-tqD731KE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=Jm-tqD731KE"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -211,7 +301,7 @@ const Seat = () => {
                           src={jj.img}
                           width={1000}
                           height={1000}
-                          className="w-full h-64 laptop:h-[390px] desktop:h-[600px] object-contain"
+                          className="w-full h-fit laptop:h-[390px] desktop:h-[600px] object-contain"
                         />
                       </div>
                     </CarouselItem>
@@ -231,28 +321,28 @@ const Seat = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
           Activations
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-10">
-            <div className="flex flex-col gap-y-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 laptop:gap-x-20 ">
+            <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
                 The SEAT Attitude campaign was not limited to digital platforms;
                 it also came to life on the ground through unique and memorable
                 activations: At the Ain Diab Surf School, we introduced
                 enthusiasts to the thrill of the waves, embodying the freedom
-                and adventure of SEAT Attitude. <br /> <br /> In our showrooms, fans had the
-                opportunity to meet their favorite artists, creating
-                unforgettable moments of connection. <br /> <br /> A surf competition brought
-                together amateurs and professionals to celebrate the passion and
-                performance of the sport. <br /> <br /> Finally, arcade gaming stations,
-                dressed in SEAT Attitude branding, were strategically placed in
-                key locations, adding a playful and unexpected touch. These
-                activations brought the SEAT Attitude spirit closer to the
-                audience, transforming it into tangible, dynamic, and engaging
-                experiences.
+                and adventure of SEAT Attitude. <br /> <br /> In our showrooms,
+                fans had the opportunity to meet their favorite artists,
+                creating unforgettable moments of connection. <br /> <br /> A
+                surf competition brought together amateurs and professionals to
+                celebrate the passion and performance of the sport. <br />{" "}
+                <br /> Finally, arcade gaming stations, dressed in SEAT Attitude
+                branding, were strategically placed in key locations, adding a
+                playful and unexpected touch. These activations brought the SEAT
+                Attitude spirit closer to the audience, transforming it into
+                tangible, dynamic, and engaging experiences.
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -400,9 +490,9 @@ const staticimg = [
 ];
 
 const activation = [
-    { img: "/Seat/activations/A1.jpeg",},
-    { img: "/Seat/activations/A2.jpeg",},
-    { img: "/Seat/activations/A3.jpeg",},
-    { img: "/Seat/activations/A4.jpg",},
-    { img: "/Seat/activations/A5.jpg",},
+  { img: "/Seat/activations/A1.jpeg" },
+  { img: "/Seat/activations/A2.jpeg" },
+  { img: "/Seat/activations/A3.jpeg" },
+  { img: "/Seat/activations/A4.jpg" },
+  { img: "/Seat/activations/A5.jpg" },
 ];
