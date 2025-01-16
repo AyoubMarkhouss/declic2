@@ -159,7 +159,7 @@ const Porschefestival = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Social Media
+          The Porsche experience
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-1 gap-y-5">
