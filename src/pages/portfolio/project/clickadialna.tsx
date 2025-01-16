@@ -6,6 +6,7 @@ import Iphone15Pro from "~/components/ui/iphone-15-pro";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import { FaArrowCircleDown, FaStar } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 import { cn } from "~/utils";
 import {
   Carousel,
@@ -17,8 +18,9 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
-const Porschefestival = () => {
+const Clickadialna = () => {
   const [open, setOpen] = useState<boolean>(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -53,7 +55,7 @@ const Porschefestival = () => {
           <div className="w-screen relative h-[calc(100vh_-_80px)] flex justify-center items-center">
             <Image
               alt="d"
-              src="/Porschefestival/Slider.webp"
+              src="/Clickadialna/Slider.jpg"
               height={2000}
               width={2000}
               className="w-screen h-full object-cover "
@@ -63,16 +65,16 @@ const Porschefestival = () => {
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Porsche Festival 2024
+            Clicka Dialna
           </h1>
           <p className=" tablet:text-lg text-justify">
-            The Porsche Festival 2024, held in Oued Zem, brought together for
-            the second consecutive year the passionate community of the brand.{" "}
-            <br />
-            This annual event, now a must-attend, welcomed around a hundred
-            guests and a hundred Porsches, setting a record for the largest
-            gathering of sports cars in Morocco, including the highest
-            concentration of 911s ever seen in the country.
+            An innovative brand content concept, aligned with the communication
+            pillars of the Flag Spéciale brand, creating an engagement space
+            with our community beyond our Meta networks. This concept addresses
+            the challenge of promoting a beer brand in Morocco while respecting
+            the constraints related to collaborations with influencers and the
+            limitations of direct product visibility on platforms like YouTube
+            and TikTok.
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -85,7 +87,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Category</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                Entertainment
               </p>
             </motion.div>
             <motion.div
@@ -97,7 +99,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Client</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Centrale Automobile Chérifienne
+                Société des Boissons du Maroc
               </p>
             </motion.div>
             <motion.div
@@ -109,20 +111,20 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Brand</p>
               <p className="text-md tablet:text-lg text-redeclic text-center">
-                Porsche
+                Flag Spéciale Original
               </p>
             </motion.div>
           </div>
         </div>
-        <TextAnimate
+        {/* <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
         >
           Master Visual
-        </TextAnimate>
+        </TextAnimate> */}
 
-        <Carousel
+        {/* <Carousel
           opts={{
             align: "start",
             loop: true,
@@ -153,21 +155,22 @@ const Porschefestival = () => {
           <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
             {current} / {count}
           </div>
-        </Carousel>
+        </Carousel> */}
         <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The Porsche experience
+          Behind The Scenes
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-1 gap-y-5">
             <div className="flex flex-col gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
-                Relive the best moments in images from this exceptional day.
-                From workshops to encounters, each moment was captured to keep a
-                lasting memory of this unique festival.
+                Dive into the behind-the-scenes of CLICKA DIALNA, where laughter
+                and surprises were the main attraction! Discover exclusive
+                moments and unseen footage from this unique concept, where our
+                influencer guests joined in on the fun with jokes.
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -230,22 +233,29 @@ const Porschefestival = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify laptop:text-start gap-y-5">
+            <div className="flex flex-col text-justify laptop:text-start gap-y-10">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
-                A day full of experiences and sharing. Participants had the
-                chance to discover and enjoy various workshops, indulge in tasty
-                moments at the food court, and explore a curated display of the
-                latest models and classic cars. <br /> <br /> Through
-                discoveries, discussions, and activities, each space allowed
-                everyone to fully experience the spirit of the festival. Thank
-                you to everyone who helped make this event a success. See you
-                soon for more adventures!
+                "Bla Tferniss" is a Moroccan version of the global concept "Try
+                Not to Laugh," with an added touch of football—because why not?
+                It pits guests against each other in a laid-back and humorous
+                atmosphere that reflects our brand, without making any reference
+                to our product. <br />
+                Between discoveries, discussions, and fun activities, each
+                moment captured the true spirit of the festival. Thank you to
+                everyone who helped make this event a success. See you soon for
+                more adventures!
               </p>
+              <Link
+                href="https://www.youtube.com/@LClickaDialna"
+                className="fontmed flex justify-center items-center gap-x-3 shadow-lg w-full tablet:w-fit px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
+              >
+                MORE EPISODES <FaPlay />
+              </Link>
             </div>
             <div className=" laptop:col-span-1 ">
               <iframe
                 className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
-                src="https://www.youtube.com/embed/--8eCy6QWWs?si=oNjb0EtMhIJ0ytZM?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
+                src="https://www.youtube.com/embed/VHtXV1KXWdU?si=XRxg5kmuI7hy5r11?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -260,52 +270,48 @@ const Porschefestival = () => {
   );
 };
 
-export default Porschefestival;
+export default Clickadialna;
 
-const affiches = [
-  {
-    id: 1,
-    content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
-  },
-  {
-    id: 2,
-    content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
-  },
-  {
-    id: 3,
-    content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
-  },
-  {
-    id: 4,
-    content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
-  },
-  {
-    id: 5,
-    content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
-  },
-  {
-    id: 6,
-    content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
-  },
-];
+// const affiches = [
+//   {
+//     id: 1,
+//     content: "Item 1",
+//     image: "/Porschefestival/master-visual/OffRoad-1.webp",
+//   },
+//   {
+//     id: 2,
+//     content: "Item 2",
+//     image: "/Porschefestival/master-visual/OffRoad-2.webp",
+//   },
+//   {
+//     id: 3,
+//     content: "Item 3",
+//     image: "/Porschefestival/master-visual/porsche.webp",
+//   },
+//   {
+//     id: 4,
+//     content: "Item 1",
+//     image: "/Porschefestival/master-visual/OffRoad-1.webp",
+//   },
+//   {
+//     id: 5,
+//     content: "Item 2",
+//     image: "/Porschefestival/master-visual/OffRoad-2.webp",
+//   },
+//   {
+//     id: 6,
+//     content: "Item 3",
+//     image: "/Porschefestival/master-visual/porsche.webp",
+//   },
+// ];
 
 const staticimg = [
-  { img: "/Porschefestival/shooting/1.webp" },
-  { img: "/Porschefestival/shooting/2.webp" },
-  { img: "/Porschefestival/shooting/3.webp" },
-  { img: "/Porschefestival/shooting/4.webp" },
-  { img: "/Porschefestival/shooting/5.webp" },
-  { img: "/Porschefestival/shooting/6.webp" },
-  { img: "/Porschefestival/shooting/7.webp" },
-  { img: "/Porschefestival/shooting/8.webp" },
-  { img: "/Porschefestival/shooting/9.webp" },
-  { img: "/Porschefestival/shooting/10.webp" },
-  { img: "/Porschefestival/shooting/11.webp" },
-  { img: "/Porschefestival/shooting/12.webp" },
+  { img: "/Clickadialna/shooting/BTS1.webp" },
+  { img: "/Clickadialna/shooting/BTS2.webp" },
+  { img: "/Clickadialna/shooting/BTS3.webp" },
+  { img: "/Clickadialna/shooting/BTS4.webp" },
+  { img: "/Clickadialna/shooting/BTS5.webp" },
+  { img: "/Clickadialna/shooting/BTS6.webp" },
+  { img: "/Clickadialna/shooting/BTS7.webp" },
+  { img: "/Clickadialna/shooting/BTS8.webp" },
 ];
