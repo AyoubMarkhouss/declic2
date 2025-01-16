@@ -232,7 +232,7 @@ const Clickadialna = () => {
           The Aftermovie
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify laptop:text-start gap-y-10">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
                 "Bla Tferniss" is a Moroccan version of the global concept "Try
@@ -252,7 +252,7 @@ const Clickadialna = () => {
                 MORE EPISODES <FaPlay />
               </Link>
             </div>
-            <div className=" laptop:col-span-1 ">
+            <div className=" laptop:col-span-1 h-52">
               <iframe
                 className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
                 src="https://www.youtube.com/embed/VHtXV1KXWdU?si=XRxg5kmuI7hy5r11?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
@@ -261,6 +261,7 @@ const Clickadialna = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
+              
             </div>
           </div>
         </div>
