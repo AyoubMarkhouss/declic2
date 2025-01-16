@@ -54,10 +54,11 @@ export default function Page() {
           >
             <div className="space-y-4">
               <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-redeclic">
-                Got ideas? we&apos;ve got the skills. let&apos;s team up
+                Say hi !
               </h2>
               <h4 className="text-gray-400 scroll-m-20 text-xl font-semibold tracking-tight">
-                Tell us more about yourself and what you&apos;re got in mind
+                We are always excited to welcome new projects and partners. So,
+                drop us a message or simply say hello!
               </h4>
             </div>
             <div className="grid grid-cols-2 gap-10">
@@ -227,10 +228,11 @@ export default function Page() {
           >
             <div className="space-y-4">
               <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-redeclic">
-                Got ideas? we&apos;ve got the skills. let&apos;s team up
+                Say Hi!
               </h2>
               <h4 className="text-gray-400 scroll-m-20 text-xl font-semibold tracking-tight">
-                Tell us more about yourself and what you&apos;re got in mind
+                We are always excited to welcome new projects and partners. So,
+                drop us a message or simply say hello!
               </h4>
             </div>
             <div className="grid grid-cols-2 gap-10">

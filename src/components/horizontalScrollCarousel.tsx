@@ -14,8 +14,8 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-60%"]);
-  const m = useTransform(scrollYProgress, [0, 1], ["0.5%", "-89.5%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-40%"]);
+  const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-77.5%"]);
 
   return (
     <div>
@@ -25,7 +25,7 @@ const HorizontalScrollCarousel = () => {
         by="character"
         className="fontmed justify-center tablet:justify-start text-4xl laptop:text-7xl w-full bg-redeclic text-white h-24  px-20 flex  items-center"
       >
-        OUR PROJETCS
+        OUR WORK
       </TextAnimate>
       <section ref={targetRef} className="-my-28 tablet:-my-0 relative h-[300vh] z-10">
         <div className="sticky top-0 laptop:top-0 desktop:top-20">
@@ -151,53 +151,53 @@ const Card = ({
 
 const cards: CardType[] = [
   {
-    url: "/qnibila.jpg",
-    title: "Flag Speciale Original",
+    url: "/AboutUs/CasablancaBeer.jpg",
+    title: "Casablanca Beer",
     desc: "lorem impsum huba",
     id: 1,
     page: "",
   },
   {
-    url: "/gold.jpg",
-    title: "Flag Speciale Gold",
+    url: "/AboutUs/ClickaDialna.jpg",
+    title: "Clicka Dialna",
     desc: "lorem impsum huba",
     id: 2,
     page: "",
   },
   {
-    url: "/casablancabeer.jpg",
-    title: "Casablanca Beer",
+    url: "/AboutUs/PorscheFestival.jpg",
+    title: "Porsche Festival",
     desc: "lorem impsum huba",
     id: 3,
     page: "/portfolio/project",
   },
   {
-    url: "/stork.jpg",
-    title: "Stork",
+    url: "/AboutUs/SeatAttitude.jpg",
+    title: "SEAT Attitude",
     desc: "lorem impsum huba",
     id: 6,
     page: "",
   },
-  {
-    url: "https://framerusercontent.com/images/xrD1XEKUiPxzEfAp3NgFFX5Mbk.png",
-    title: "Carlsberg Beer",
-    desc: "lorem impsum huba",
-    id: 5,
-    page: "",
-  },
+  // {
+  //   url: "https://framerusercontent.com/images/xrD1XEKUiPxzEfAp3NgFFX5Mbk.png",
+  //   title: "Carlsberg Beer",
+  //   desc: "lorem impsum huba",
+  //   id: 5,
+  //   page: "",
+  // },
 
-  {
-    url: "https://framerusercontent.com/images/63Ou8G3dAZyA7jCePWCbGXWT0.png",
-    title: "Vins D'ici",
-    desc: "lorem impsum huba",
-    id: 7,
-    page: "",
-  },
-  {
-    url: "https://framerusercontent.com/images/8Ffi88e202S78L0ljwETS0kBaC4.png",
-    title: "Vins Castel",
-    desc: "lorem impsum huba",
-    id: 8,
-    page: "",
-  },
+  // {
+  //   url: "https://framerusercontent.com/images/63Ou8G3dAZyA7jCePWCbGXWT0.png",
+  //   title: "Vins D'ici",
+  //   desc: "lorem impsum huba",
+  //   id: 7,
+  //   page: "",
+  // },
+  // {
+  //   url: "https://framerusercontent.com/images/8Ffi88e202S78L0ljwETS0kBaC4.png",
+  //   title: "Vins Castel",
+  //   desc: "lorem impsum huba",
+  //   id: 8,
+  //   page: "",
+  // },
 ];

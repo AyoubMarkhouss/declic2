@@ -145,7 +145,7 @@ const Footer = () => {
             href="/portfolio?section=work"
             className="fontmed flex tablet:justify-center text-xl text-white  transition-all duration-300 transform hover:scale-125"
           >
-            Campagnes
+            Campaign
           </Link>
           <Link
             href="/"

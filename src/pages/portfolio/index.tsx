@@ -112,11 +112,10 @@ export default function Portfolio() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-md laptop:max-w-[70%] pb-5"
             >
-              Chez Declic Agency, nous avons eu le privilège de travailler avec
-              des marques et des clients qui partagent notre vision audacieuse
-              de la communication. Chaque projet est une opportunité de
-              repousser les limites, d’innover et de créer des
-              campagnes mémorables.
+              At Declic Agency, we’ve had the privilege of working with brands
+              and clients who share our bold vision of communication. Each
+              project is an opportunity to push boundaries, innovate, and create
+              unforgettable campaigns
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}

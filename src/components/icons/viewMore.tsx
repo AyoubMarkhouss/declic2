@@ -16,10 +16,11 @@ const ViewMore = ({ className }: { className?: string }) => {
         d="M 0 50 L 0 50 A 1 1 0 0 1 100 50 L 100 50 L 100 50 A 1 1 0 0 1 0 50 L 0 50"
         stroke-width="none"
         fill="transparent"
+        className="hidden"
       ></path>
       <text>
         <textPath
-          className="fill-redeclic text-[19.5px] font-semibold "
+          className="fill-redeclic shrink-0 laptop:text-[19.5px] font-semibold "
           href="#curve-wnxkz4"
           startOffset="0"
           dominant-baseline="Central"
