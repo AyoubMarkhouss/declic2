@@ -122,6 +122,134 @@ const Seat = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
+          Films Ads
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-14 laptop:gap-y-5 py-10 mb-10">
+          <div className="laptop:pb-5">
+            <p>
+              Discover SEAT’s universe through 6 captivating videos, each
+              telling a unique story of the SEAT Attitude campaign.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-14 laptop:gap-y-5 laptop:gap-x-5">
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/Hya98sThWD0?si=d_aJhu-qXaV4WW5N?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT X ReqTeq
+              </TextAnimate>
+            </div>
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/NWt0fSnGzxw?si=fORSo9BAXOsOKXaG?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT Surf
+              </TextAnimate>
+            </div>
+
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/k0BX3md11No?si=kpPlS7rM395JB-M6?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT Dance
+              </TextAnimate>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-14 laptop:gap-y-5 laptop:gap-x-5">
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/ppHjAWycwoE?si=HTnaCM_wIhWp9tRT?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT Street Art
+              </TextAnimate>
+            </div>
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/1c-YkAIKVrY?si=2gdppwT_moqMqnrr?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT Music
+              </TextAnimate>
+            </div>
+
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
+              <iframe
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/uKrrRWsEmgQ?si=s12sfw8GdBVPGFAM?controls=0&modestbranding=1&mute=1&rel=0"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <TextAnimate
+                animation="blurInUp"
+                by="character"
+                className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
+              >
+                SEAT Urban
+              </TextAnimate>
+            </div>
+          </div>
+        </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+        >
           Led Display
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
