@@ -27,7 +27,7 @@ const Footer = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="col-span-4 flex justify-center items-center py-5"
       >
-        <Link href='/'>
+        <Link href='/portfolio?section=work'>
           <Image
             alt="declic"
             src="/declic-white.png"

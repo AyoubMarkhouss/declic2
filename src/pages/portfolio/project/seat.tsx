@@ -68,12 +68,12 @@ const Seat = () => {
           <p className=" tablet:text-lg text-justify">
             After introducing "Level Up," marking the new strategic partnership
             between SEAT and CAC, its new importer, it became essential to
-            affirm the brand's DNA and solidify its identity. <br />
+            affirm the brand's DNA and solidify its identity.
             This vision came to life through the SEAT Attitude campaign, which
             activated four key platforms represented by renowned ambassadors:
             Othman Choufani, Lilias Tebbai, ReqTeq, Aezaddy, Aidance, Sara
-            Morbi, and Sika. <br /> This campaign brilliantly highlighted SEAT’s
-            core values, encapsulated by its signature "Born in the Sun." <br />{" "}
+            Morbi, and Sika.  This campaign brilliantly highlighted SEAT’s
+            core values, encapsulated by its signature "Born in the Sun."
             More than just a car, SEAT offers its customers a unique experience
             and mindset, celebrating a dynamic and inspiring lifestyle.
           </p>
@@ -250,17 +250,19 @@ const Seat = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Led Display
+          OOH Video
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-10 gap-x-10">
             <div className="col-span-1 laptop:col-span-2">
               <p className="text-justify laptop:text-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatem deserunt accusantium doloribus molestiae provident,
-                recusandae velit, maxime ipsum sapiente modi voluptatibus
-                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
-                nihil!
+                The SEAT Attitude campaign also stood out through a series of
+                video displays designed to showcase the SEAT Arona and SEAT
+                Ateca. Each video highlights a unique aspect of SEAT’s universe,
+                brought to life by our ambassadors and their passions. From the
+                freedom of the waves to urban dynamism, these displays reflect
+                the essence of SEAT Attitude: a bold, vibrant, and resolutely
+                modern mindset embodied by these two iconic models.
               </p>
             </div>
 
@@ -332,27 +334,19 @@ const Seat = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Press
+          Prints
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-10">
             <div className="col-span-1 flex items-center ">
               <p className="text-justify laptop:text-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatem deserunt accusantium doloribus molestiae provident,
-                recusandae velit, maxime ipsum sapiente modi voluptatibus
-                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
-                nihil, Lorem ipsum dolor, sit amet consectetur adipisicing elit.{" "}
-                <br /> <br />
-                Voluptatem deserunt accusantium doloribus molestiae provident,
-                recusandae velit, maxime ipsum sapiente modi voluptatibus
-                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
-                nihil!
-                <br /> <br />
-                Voluptatem deserunt accusantium doloribus molestiae provident,
-                recusandae velit, maxime ipsum sapiente modi voluptatibus
-                placeat, dignissimos aut labore eum. Voluptatibus nostrum ab
-                nihil!
+                The SEAT Attitude campaign also extended to Moroccan press with
+                two prominent publications, showcasing the SEAT Arona and SEAT
+                Ateca. These features reflect the brand’s universe while
+                highlighting the distinctive lines and strengths of these two
+                iconic models. Published in strategic outlets, these pieces
+                further amplify the campaign’s impact and solidify the SEAT
+                Attitude spirit among the Moroccan audience.
               </p>
             </div>
 
@@ -390,8 +384,8 @@ const Seat = () => {
                 a strategic rollout on social media and a powerful advertising
                 campaign. Through interactive challenges, immersive videos, and
                 static posts, each communication platform was highlighted,
-                driven by our ambassadors and their unique worlds. <br />
-                <br /> In parallel, an Ads campaign was launched to amplify SEAT
+                driven by our ambassadors and their unique worlds.
+                 In parallel, an Ads campaign was launched to amplify SEAT
                 Attitude's reach and connect with an even wider audience.
               </p>
             </div>
@@ -461,12 +455,11 @@ const Seat = () => {
                 it also came to life on the ground through unique and memorable
                 activations: At the Ain Diab Surf School, we introduced
                 enthusiasts to the thrill of the waves, embodying the freedom
-                and adventure of SEAT Attitude. <br /> <br /> In our showrooms,
+                and adventure of SEAT Attitude.  In our showrooms,
                 fans had the opportunity to meet their favorite artists,
-                creating unforgettable moments of connection. <br /> <br /> A
+                creating unforgettable moments of connection.  A
                 surf competition brought together amateurs and professionals to
-                celebrate the passion and performance of the sport. <br />{" "}
-                <br /> Finally, arcade gaming stations, dressed in SEAT Attitude
+                celebrate the passion and performance of the sport. Finally, arcade gaming stations, dressed in SEAT Attitude
                 branding, were strategically placed in key locations, adding a
                 playful and unexpected touch. These activations brought the SEAT
                 Attitude spirit closer to the audience, transforming it into

@@ -67,8 +67,7 @@ const Porschefestival = () => {
           </h1>
           <p className=" tablet:text-lg text-justify">
             The Porsche Festival 2024, held in Oued Zem, brought together for
-            the second consecutive year the passionate community of the brand.{" "}
-            <br />
+            the second consecutive year the passionate community of the brand.
             This annual event, now a must-attend, welcomed around a hundred
             guests and a hundred Porsches, setting a record for the largest
             gathering of sports cars in Morocco, including the highest
@@ -235,11 +234,10 @@ const Porschefestival = () => {
                 A day full of experiences and sharing. Participants had the
                 chance to discover and enjoy various workshops, indulge in tasty
                 moments at the food court, and explore a curated display of the
-                latest models and classic cars. <br /> <br /> Through
-                discoveries, discussions, and activities, each space allowed
-                everyone to fully experience the spirit of the festival. Thank
-                you to everyone who helped make this event a success. See you
-                soon for more adventures!
+                latest models and classic cars.Through discoveries, discussions,
+                and activities, each space allowed everyone to fully experience
+                the spirit of the festival. Thank you to everyone who helped
+                make this event a success. See you soon for more adventures!
               </p>
             </div>
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">

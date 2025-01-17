@@ -69,7 +69,7 @@ const Header: React.FC<{
         </AnimatePresence>
       )}
       <div className="flex fixed z-50 top-0 left-0  h-20 w-full items-center justify-between px-10">
-        <Link href="/">
+        <Link href="/portfolio?section=work">
           <Image
             alt="logo"
             src="/declic-red.png"
