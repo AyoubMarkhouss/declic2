@@ -241,7 +241,7 @@ export default function Portfolio() {
             <TextAnimate
               animation="blurInUp"
               by="character"
-              className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-8xl desktop:text-9xl text-redeclic"
+              className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-7xl desktop:text-9xl text-redeclic"
             >
               The Lab Of Creativity
             </TextAnimate>
@@ -260,7 +260,7 @@ export default function Portfolio() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className="flex gap-x-5 pb-5"
+              className="flex gap-x-5 pb-5 "
             >
               <Link
                 href={"?section=work"}
@@ -464,13 +464,13 @@ export default function Portfolio() {
           )}
         </div>
         <div className="relative h-[470px] bg-white flex gap-y-7 flex-col justify-center items-center overflow-hidden">
-          <div className="absolute inset-0">
+          <div className="absolute cursor-not-allowed inset-0">
             <video
               src="/goat-HD.mp4" // Replace with your GIF path in the public folder
               autoPlay
               loop
               muted
-              className="object-cover cursor-not-allowed absolute bottom-0 w-full h-full "
+              className="object-cover cursor-not-allowed pointer-events-none absolute bottom-0 w-full h-full "
             />
           </div>
 

@@ -79,35 +79,37 @@ const Header: React.FC<{
           />
         </Link>
         <div className="z-50 flex gap-x-6 items-center">
-          {["Home", "Campaign", "About us", "Contact"].map((text, index) => (
-            <motion.div
-              key={index}
-              className="text-xl fontmed"
-              variants={linkVariants}
-              initial="hidden"
-              animate={isHovered || showLinks ? "visible" : "hidden"}
-              transition={{
-                duration: 0.5,
-                ease: "easeInOut",
-                delay: index * 0.1,
-              }}
-            >
-              <Link
-                className="text-black z-0 hidden laptop:block"
-                href={
-                  text === "Home"
-                    ? "/portfolio?section=work"
-                    : text === "About us"
-                    ? "/"
-                    : text === "Campaign"
-                    ? "/portfolio?section=work"
-                    : "/contact"
-                }
+          {["Home", "Hall of fame", "About us", "Contact"].map(
+            (text, index) => (
+              <motion.div
+                key={index}
+                className="text-xl fontmed"
+                variants={linkVariants}
+                initial="hidden"
+                animate={isHovered || showLinks ? "visible" : "hidden"}
+                transition={{
+                  duration: 0.5,
+                  ease: "easeInOut",
+                  delay: index * 0.1,
+                }}
               >
-                {text}
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  className="text-black z-0 hidden laptop:block"
+                  href={
+                    text === "Home"
+                      ? "/portfolio?section=work"
+                      : text === "About us"
+                      ? "/"
+                      : text === "Hall of fame"
+                      ? "/halloffame"
+                      : "/contact"
+                  }
+                >
+                  {text}
+                </Link>
+              </motion.div>
+            )
+          )}
 
           {/* Button */}
           <button
@@ -160,7 +162,7 @@ const SlideTabs: React.FC = () => {
 
   const pages = [
     { name: "Home", href: "/portfolio?section=work" },
-    { name: "Campaign", href: "/portfolio?section=work" },
+    { name: "Hall of fame", href: "/halloffame" },
     { name: "About us", href: "/" },
     { name: "Contact", href: "/contact" },
   ];
@@ -172,7 +174,7 @@ const SlideTabs: React.FC = () => {
           opacity: 0,
         }));
       }}
-      className="fontmed relative mx-auto flex flex-col w-full text-center gap-3 p-1"
+      className="fontmed relative mx-auto flex flex-col w-full text-center gap-1 laptop:gap-5 p-1"
     >
       {pages.map((page, index) => (
         <Tab
@@ -183,7 +185,7 @@ const SlideTabs: React.FC = () => {
             setActiveTab(index);
           }}
         >
-          <a className="w-full text-5xl tablet:text-8xl" href={page.href}>
+          <a className="w-full text-4xl tablet:text-8xl" href={page.href}>
             {page.name}
           </a>
         </Tab>

@@ -144,10 +144,10 @@ const Footer = () => {
             Home
           </Link>
           <Link
-            href="/portfolio?section=work"
+            href="/halloffame"
             className="fontmed flex tablet:justify-center text-xl text-white  transition-all duration-300 transform hover:scale-125"
           >
-            Campaign
+           Hall of fame
           </Link>
           <Link
             href="/"
