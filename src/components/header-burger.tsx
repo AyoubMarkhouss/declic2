@@ -69,7 +69,7 @@ const Header: React.FC<{
         </AnimatePresence>
       )}
       <div className="flex fixed z-50 top-0 left-0  h-20 w-full items-center justify-between px-10">
-        <Link href='/'>
+        <Link href="/">
           <Image
             alt="logo"
             src="/declic-red.png"
@@ -79,7 +79,7 @@ const Header: React.FC<{
           />
         </Link>
         <div className="z-50 flex gap-x-6 items-center">
-          {["Home", "About us", "Contact"].map((text, index) => (
+          {["Home", "Campaign", "About us", "Contact"].map((text, index) => (
             <motion.div
               key={index}
               className="text-xl fontmed"
@@ -99,6 +99,8 @@ const Header: React.FC<{
                     ? "/portfolio?section=work"
                     : text === "About us"
                     ? "/"
+                    : text === "Campaign"
+                    ? "/portfolio?section=work"
                     : "/contact"
                 }
               >
@@ -158,7 +160,7 @@ const SlideTabs: React.FC = () => {
 
   const pages = [
     { name: "Home", href: "/portfolio?section=work" },
-    { name: "Campagnes", href: "/portfolio?section=work" },
+    { name: "Campaign", href: "/portfolio?section=work" },
     { name: "About us", href: "/" },
     { name: "Contact", href: "/contact" },
   ];
