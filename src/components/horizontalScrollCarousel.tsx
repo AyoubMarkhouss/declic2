@@ -66,7 +66,7 @@ const HorizontalScrollCarousel = () => {
       <div className="flex justify-center items-center mb-20">
         <Link
           href="/portfolio?section=work"
-          className="fontmed shadow-lg px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
+          className="fontmed shadow-lg z-50 px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
         >
           VIEW MORE
         </Link>
@@ -114,7 +114,7 @@ const Card = ({
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="h-[400px] relative  group-hover:border-[10px] transition-all duration-300 transform group-hover:border-redeclic hover:cursor-pointer shadow-lg overflow-hidden"
         >
-          <div className="px-5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 group-hover:flex hidden z-[999999]">
+          <div className="px-5 absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 laptop:group-hover:flex hidden z-[999999]">
             <ViewMore />
           </div>
           <img

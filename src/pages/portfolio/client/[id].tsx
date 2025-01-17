@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { TextAnimate } from "~/components/ui/text-animate";
 import Header from "~/components/header-burger";
 import { useState } from "react";
+import ViewMore from "~/components/icons/viewMore";
 
 export default function Portfolio() {
   // Function to load more works
@@ -71,7 +72,9 @@ export default function Portfolio() {
                 height={300}
                 className="mb-4 "
               />
-              <h1 className="fontmed text-5xl py-3">About {client?.title}</h1>
+              <h1 className="fontmed text-center text-5xl py-3">
+                {client?.title}
+              </h1>
               <p className="text-lg text-justify text-gray-700">
                 {client?.description}
               </p>
@@ -80,30 +83,33 @@ export default function Portfolio() {
                 .filter((k) => k.brand === client?.title)
                 .map((g) => {
                   return (
-                    <div
-                      className="mb-10 group break-inside-avoid"
-                      key={g.title}
-                    >
-                      <Image
-                        className="opacity-80 hover:scale-105 hover:opacity-100 object-cover transition-all duration-300 transform"
-                        alt="500"
-                        src={g.image}
-                        width={500}
-                        height={500}
-                      />
-                      <div className="flex items-center group-hover:scale-105 transition-all duration-300 transform justify-between pt-2">
-                        <h1 className="fontmed group-hover:text-redeclic text-lg">
-                          {g.title}
-                        </h1>
-                        <FaChevronRight className="group-hover:fill-redeclic" />
+                    <Link href={g.link}>
+                      <div
+                        className="my-10  group  break-inside-avoid"
+                        key={g.title}
+                      >
+                        <div className="relative">
+                          <div className="px-5 hidden laptop:group-hover:flex group absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2   z-[999999]">
+                            <ViewMore />
+                          </div>
+                          <Image
+                            className="object-cover group-hover:border-[10px] group-hover:border-redeclic hover:cursor-pointer  transition-all duration-300 transform"
+                            alt="500"
+                            src={g.image}
+                            width={500}
+                            height={500}
+                          />
+                        </div>
+
+                        <div className="flex items-center transition-all duration-300 transform justify-between pt-2">
+                          <h1 className="fontmed group-hover:text-redeclic text-lg">
+                            {g.title}
+                          </h1>
+                          <FaChevronRight className="group-hover:fill-redeclic" />
+                        </div>
+                        <p className="text-sm ">{g.category}</p>
                       </div>
-                      <p className="text-sm group-hover:scale-105 transition-all duration-300 transform">
-                        {g.category}
-                      </p>
-                      <p className="text-xs group-hover:scale-105 transition-all duration-300 transform text-gray-400">
-                        {g.date}
-                      </p>
-                    </div>
+                    </Link>
                   );
                 })}
               <Link
@@ -124,36 +130,35 @@ export default function Portfolio() {
 
 const work = [
   {
-    title: "Flag Speciale Gold",
-    image: "/gold.jpg",
-    category: "Mechroubat",
+    title: "L'Clicka Dialna",
+    image: "/AboutUs/ClickaDialna.jpg",
+    category: "Entertainment",
     date: "25 avril 2024",
-    link: "",
-    brand: "Porsche",
+    link: "/portfolio/project/clickadialna",
+    brand: "L'Clicka Dialna",
   },
   {
-    title: "Flag Speciale Original",
-    image: "/qnibila.jpg",
-    category: "Mechroubat",
+    title: "Porsche Morocco",
+    image: "/AboutUs/PorscheFestival.jpg",
+    category: "Automotive",
     date: "25 avril 2024",
-    link: "",
-    brand: "Porsche",
+    link: "/portfolio/project/porschefestival",
+    brand: "Porsche Morocco",
   },
   {
     title: "Casablanca Beer",
-    image: "/casablancabeer.jpg",
-    category: "Mechroubat",
-    date: "25 avril 2024",
-    link: "",
-    brand: "",
+    image: "/AboutUs/CasablancaBeer.jpg",
+    category: "Beverages",
+    link: "/portfolio/project/casablancabeer",
+    brand: "Casablanca beer",
   },
   {
-    title: "Stork",
-    image: "/stork.jpg",
-    category: "Mechroubat",
+    title: "SEAT Attitude",
+    image: "/AboutUs/SeatAttitude.jpg",
+    category: "Automotive",
     date: "26 avril 2024",
-    link: "",
-    brand: "",
+    link: "/portfolio/project/seat",
+    brand: "SEAT Morocco",
   },
   {
     title: "Project 5",

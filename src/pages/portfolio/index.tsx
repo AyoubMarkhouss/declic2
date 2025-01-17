@@ -1,93 +1,226 @@
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "~/components/footer";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Header from "~/components/header-burger";
 import { TextAnimate } from "~/components/ui/text-animate";
+import ViewMore from "~/components/icons/viewMore";
 // import { useRouter } from "next/router";
 
 export const clients = [
   {
-    image: "/audi.png",
+    image: "/Clients/Refs-logos/AinIfrane.png",
+    title: "Aïn Ifrane",
+    description:
+      " Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
+  },
+  {
+    image: "/Clients/Refs-logos/AlJabr.png",
+    title: "Al Jabr",
+    description:
+      "A Moroccan school offering modern and high-quality education, promoting skill development and student growth.",
+  },
+  {
+    image: "/Clients/Refs-logos/Anatolia.png",
+    title: "Anatolia",
+    description:
+      "Premium Turkish restaurant in Casablanca, offering authentic cuisine in a warm atmosphere.",
+  },
+  {
+    image: "/Clients/Refs-logos/Audi.png",
     title: "Audi",
-    description:
-      "Audi has been at the forefront of the automotive industry, delivering premium cars that combine luxury, technology, and performance. With a legacy of innovation, Audi continues to redefine the driving experience through advanced engineering and design.",
-  },
-  {
-    image: "/seat.png",
-    title: "SEAT",
-    description:
-      "SEAT is a Spanish automotive brand known for its youthful, dynamic, and affordable vehicles. Focusing on design, comfort, and cutting-edge technology, SEAT offers cars that resonate with drivers looking for reliability and style.",
-  },
-  {
-    image: "/bently.png",
-    title: "Bentley",
-    description:
-      "Bentley represents the pinnacle of luxury in the automotive world, blending exceptional craftsmanship with powerful performance. Each Bentley vehicle is a masterpiece, designed to deliver an unparalleled driving experience and unmatched sophistication.",
-  },
-  {
-    image: "/porch.png",
-    title: "Porsche",
     description:
       "Porsche is synonymous with sports car excellence, offering vehicles that boast unmatched precision, performance, and style. From racetracks to the open road, Porsche delivers a thrilling driving experience like no other.",
   },
   {
-    image: "/fast.png",
-    title: "Fast Auto",
+    image: "/Clients/Refs-logos/BeachMama.png",
+    title: "Beach Mama",
     description:
-      "Fast Auto is dedicated to creating vehicles that embody speed, agility, and innovation. Known for its commitment to high performance and cutting-edge technology, Fast Auto is a brand for those who crave excitement on the road.",
+      "A beachfront restaurant in Casablanca and pool club in Marrakech, offering a unique culinary experience with a relaxed and modern ambiance.",
   },
   {
-    image: "/Motul.png",
-    title: "Motul",
+    image: "/Clients/Refs-logos/BISC.png",
+    title: "British International School of Casablanca (BISC)",
     description:
-      "Motul is a global leader in the development and production of high-performance motor oils and lubricants. With a strong presence in motorsports, Motul delivers products designed to maximize engine performance and longevity.",
+      "A high-quality British educational institution, offering a multicultural environment and a rigorous academic program.",
   },
   {
-    image: "/marjan.png",
-    title: "Marjane",
+    image: "/Clients/Refs-logos/Casablanca.png",
+    title: "Casablanca beer",
     description:
-      "Marjan is revolutionizing the retail landscape with a commitment to providing quality products at affordable prices. Known for its wide range of offerings, Marjan caters to customers seeking value without compromising on quality.",
+      "An iconic Moroccan beer, known for its quality and subtle aroma, symbolizing conviviality and hospitality.",
   },
   {
-    image: "/g4s.png",
+    image: "/Clients/Refs-logos/Castel.png",
+    title: "Castel France",
+    description:
+      "A French wine group, including prestigious brands like Châteaux Castel and Maison Castel, known for its expertise in producing quality wines.",
+  },
+  {
+    image: "/Clients/Refs-logos/ClickaDialna.png",
+    title: "L'Clicka Dialna",
+    description:
+      "A Moroccan YouTube channel creating diverse content that showcases local culture and trends.",
+  },
+  {
+    image: "/Clients/Refs-logos/CUPRA.png",
+    title: "Cupra Morocco",
+    description:
+      " A brand derived from SEAT, specializing in sports and high-performance cars.",
+  },
+  {
+    image: "/Clients/Refs-logos/Dacia.png",
+    title: "Dacia Morocco",
+    description:
+      "A brand of the Renault Group, offering affordable, robust, and reliable cars, perfect for the Moroccan market.",
+  },
+  {
+    image: "/Clients/Refs-logos/ExpressRelais.png",
+    title: "Express Relais",
+    description:
+      "A delivery and automated parcel locker service in Morocco, facilitating the quick and secure sending and receiving of packages.",
+  },
+  {
+    image: "/Clients/Refs-logos/FastPro.png",
+    title: "Fast Pro Morocco",
+    description:
+      "An automotive service center providing vehicle maintenance and repair services.",
+  },
+  {
+    image: "/Clients/Refs-logos/FSB.png",
+    title: "Flag Speciale Black",
+    description:
+      " Moroccan amber beer, offering a rich and intense flavor, ideal for lovers of stronger beers.",
+  },
+  {
+    image: "/Clients/Refs-logos/FSG.png",
+    title: "Flag Speciale Gold",
+    description:
+      "Premium Moroccan beer, recognized for its superior quality and refined taste.",
+  },
+  {
+    image: "/Clients/Refs-logos/FSO.png",
+    title: "Flag Speciale Original",
+    description:
+      "Beer produced locally by Brasseries du Maroc, appreciated for its authentic taste.",
+  },
+  {
+    image: "/Clients/Refs-logos/G4S.png",
     title: "G4S",
     description:
-      "G4S is a global leader in integrated security solutions, providing services that ensure safety and peace of mind. With expertise in technology and risk management, G4S is a trusted partner for businesses and governments worldwide.",
+      " An international security group specializing in risk management and security services globally.",
   },
   {
-    image: "/marina.png",
-    title: "Marina shopping",
+    image: "/Clients/Refs-logos/Marina.png",
+    title: "Marina Shopping",
     description:
-      "Marina specializes in creating luxurious waterfront living spaces that combine elegance with modern amenities. Known for its impeccable design and serene locations, Marina offers an unparalleled lifestyle by the water.",
+      "A luxury shopping mall in Casablanca, featuring both international and local brands.",
   },
   {
-    image: "/AlJabr.png",
-    title: "Al Jabr",
+    image: "/Clients/Refs-logos/Midas.png",
+    title: "Midas Morocco",
     description:
-      "AlJabr is a leader in mobility and engineering solutions, driving innovation in the automotive and industrial sectors. With a commitment to quality and sustainability, AlJabr is shaping the future of transportation and technology.",
+      "A network of auto centers offering quality maintenance and repair services across Morocco.",
   },
   {
-    image: "/renaut.svg",
-    title: "Renault",
+    image: "/Clients/Refs-logos/Motul.png",
+    title: "Motul Africa",
     description:
-      "Renault is a French automotive powerhouse known for its innovative designs and commitment to sustainability. From electric vehicles to stylish sedans, Renault continues to push the boundaries of what’s possible in modern mobility.",
+      "Specialist in vehicle oils and lubricants, Motul Africa stands out for the quality and performance of its products used by professionals and individuals.",
+  },
+  {
+    image: "/Clients/Refs-logos/PORSCHE.png",
+    title: "Porsche Morocco",
+    description:
+      "Official representative of Porsche in Morocco, distributed by the Centrale Automobile Chérifienne. Porsche Morocco offers luxury vehicles combining performance, design, and technology.",
+  },
+  {
+    image: "/Clients/Refs-logos/Renault.png",
+    title: "Renault Morocco",
+    description:
+      "A French automotive manufacturer offering a wide range of vehicles, from city cars to utility vehicles, combining technology and performance.",
+  },
+  {
+    image: "/Clients/Refs-logos/SEAT.png",
+    title: "SEAT Morocco",
+    description:
+      " A subsidiary of the Spanish brand, SEAT Morocco offers modern and accessible models, combining safety and innovation",
+  },
+  {
+    image: "/Clients/Refs-logos/Seriderm.png",
+    title: "Seriderm",
+    description:
+      " Importer of aesthetic and medical laser machines, offering state-of-the-art equipment for professionals in the beauty and healthcare sectors.",
+  },
+  {
+    image: "/Clients/Refs-logos/Stork.png",
+    title: "Stork",
+    description:
+      "Popular Moroccan beer, appreciated for its refreshing taste and accessibility.",
+  },
+  {
+    image: "/Clients/Refs-logos/Tachfine.png",
+    title: "Tachfine Center",
+    description:
+      "A shopping mall in Casablanca, offering a wide selection of stores, restaurants, and services for a complete shopping experience.",
+  },
+  {
+    image: "/Clients/Refs-logos/UM.png",
+    title: "Universal Music Maghreb",
+    description:
+      "The branch of the giant Universal Music, representing music and artists from the Maghreb, contributing to the global reach of regional musical culture.",
+  },
+  {
+    image: "/Clients/Refs-logos/Vindici.png",
+    title: "Vins d'ici",
+    description:
+      "A range of Moroccan wines including Comptesse, Kasbaha, Halana, Bonassia, and Vignes d'Azour, offering a diverse selection of locally produced quality wines.",
+  },
+  {
+    image: "/Clients/Refs-logos/VW.png",
+    title: "Volkswagen Morocco",
+    description:
+      "Presence of the German brand, offering reliable and high-performance vehicles adapted to the Moroccan market.",
+  },
+  {
+    image: "/Clients/Refs-logos/VWFleet.png",
+    title: "Volkswagen Fleet",
+    description:
+      "A service that groups all Volkswagen Group brands for corporate clients, offering fleet management solutions tailored to business needs.",
+  },
+  {
+    image: "/Clients/Refs-logos/Yassamine.png",
+    title: "Yassamine",
+    description:
+      "A school in Casablanca offering a comprehensive educational program, focusing on both academic and personal development for students.",
   },
 ];
 export default function Portfolio() {
   const searchParams = useSearchParams();
   // const router = useRouter();
   const section = searchParams.get("section");
-  const [visibleWorks, setVisibleWorks] = useState(6); // Number of works visible initially
+  const [visibleWorks, setVisibleWorks] = useState(6);
+  const [numColumns, setNumColumns] = useState(3); // Number of works visible initially
   const [selectedClient, setSelectedClient] = useState<{
     image: string;
     description: string;
     title: string;
   } | null>(null);
+  useEffect(() => {
+    const updateColumns = () => {
+      const columns =
+        window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+      setNumColumns(columns);
+    };
 
+    updateColumns(); // Initial call
+    window.addEventListener("resize", updateColumns); // Update on resize
+
+    return () => window.removeEventListener("resize", updateColumns); // Cleanup
+  }, []);
   // Function to load more works
   const loadMoreWorks = () => {
     setVisibleWorks((prev) => prev + 6); // Show 6 more works on each click
@@ -143,7 +276,7 @@ export default function Portfolio() {
           </div>
 
           {/* Conditional rendering of the sections */}
-          {section === "work" ? (
+          {/* {section === "work" ? (
             <div className="columns-xs min-h-screen h-full laptop:columns-3 gap-20 mb-28">
               {work.slice(0, visibleWorks).map((g) => (
                 <motion.div
@@ -186,6 +319,60 @@ export default function Portfolio() {
             </div>
           ) : (
             <></>
+          )} */}
+          {section === "work" ? (
+            <div className="flex gap-10 mb-10">
+              {/* Create the columns dynamically */}
+              {Array.from({ length: numColumns }).map((_, colIndex) => (
+                <div className="flex-1 space-y-4" key={colIndex}>
+                  {/* Distribute items to columns */}
+                  {work
+                    .filter((_, index) => index % numColumns === colIndex)
+                    .slice(0, Math.ceil(visibleWorks / numColumns))
+                    .map((g) => (
+                      <Link href={g.link}>
+                        <motion.div
+                          className="group mb-5"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5 }}
+                          viewport={{ once: true }}
+                          key={g.title}
+                        >
+                          <div className="relative group">
+                            <div className="px-5 hidden laptop:group-hover:flex group absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2   z-[999999]">
+                              <ViewMore />
+                            </div>
+                            <Image
+                              className="opacity-80 group-hover:opacity-100 object-cover transition-all duration-300 transform"
+                              alt={g.title}
+                              src={g.image}
+                              width={500}
+                              height={500}
+                            />
+                          </div>
+
+                          <div className="flex items-center justify-between pt-2">
+                            <h1 className="fontmed group-hover:text-redeclic text-lg">
+                              {g.title}
+                            </h1>
+                            <FaChevronRight className="group-hover:fill-redeclic" />
+                          </div>
+                          <p className="text-sm">{g.category}</p>
+                        </motion.div>
+                      </Link>
+                    ))}
+                </div>
+              ))}
+            </div>
+          ) : null}
+          {visibleWorks < work.length && (
+            <button
+              className="fontmed mt-10 mx-auto block px-6 py-2 bg-redeclic text-white"
+              onClick={loadMoreWorks}
+            >
+              View More
+            </button>
           )}
 
           {section === "client" ? (
@@ -256,9 +443,6 @@ export default function Portfolio() {
                         <p className="text-sm group-hover:scale-105 transition-all duration-300 transform">
                           {g.category}
                         </p>
-                        <p className="text-xs group-hover:scale-105 transition-all duration-300 transform text-gray-400">
-                          {g.date}
-                        </p>
                       </div>
                     );
                   })}
@@ -280,41 +464,10 @@ export default function Portfolio() {
               autoPlay
               loop
               muted
-              className="object-cover absolute bottom-0 w-full h-full "
+              className="object-cover cursor-not-allowed absolute bottom-0 w-full h-full "
             />
           </div>
-          {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-x-5  px-20">
-            
-            <div className="col-span-1 pt-20">
-              <h1 className="text-5xl absolute z-20 font-black leading-tight tracking-tight">
-                WHEN THE WORLD <br /> <span className="">ZIGS,</span>{" "}
-                <span className="text-redeclic">ZAG.</span>
-              </h1>
-            </div>
 
-            
-            <div className="col-span-2 relative "></div>
-
-           
-            <div className="col-span-1 z-30 text-white text-md flex flex-col justify-center">
-              <p className="">
-                It’s easy to go with the grain, stick within the category codes
-                and make your brand as frictionless as possible. It feels safe.
-                And in an uncertain world, safety feels like a sensible
-                strategy.
-              </p>
-              <p className="">
-                But we believe the greatest risk is to stand still and fail to
-                stand out. It’s only the bold that get noticed and the brave
-                that get loved today. From your purpose to your point of sale,
-                it’s difference that will pay dividends. That is our belief, and
-                this is our promise: We will never offer you business as usual.
-                We will always build you a brand less ordinary – and far more
-                powerful.
-              </p>
-              <p className="text-black font-bold ">Welcome to BBH.</p>
-            </div>
-          </div> */}
           <div className="bg-black/30 w-screen h-[470px] absolute"></div>
           <h1 className="fontreg text-white text-center text-5xl z-10">
             THE GOAT OF MOROCCO
@@ -331,115 +484,50 @@ export default function Portfolio() {
 
 const work = [
   {
-    title: "Flag Speciale Gold",
-    image: "/gold.jpg",
-    category: "Mechroubat",
-    date: "25 avril 2024",
-    link: "",
-    brand: "Porsche",
+    title: "L'Clicka Dialna",
+    image: "/AboutUs/ClickaDialna.jpg",
+    category: "Entertainment",
+    link: "/portfolio/project/clickadialna",
+    brand: "L'Clicka Dialna",
   },
   {
-    title: "Flag Speciale Original",
-    image: "/qnibila.jpg",
-    category: "Mechroubat",
-    date: "25 avril 2024",
-    link: "",
-    brand: "Porsche",
+    title: "Porsche Morocco",
+    image: "/Porschefestival/Slider.webp",
+    category: "Automotive",
+
+    link: "/portfolio/project/porschefestival",
+    brand: "Porsche Morocco",
+  },
+
+  {
+    title: "Casablanca Beer",
+    image: "/AboutUs/CasablancaBeer.jpg",
+    category: "Beverages",
+    link: "/portfolio/project/casablancabeer",
+    brand: "Casablanca beer",
+  },
+
+  {
+    title: "SEAT Attitude",
+    image: "/Seat/Slider.jpg",
+    category: "Automotive",
+
+    link: "/portfolio/project/seat",
+    brand: "SEAT Morocco",
   },
   {
     title: "Casablanca Beer",
-    image: "/casablancabeer.jpg",
-    category: "Mechroubat",
-    date: "25 avril 2024",
-    link: "",
-    brand: "",
+    image: "/AboutUs/CasablancaBeer.jpg",
+    category: "Beverages",
+    link: "/portfolio/project/casablancabeer",
+    brand: "Casablanca beer",
   },
   {
-    title: "Stork",
-    image: "/stork.jpg",
-    category: "Mechroubat",
-    date: "26 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 5",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-    category: "Automobile",
-    date: "26 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 2",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-    category: "Automobile",
-    date: "26 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 2",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-    category: "Automobile",
-    date: "26 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 3",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg",
-    category: "Automobile",
-    date: "27 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 4",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
-    category: "Automobile",
-    date: "28 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 5",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
-    category: "Automobile",
-    date: "29 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 6",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
-    category: "Automobile",
-    date: "30 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 7",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg",
-    category: "Automobile",
-    date: "1 mai 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 8",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg",
-    category: "Automobile",
-    date: "2 mai 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 9",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
-    category: "Automobile",
-    date: "3 mai 2024",
-    link: "",
-    brand: "",
+    title: "Porsche Morocco",
+    image: "/Porschefestival/Slider.webp",
+    category: "Automotive",
+
+    link: "/portfolio/project/porschefestival",
+    brand: "Porsche Morocco",
   },
 ];

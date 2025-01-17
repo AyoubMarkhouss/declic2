@@ -173,3 +173,25 @@ css .item {
   break-inside: avoid;
   page-break-inside: avoid;
 }
+
+.masonry-grid {
+  column-count: 3; /* Adjust for number of columns */
+  column-gap: 3rem; /* Space between columns */
+}
+
+.masonry-item {
+  break-inside: avoid; /* Prevent breaking items across columns */
+  margin-bottom: 3rem; /* Space between items */
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
