@@ -346,7 +346,7 @@ export default function Portfolio() {
                           key={g.title}
                         >
                           <div className="relative group">
-                            <div className="px-5 hidden laptop:group-hover:flex group absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2   z-[999999]">
+                            <div className="px-5 hidden laptop:group-hover:flex group absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 z-10">
                               <ViewMore />
                             </div>
                             <Image
