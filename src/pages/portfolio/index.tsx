@@ -12,94 +12,10 @@ import ViewMore from "~/components/icons/viewMore";
 
 export const clients = [
   {
-    image: "/Clients/Refs-logos/AinIfrane.png",
-    title: "Aïn Ifrane",
-    description:
-      " Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
-  },
-  {
-    image: "/Clients/Refs-logos/AlJabr.png",
-    title: "Al Jabr",
-    description:
-      "A Moroccan school offering modern and high-quality education, promoting skill development and student growth.",
-  },
-  {
-    image: "/Clients/Refs-logos/Anatolia.png",
-    title: "Anatolia",
-    description:
-      "Premium Turkish restaurant in Casablanca, offering authentic cuisine in a warm atmosphere.",
-  },
-  {
     image: "/Clients/Refs-logos/Audi.png",
     title: "Audi",
     description:
       "Porsche is synonymous with sports car excellence, offering vehicles that boast unmatched precision, performance, and style. From racetracks to the open road, Porsche delivers a thrilling driving experience like no other.",
-  },
-  {
-    image: "/Clients/Refs-logos/BeachMama.png",
-    title: "Beach Mama",
-    description:
-      "A beachfront restaurant in Casablanca and pool club in Marrakech, offering a unique culinary experience with a relaxed and modern ambiance.",
-  },
-  {
-    image: "/Clients/Refs-logos/BISC.png",
-    title: "British International School of Casablanca (BISC)",
-    description:
-      "A high-quality British educational institution, offering a multicultural environment and a rigorous academic program.",
-  },
-  {
-    image: "/Clients/Refs-logos/Casablanca.png",
-    title: "Casablanca beer",
-    description:
-      "An iconic Moroccan beer, known for its quality and subtle aroma, symbolizing conviviality and hospitality.",
-  },
-  {
-    image: "/Clients/Refs-logos/Castel.png",
-    title: "Castel France",
-    description:
-      "A French wine group, including prestigious brands like Châteaux Castel and Maison Castel, known for its expertise in producing quality wines.",
-  },
-  {
-    image: "/Clients/Refs-logos/ClickaDialna.png",
-    title: "L'Clicka Dialna",
-    description:
-      "A Moroccan YouTube channel creating diverse content that showcases local culture and trends.",
-  },
-  {
-    image: "/Clients/Refs-logos/CUPRA.png",
-    title: "Cupra Morocco",
-    description:
-      " A brand derived from SEAT, specializing in sports and high-performance cars.",
-  },
-  {
-    image: "/Clients/Refs-logos/Dacia.png",
-    title: "Dacia Morocco",
-    description:
-      "A brand of the Renault Group, offering affordable, robust, and reliable cars, perfect for the Moroccan market.",
-  },
-  {
-    image: "/Clients/Refs-logos/ExpressRelais.png",
-    title: "Express Relais",
-    description:
-      "A delivery and automated parcel locker service in Morocco, facilitating the quick and secure sending and receiving of packages.",
-  },
-  {
-    image: "/Clients/Refs-logos/FastPro.png",
-    title: "Fast Pro Morocco",
-    description:
-      "An automotive service center providing vehicle maintenance and repair services.",
-  },
-  {
-    image: "/Clients/Refs-logos/FSB.png",
-    title: "Flag Speciale Black",
-    description:
-      " Moroccan amber beer, offering a rich and intense flavor, ideal for lovers of stronger beers.",
-  },
-  {
-    image: "/Clients/Refs-logos/FSG.png",
-    title: "Flag Speciale Gold",
-    description:
-      "Premium Moroccan beer, recognized for its superior quality and refined taste.",
   },
   {
     image: "/Clients/Refs-logos/FSO.png",
@@ -108,28 +24,10 @@ export const clients = [
       "Beer produced locally by Brasseries du Maroc, appreciated for its authentic taste.",
   },
   {
-    image: "/Clients/Refs-logos/G4S.png",
-    title: "G4S",
+    image: "/Clients/Refs-logos/Casablanca.png",
+    title: "Casablanca beer",
     description:
-      " An international security group specializing in risk management and security services globally.",
-  },
-  {
-    image: "/Clients/Refs-logos/Marina.png",
-    title: "Marina Shopping",
-    description:
-      "A luxury shopping mall in Casablanca, featuring both international and local brands.",
-  },
-  {
-    image: "/Clients/Refs-logos/Midas.png",
-    title: "Midas Morocco",
-    description:
-      "A network of auto centers offering quality maintenance and repair services across Morocco.",
-  },
-  {
-    image: "/Clients/Refs-logos/Motul.png",
-    title: "Motul Africa",
-    description:
-      "Specialist in vehicle oils and lubricants, Motul Africa stands out for the quality and performance of its products used by professionals and individuals.",
+      "An iconic Moroccan beer, known for its quality and subtle aroma, symbolizing conviviality and hospitality.",
   },
   {
     image: "/Clients/Refs-logos/PORSCHE.png",
@@ -138,10 +36,10 @@ export const clients = [
       "Official representative of Porsche in Morocco, distributed by the Centrale Automobile Chérifienne. Porsche Morocco offers luxury vehicles combining performance, design, and technology.",
   },
   {
-    image: "/Clients/Refs-logos/Renault.png",
-    title: "Renault Morocco",
+    image: "/Clients/Refs-logos/CUPRA.png",
+    title: "Cupra Morocco",
     description:
-      "A French automotive manufacturer offering a wide range of vehicles, from city cars to utility vehicles, combining technology and performance.",
+      " A brand derived from SEAT, specializing in sports and high-performance cars.",
   },
   {
     image: "/Clients/Refs-logos/SEAT.png",
@@ -150,22 +48,16 @@ export const clients = [
       " A subsidiary of the Spanish brand, SEAT Morocco offers modern and accessible models, combining safety and innovation",
   },
   {
-    image: "/Clients/Refs-logos/Seriderm.png",
-    title: "Seriderm",
+    image: "/Clients/Refs-logos/FSG.png",
+    title: "Flag Speciale Gold",
     description:
-      " Importer of aesthetic and medical laser machines, offering state-of-the-art equipment for professionals in the beauty and healthcare sectors.",
+      "Premium Moroccan beer, recognized for its superior quality and refined taste.",
   },
   {
-    image: "/Clients/Refs-logos/Stork.png",
-    title: "Stork",
+    image: "/Clients/Refs-logos/AinIfrane.png",
+    title: "Aïn Ifrane",
     description:
-      "Popular Moroccan beer, appreciated for its refreshing taste and accessibility.",
-  },
-  {
-    image: "/Clients/Refs-logos/Tachfine.png",
-    title: "Tachfine Center",
-    description:
-      "A shopping mall in Casablanca, offering a wide selection of stores, restaurants, and services for a complete shopping experience.",
+      " Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
   },
   {
     image: "/Clients/Refs-logos/UM.png",
@@ -174,17 +66,24 @@ export const clients = [
       "The branch of the giant Universal Music, representing music and artists from the Maghreb, contributing to the global reach of regional musical culture.",
   },
   {
-    image: "/Clients/Refs-logos/Vindici.png",
-    title: "Vins d'ici",
-    description:
-      "A range of Moroccan wines including Comptesse, Kasbaha, Halana, Bonassia, and Vignes d'Azour, offering a diverse selection of locally produced quality wines.",
-  },
-  {
     image: "/Clients/Refs-logos/VW.png",
     title: "Volkswagen Morocco",
     description:
       "Presence of the German brand, offering reliable and high-performance vehicles adapted to the Moroccan market.",
   },
+  {
+    image: "/Clients/Refs-logos/Motul.png",
+    title: "Motul Africa",
+    description:
+      "Specialist in vehicle oils and lubricants, Motul Africa stands out for the quality and performance of its products used by professionals and individuals.",
+  },
+  {
+    image: "/Clients/Refs-logos/Castel.png",
+    title: "Castel France",
+    description:
+      "A French wine group, including prestigious brands like Châteaux Castel and Maison Castel, known for its expertise in producing quality wines.",
+  },
+
   {
     image: "/Clients/Refs-logos/VWFleet.png",
     title: "Volkswagen Fleet",
@@ -192,10 +91,117 @@ export const clients = [
       "A service that groups all Volkswagen Group brands for corporate clients, offering fleet management solutions tailored to business needs.",
   },
   {
+    image: "/Clients/Refs-logos/ClickaDialna.png",
+    title: "L'Clicka Dialna",
+    description:
+      "A Moroccan YouTube channel creating diverse content that showcases local culture and trends.",
+  },
+  {
+    image: "/Clients/Refs-logos/Vindici.png",
+    title: "Vins d'ici",
+    description:
+      "A range of Moroccan wines including Comptesse, Kasbaha, Halana, Bonassia, and Vignes d'Azour, offering a diverse selection of locally produced quality wines.",
+  },
+  {
+    image: "/Clients/Refs-logos/Stork.png",
+    title: "Stork",
+    description:
+      "Popular Moroccan beer, appreciated for its refreshing taste and accessibility.",
+  },
+  {
+    image: "/Clients/Refs-logos/AlJabr.png",
+    title: "Al Jabr",
+    description:
+      "A Moroccan school offering modern and high-quality education, promoting skill development and student growth.",
+  },
+
+  {
     image: "/Clients/Refs-logos/Yassamine.png",
     title: "Yassamine",
     description:
       "A school in Casablanca offering a comprehensive educational program, focusing on both academic and personal development for students.",
+  },
+  {
+    image: "/Clients/Refs-logos/BISC.png",
+    title: "British International School of Casablanca (BISC)",
+    description:
+      "A high-quality British educational institution, offering a multicultural environment and a rigorous academic program.",
+  },
+  {
+    image: "/Clients/Refs-logos/Seriderm.png",
+    title: "Seriderm",
+    description:
+      " Importer of aesthetic and medical laser machines, offering state-of-the-art equipment for professionals in the beauty and healthcare sectors.",
+  },
+  {
+    image: "/Clients/Refs-logos/Marina.png",
+    title: "Marina Shopping",
+    description:
+      "A luxury shopping mall in Casablanca, featuring both international and local brands.",
+  },
+
+  {
+    image: "/Clients/Refs-logos/Tachfine.png",
+    title: "Tachfine Center",
+    description:
+      "A shopping mall in Casablanca, offering a wide selection of stores, restaurants, and services for a complete shopping experience.",
+  },
+  {
+    image: "/Clients/Refs-logos/G4S.png",
+    title: "G4S",
+    description:
+      " An international security group specializing in risk management and security services globally.",
+  },
+  {
+    image: "/Clients/Refs-logos/FSB.png",
+    title: "Flag Speciale Black",
+    description:
+      " Moroccan amber beer, offering a rich and intense flavor, ideal for lovers of stronger beers.",
+  },
+
+  {
+    image: "/Clients/Refs-logos/Renault.png",
+    title: "Renault Morocco",
+    description:
+      "A French automotive manufacturer offering a wide range of vehicles, from city cars to utility vehicles, combining technology and performance.",
+  },
+
+  {
+    image: "/Clients/Refs-logos/Dacia.png",
+    title: "Dacia Morocco",
+    description:
+      "A brand of the Renault Group, offering affordable, robust, and reliable cars, perfect for the Moroccan market.",
+  },
+  {
+    image: "/Clients/Refs-logos/FastPro.png",
+    title: "Fast Pro Morocco",
+    description:
+      "An automotive service center providing vehicle maintenance and repair services.",
+  },
+  {
+    image: "/Clients/Refs-logos/Midas.png",
+    title: "Midas Morocco",
+    description:
+      "A network of auto centers offering quality maintenance and repair services across Morocco.",
+  },
+  {
+    image: "/Clients/Refs-logos/BeachMama.png",
+    title: "Beach Mama",
+    description:
+      "A beachfront restaurant in Casablanca and pool club in Marrakech, offering a unique culinary experience with a relaxed and modern ambiance.",
+  },
+  {
+    image: "/Clients/Refs-logos/Anatolia.png",
+    title: "Anatolia",
+    description:
+      "Premium Turkish restaurant in Casablanca, offering authentic cuisine in a warm atmosphere.",
+  },
+
+  {
+    image: "/Clients/Refs-logos/ExpressRelais.png",
+    title: "Express Relais",
+    description:
+      "A delivery and automated parcel locker service in Morocco, facilitating the quick and secure sending and receiving of packages.",
   },
 ];
 export default function Portfolio() {

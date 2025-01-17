@@ -39,8 +39,10 @@ export default function Portfolio() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-lg laptop:max-w-[70%] pb-5"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-              reprehenderit sit iste, dolores dolorum molestiae dicta explicabo!{" "}
+              At Declic Agency, we’ve had the privilege of working with brands
+              and clients who share our bold vision of communication. Each
+              project is an opportunity to push boundaries, innovate, and create
+              unforgettable campaigns
             </motion.p>
             <div className="flex gap-x-5">
               <Link

@@ -69,7 +69,7 @@ const Header: React.FC<{
         </AnimatePresence>
       )}
       <div className="flex fixed z-50 top-0 left-0  h-20 w-full items-center justify-between px-10">
-        <div className="">
+        <Link href='/'>
           <Image
             alt="logo"
             src="/declic-red.png"
@@ -77,7 +77,7 @@ const Header: React.FC<{
             height={1000}
             className="w-20"
           />
-        </div>
+        </Link>
         <div className="z-50 flex gap-x-6 items-center">
           {["Home", "About us", "Contact"].map((text, index) => (
             <motion.div

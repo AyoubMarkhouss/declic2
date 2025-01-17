@@ -27,13 +27,15 @@ const Footer = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="col-span-4 flex justify-center items-center py-5"
       >
-        <Image
-          alt="declic"
-          src="/declic-white.png"
-          height={1500}
-          width={1500}
-          className="w-40"
-        />
+        <Link href='/'>
+          <Image
+            alt="declic"
+            src="/declic-white.png"
+            height={1500}
+            width={1500}
+            className="w-40"
+          />
+        </Link>
       </motion.div>
       <div className="col-span-4 flex justify-between border-t-2 pt-10">
         <div className="col-span-1">
