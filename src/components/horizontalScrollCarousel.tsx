@@ -14,8 +14,8 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-40%"]);
-  const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-77.5%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-45%"]);
+  const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-82%"]);
 
   return (
     <div>
@@ -177,6 +177,13 @@ const cards: CardType[] = [
     desc: "Automotive",
     id: 6,
     page: "/portfolio/project/seat",
+  },
+  {
+    url: "/AboutUs/FastPro.webp",
+    title: "Fast Pro",
+    desc: "Automotive maintenance",
+    id: 7,
+    page: "/portfolio/project/fastpro",
   },
   // {
   //   url: "https://framerusercontent.com/images/xrD1XEKUiPxzEfAp3NgFFX5Mbk.png",

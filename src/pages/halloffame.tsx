@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Footer from "~/components/footer";
+import HalloffameCarousel from "~/components/halloffameCarousel";
 import Header from "~/components/header-burger";
 import HorizontalScrollCarousel from "~/components/horizontalScrollCarousel";
 import { TextAnimate } from "~/components/ui/text-animate";
@@ -35,11 +36,12 @@ export default function Halloffame() {
             >
               Here’s where we showcase our proudest moments in Morocco. Projects
               that made an impact and left their mark. Take a peek at what we do
-              best (and yes, we love to brag a little)! 😉 <br /> 👉 Click on a client
-              to explore their success story!
+              best (and yes, we love to brag a little)! 😉 <br /> 👉 Click on a
+              client to explore their success story!
             </motion.p>
           </div>
         </div>
+        <HalloffameCarousel />
         <HorizontalScrollCarousel />
         <Footer />
       </div>
