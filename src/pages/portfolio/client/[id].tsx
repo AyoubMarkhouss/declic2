@@ -163,12 +163,12 @@ const work = [
     brand: "SEAT Morocco",
   },
   {
-    title: "Project 5",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-    category: "Automobile",
+    title: "Fast Pro",
+    image: "/AboutUs/FastPro.webp",
+    category: "Automotive maintenance",
     date: "26 avril 2024",
-    link: "",
-    brand: "",
+    link: "/portfolio/project/fastpro",
+    brand: "Fast Pro Morocco",
   },
   {
     title: "Project 2",

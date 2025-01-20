@@ -53,10 +53,17 @@ const Porschefestival = () => {
           <div className="w-screen relative h-[calc(100vh_-_80px)] flex justify-center items-center">
             <Image
               alt="d"
-              src="/Porschefestival/Slider.webp"
+              src="/Porschefestival/Slider_porsche_desktop.webp"
               height={2000}
               width={2000}
-              className="w-screen h-full object-cover "
+              className=" hidden laptop:block w-screen h-full object-cover "
+            />
+            <Image
+              alt="d"
+              src="/Porschefestival/Slider_porsche_mobile.webp"
+              height={2000}
+              width={2000}
+              className="laptop:hidden w-screen h-full object-cover "
             />
             {/* <div className="absolute inset-0 bg-black bg-opacity-15 h-96"></div> */}
           </div>

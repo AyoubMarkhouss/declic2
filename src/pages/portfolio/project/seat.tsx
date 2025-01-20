@@ -56,7 +56,14 @@ const Seat = () => {
               src="/Seat/Slider.jpg"
               height={2000}
               width={2000}
-              className="w-screen h-full object-cover "
+              className=" hidden laptop:block w-screen h-full object-cover "
+            />
+            <Image
+              alt="d"
+              src="/Seat/Slider_seat_mobile.webp"
+              height={2000}
+              width={2000}
+              className="laptop:hidden w-screen h-full object-cover "
             />
             {/* <div className="absolute inset-0 bg-black bg-opacity-15 h-96"></div> */}
           </div>
@@ -68,14 +75,14 @@ const Seat = () => {
           <p className=" tablet:text-lg text-justify">
             After introducing "Level Up," marking the new strategic partnership
             between SEAT and CAC, its new importer, it became essential to
-            affirm the brand's DNA and solidify its identity.
-            This vision came to life through the SEAT Attitude campaign, which
-            activated four key platforms represented by renowned ambassadors:
-            Othman Choufani, Lilias Tebbai, ReqTeq, Aezaddy, Aidance, Sara
-            Morbi, and Sika.  This campaign brilliantly highlighted SEAT’s
-            core values, encapsulated by its signature "Born in the Sun."
-            More than just a car, SEAT offers its customers a unique experience
-            and mindset, celebrating a dynamic and inspiring lifestyle.
+            affirm the brand's DNA and solidify its identity. This vision came
+            to life through the SEAT Attitude campaign, which activated four key
+            platforms represented by renowned ambassadors: Othman Choufani,
+            Lilias Tebbai, ReqTeq, Aezaddy, Aidance, Sara Morbi, and Sika. This
+            campaign brilliantly highlighted SEAT’s core values, encapsulated by
+            its signature "Born in the Sun." More than just a car, SEAT offers
+            its customers a unique experience and mindset, celebrating a dynamic
+            and inspiring lifestyle.
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -165,7 +172,7 @@ const Seat = () => {
                 by="character"
                 className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
               >
-                SEAT Surf
+                SEAT X Othmane Choufani
               </TextAnimate>
             </div>
 
@@ -184,7 +191,7 @@ const Seat = () => {
                 by="character"
                 className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
               >
-                SEAT Dance
+                SEAT X ΛĪDΛИƇƐ
               </TextAnimate>
             </div>
           </div>
@@ -204,7 +211,7 @@ const Seat = () => {
                 by="character"
                 className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
               >
-                SEAT Street Art
+                SEAT X Sikart
               </TextAnimate>
             </div>
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">
@@ -222,7 +229,7 @@ const Seat = () => {
                 by="character"
                 className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
               >
-                SEAT Music
+                SEAT X Aezaddy
               </TextAnimate>
             </div>
 
@@ -240,7 +247,7 @@ const Seat = () => {
                 by="character"
                 className="text-lg font-semibold text-center py-2 text-white bg-redeclic"
               >
-                SEAT Urban
+                SEAT X Sarah Morbi
               </TextAnimate>
             </div>
           </div>
@@ -384,9 +391,9 @@ const Seat = () => {
                 a strategic rollout on social media and a powerful advertising
                 campaign. Through interactive challenges, immersive videos, and
                 static posts, each communication platform was highlighted,
-                driven by our ambassadors and their unique worlds.
-                 In parallel, an Ads campaign was launched to amplify SEAT
-                Attitude's reach and connect with an even wider audience.
+                driven by our ambassadors and their unique worlds. In parallel,
+                an Ads campaign was launched to amplify SEAT Attitude's reach
+                and connect with an even wider audience.
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -455,15 +462,16 @@ const Seat = () => {
                 it also came to life on the ground through unique and memorable
                 activations: At the Ain Diab Surf School, we introduced
                 enthusiasts to the thrill of the waves, embodying the freedom
-                and adventure of SEAT Attitude.  In our showrooms,
-                fans had the opportunity to meet their favorite artists,
-                creating unforgettable moments of connection.  A
-                surf competition brought together amateurs and professionals to
-                celebrate the passion and performance of the sport. Finally, arcade gaming stations, dressed in SEAT Attitude
-                branding, were strategically placed in key locations, adding a
-                playful and unexpected touch. These activations brought the SEAT
-                Attitude spirit closer to the audience, transforming it into
-                tangible, dynamic, and engaging experiences.
+                and adventure of SEAT Attitude. In our showrooms, fans had the
+                opportunity to meet their favorite artists, creating
+                unforgettable moments of connection. A surf competition brought
+                together amateurs and professionals to celebrate the passion and
+                performance of the sport. Finally, arcade gaming stations,
+                dressed in SEAT Attitude branding, were strategically placed in
+                key locations, adding a playful and unexpected touch. These
+                activations brought the SEAT Attitude spirit closer to the
+                audience, transforming it into tangible, dynamic, and engaging
+                experiences.
               </p>
             </div>
             {/* <div className="flex items-center justify-center">

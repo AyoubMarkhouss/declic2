@@ -5,7 +5,7 @@ export default function Sheepsection() {
     <div className="relative h-screen bg-white flex overflow-hidden">
       <div className="absolute inset-0">
         <video
-          src="/goat-HD.mp4" // Replace with your GIF path in the public folder
+          src="/goat-HD.webm" // Replace with your GIF path in the public folder
           autoPlay
           loop
           muted

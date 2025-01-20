@@ -466,7 +466,7 @@ export default function Portfolio() {
         <div className="relative h-[470px] bg-white flex gap-y-7 flex-col justify-center items-center overflow-hidden">
           <div className="absolute cursor-not-allowed inset-0">
             <video
-              src="/goat-HD.mp4" // Replace with your GIF path in the public folder
+              src="/goat-HD.webm" // Replace with your GIF path in the public folder
               autoPlay
               loop
               muted
@@ -498,7 +498,7 @@ const work = [
   },
   {
     title: "Porsche Morocco",
-    image: "/Porschefestival/Slider.webp",
+    image: "/Porschefestival/Slider_porsche_desktop.webp",
     category: "Automotive",
 
     link: "/portfolio/project/porschefestival",
@@ -522,18 +522,11 @@ const work = [
     brand: "SEAT Morocco",
   },
   {
-    title: "Casablanca Beer",
-    image: "/AboutUs/CasablancaBeer.jpg",
-    category: "Beverages",
-    link: "/portfolio/project/casablancabeer",
-    brand: "Casablanca beer",
+    title: "Fast Pro",
+    image: "/AboutUs/FastPro.webp",
+    category: "Automotive maintenance",
+    link: "/portfolio/project/fastpro",
+    brand: "Fast Pro",
   },
-  {
-    title: "Porsche Morocco",
-    image: "/Porschefestival/Slider.webp",
-    category: "Automotive",
-
-    link: "/portfolio/project/porschefestival",
-    brand: "Porsche Morocco",
-  },
+  
 ];

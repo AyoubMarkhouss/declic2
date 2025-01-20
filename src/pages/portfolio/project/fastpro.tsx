@@ -18,7 +18,7 @@ import {
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
 
-const Porschefestival = () => {
+const Fastpro = () => {
   const [open, setOpen] = useState<boolean>(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -121,7 +121,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Brand</p>
               <p className="text-md tablet:text-lg text-redeclic text-center">
-             Fast pro
+                Fast pro
               </p>
             </motion.div>
           </div>
@@ -171,15 +171,22 @@ const Porschefestival = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The Porsche experience
+          The centers
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-10 desktop:gap-x-0 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
-                Relive the best moments in images from this exceptional day.
-                From workshops to encounters, each moment was captured to keep a
-                lasting memory of this unique festival.
+                The new FAST PRO service centers offer an entirely new customer
+                experience, with modernized garages, a polished atmosphere, and
+                state-of-the-art equipment. We reimagined every visual and
+                functional aspect of these centers to provide a smoother, more
+                enjoyable experience while ensuring the expertise and quality
+                service that have built Foramag’s reputation. These new centers
+                reflect the brand’s commitment to evolve while staying true to
+                its values of competence, speed, and professionalism. Through
+                this transformation, we helped make every visit to these centers
+                a moment of trust and reassurance for customers.
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -208,7 +215,7 @@ const Porschefestival = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {staticimg.map((jj, index) => (
+                  {centers.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -271,7 +278,7 @@ const Porschefestival = () => {
   );
 };
 
-export default Porschefestival;
+export default Fastpro;
 
 const affiches = [
   {
@@ -306,17 +313,17 @@ const affiches = [
   },
 ];
 
-const staticimg = [
-  { img: "/Porschefestival/shooting/1.webp" },
-  { img: "/Porschefestival/shooting/2.webp" },
-  { img: "/Porschefestival/shooting/3.webp" },
-  { img: "/Porschefestival/shooting/4.webp" },
-  { img: "/Porschefestival/shooting/5.webp" },
-  { img: "/Porschefestival/shooting/6.webp" },
-  { img: "/Porschefestival/shooting/7.webp" },
-  { img: "/Porschefestival/shooting/8.webp" },
-  { img: "/Porschefestival/shooting/9.webp" },
-  { img: "/Porschefestival/shooting/10.webp" },
-  { img: "/Porschefestival/shooting/11.webp" },
-  { img: "/Porschefestival/shooting/12.webp" },
+const centers = [
+  { img: "/Fastpro/Centers/fp1.webp" },
+  { img: "/Fastpro/Centers/fp2.webp" },
+  { img: "/Fastpro/Centers/fp3.webp" },
+  { img: "/Fastpro/Centers/fp4.webp" },
+  { img: "/Fastpro/Centers/fp5.webp" },
+  { img: "/Fastpro/Centers/fp6.webp" },
+  { img: "/Fastpro/Centers/fp7.webp" },
+  { img: "/Fastpro/Centers/fp8.webp" },
+  { img: "/Fastpro/Centers/fp9.webp" },
+  { img: "/Fastpro/Centers/fp10.webp" },
+  { img: "/Fastpro/Centers/fp11.webp" },
+  
 ];

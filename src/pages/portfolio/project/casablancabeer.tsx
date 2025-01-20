@@ -56,7 +56,14 @@ const Casablancabeer = () => {
               src="/Casablancabeer/Slider-min.webp"
               height={2000}
               width={2000}
-              className="w-screen h-full object-cover "
+              className="hidden laptop:block w-screen h-full object-cover "
+            />
+            <Image
+              alt="d"
+              src="/Casablancabeer/Slider_casa_mobile.webp"
+              height={2000}
+              width={2000}
+              className="laptop:hidden w-screen h-full object-cover "
             />
             {/* <div className="absolute inset-0 bg-black bg-opacity-15 h-96"></div> */}
           </div>
