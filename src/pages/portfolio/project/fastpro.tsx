@@ -126,46 +126,68 @@ const Fastpro = () => {
             </motion.div>
           </div>
         </div>
-        {/* <TextAnimate
+        <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          Master Visual
+          The logo
         </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify laptop:text-lg desktop:text-xl">
+                As part of the rebranding of FAST PRO, we designed a logo that
+                reflects the values of speed, performance, and expertise. This
+                modern logo, with clean lines and carefully chosen colors,
+                embodies Foramag’s innovative vision for its automotive service
+                centers. Through this design, we aimed to symbolize FAST PRO’s
+                commitment to providing quick and quality service while
+                maintaining a strong connection to the brand’s core values.
+              </p>
+            </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full laptop:max-w-6xl desktop:max-w-7xl my-10 pl-3 tablet:pl-0 mx-auto"
-          setApi={setApi}
+            <div className="">
+              <Image
+                alt="fastpro-logo"
+                src="/Clients/Refs-logos/FastPro.png"
+                width={2000}
+                height={2000}
+              />
+            </div>
+          </div>
+        </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          <CarouselContent className="">
-            {affiches.map((it, index) => (
-              <CarouselItem key={index} className="laptop:basis-1/3">
-                <div className="p-1">
-                  <Image
-                    src={it.image}
-                    width={5020}
-                    height={5020}
-                    alt="image"
-                    className="w-96 "
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="hidden tablet:block">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
+          The campaign
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
+                As part of the rebranding of FAST PRO, we designed a logo that
+                reflects the values of speed, performance, and expertise. This
+                modern logo, with clean lines and carefully chosen colors,
+                embodies Foramag’s innovative vision for its automotive service
+                centers. Through this design, we aimed to symbolize FAST PRO’s
+                commitment to providing quick and quality service while
+                maintaining a strong connection to the brand’s core values.
+              </p>
+            </div>
 
-          <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
-            {current} / {count}
+            <div className=" py-5">
+              <Image
+                alt="fastpro-campaign"
+                src="/Fastpro/Campain/FastPro_compain.webp"
+                width={2000}
+                height={2000}
+              />
+            </div>
           </div>
-        </Carousel> */}
+        </div>
         <TextAnimate
           animation="blurInUp"
           by="character"
@@ -176,7 +198,7 @@ const Fastpro = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
-              <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
                 The new FAST PRO service centers offer an entirely new customer
                 experience, with modernized garages, a polished atmosphere, and
                 state-of-the-art equipment. We reimagined every visual and
