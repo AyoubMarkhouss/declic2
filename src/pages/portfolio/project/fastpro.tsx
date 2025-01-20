@@ -126,7 +126,7 @@ const Fastpro = () => {
             </motion.div>
           </div>
         </div>
-        <TextAnimate
+        {/* <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
@@ -165,7 +165,7 @@ const Fastpro = () => {
           <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
             {current} / {count}
           </div>
-        </Carousel>
+        </Carousel> */}
         <TextAnimate
           animation="blurInUp"
           by="character"
@@ -240,7 +240,7 @@ const Fastpro = () => {
             </div>
           </div>
         </div>
-        <TextAnimate
+        {/* <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
@@ -271,7 +271,7 @@ const Fastpro = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
