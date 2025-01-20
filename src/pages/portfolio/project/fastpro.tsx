@@ -174,7 +174,7 @@ const Fastpro = () => {
           The centers
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-10 desktop:gap-x-0 gap-y-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
                 The new FAST PRO service centers offer an entirely new customer
