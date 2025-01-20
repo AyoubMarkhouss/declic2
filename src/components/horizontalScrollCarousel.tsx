@@ -186,7 +186,7 @@ const cards: CardType[] = [
     page: "/portfolio/project/fastpro",
   },
   {
-    url: "/AinIfrane/AinIfrane.webp",
+    url: "/Ainifrane/AinIfrane.webp",
     title: "Aïn Ifrane",
     desc: "Beverages",
     id: 8,

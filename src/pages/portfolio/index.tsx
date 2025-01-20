@@ -530,7 +530,7 @@ const work = [
   },
   {
     title: "Aïn Ifrane",
-    image: "/AinIfrane/Slider_ifran_desktop.webp",
+    image: "/Ainifrane/Slider_ifran_desktop.webp",
     category: "Beverages",
     link: "/portfolio/project/ainifrane",
     brand: "Aïn Ifrane",
