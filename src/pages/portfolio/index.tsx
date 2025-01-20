@@ -372,7 +372,7 @@ export default function Portfolio() {
               ))}
             </div>
           ) : null}
-          {visibleWorks < work.length && (
+          {section === "work" && visibleWorks < work.length && (
             <button
               className="fontmed my-10 mx-auto block px-6 py-2 bg-redeclic text-white"
               onClick={loadMoreWorks}
