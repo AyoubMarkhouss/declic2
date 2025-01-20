@@ -14,7 +14,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-45%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-67%"]);
   const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-82%"]);
 
   return (
@@ -131,7 +131,7 @@ const Card = ({
         </motion.div>
 
         <h1
-          className={`fontmed  text-4xl transition-colors duration-300 ${
+          className={`fontmed  text-3xl transition-colors duration-300 ${
             isOtherHovered ? "text-gray-400" : "text-black"
           }`}
         >
@@ -152,7 +152,7 @@ const Card = ({
 const cards: CardType[] = [
   {
     url: "/AboutUs/CasablancaBeer.jpg",
-    title: "Casablanca Beer",
+    title: "Feel the spirit of Morocco",
     desc: "Beverages",
     id: 1,
     page: "/portfolio/project/casablancabeer",
@@ -166,7 +166,7 @@ const cards: CardType[] = [
   },
   {
     url: "/AboutUs/PorscheFestival.jpg",
-    title: "Porsche Festival",
+    title: "Porsche Festival 2024",
     desc: "Automotive",
     id: 3,
     page: "/portfolio/project/porschefestival",
@@ -185,26 +185,25 @@ const cards: CardType[] = [
     id: 7,
     page: "/portfolio/project/fastpro",
   },
-  // {
-  //   url: "https://framerusercontent.com/images/xrD1XEKUiPxzEfAp3NgFFX5Mbk.png",
-  //   title: "Carlsberg Beer",
-  //   desc: "lorem impsum huba",
-  //   id: 5,
-  //   page: "",
-  // },
-
-  // {
-  //   url: "https://framerusercontent.com/images/63Ou8G3dAZyA7jCePWCbGXWT0.png",
-  //   title: "Vins D'ici",
-  //   desc: "lorem impsum huba",
-  //   id: 7,
-  //   page: "",
-  // },
-  // {
-  //   url: "https://framerusercontent.com/images/8Ffi88e202S78L0ljwETS0kBaC4.png",
-  //   title: "Vins Castel",
-  //   desc: "lorem impsum huba",
-  //   id: 8,
-  //   page: "",
-  // },
+  {
+    url: "/AinIfrane/AinIfrane.webp",
+    title: "Aïn Ifrane",
+    desc: "Beverages",
+    id: 8,
+    page: "/portfolio/project/ainifrane",
+  },
+  {
+    url: "/Expressrelais/ExpressRelais.webp",
+    title: "Express Relais",
+    desc: "Delivery Service",
+    id: 8,
+    page: "/portfolio/project/expressrelais",
+  },
+  {
+    url: "/Cupra/Cupra.webp",
+    title: "CUPRA",
+    desc: "Automotive",
+    id: 8,
+    page: "/portfolio/project/cupra",
+  },
 ];

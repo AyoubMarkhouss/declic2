@@ -173,7 +173,7 @@ const Casablancabeer = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
-            <div className="flex flex-col text-justify laptop:text-start gap-y-5">
+            <div className="flex flex-col text-justify  gap-y-5">
               <p className="laptop:text-lg desktop:text-xl">
                 To accompany the launch of "Feel The Spirit of Morocco," we
                 carried out a massive digital deployment aimed at engaging our
@@ -260,7 +260,7 @@ const Casablancabeer = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify laptop:text-start gap-y-5">
+            <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
                 Relive the highlights of our launch event, "Feel The Spirit of
                 Morocco," through this exclusive aftermovie. Immerse yourself in

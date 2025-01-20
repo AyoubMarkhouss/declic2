@@ -18,7 +18,7 @@ import {
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
 
-const Porschefestival = () => {
+const Expressrelais = () => {
   const [open, setOpen] = useState<boolean>(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -53,32 +53,37 @@ const Porschefestival = () => {
           <div className="w-screen relative h-[calc(100vh_-_80px)] flex justify-center items-center">
             <Image
               alt="d"
-              src="/Porschefestival/Slider_porsche_desktop.webp"
+              src="/Expressrelais/Slider_er_desktop.webp"
               height={2000}
               width={2000}
-              className=" hidden laptop:block w-screen h-full object-cover "
+              className="hidden tablet:block w-screen h-full object-cover "
             />
             <Image
               alt="d"
-              src="/Porschefestival/Slider_porsche_mobile.webp"
+              src="/Expressrelais/Slider_er_mobile.webp"
               height={2000}
               width={2000}
-              className="laptop:hidden w-screen h-full object-cover "
+              className="block tablet:hidden w-screen h-full object-cover "
             />
+
             {/* <div className="absolute inset-0 bg-black bg-opacity-15 h-96"></div> */}
           </div>
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Porsche Festival 2024
+            Express Relais
           </h1>
           <p className=" tablet:text-lg text-justify">
-            The Porsche Festival 2024, held in Oued Zem, brought together for
-            the second consecutive year the passionate community of the brand.
-            This annual event, now a must-attend, welcomed around a hundred
-            guests and a hundred Porsches, setting a record for the largest
-            gathering of sports cars in Morocco, including the highest
-            concentration of 911s ever seen in the country.
+            For the launch of Express Relais, an innovative delivery system
+            using automated lockers, our mission was to design a communication
+            strategy tailored to two main targets: B2B, highlighting the
+            simplicity and speed of use for consumers receiving their parcels
+            independently, and B2C, showcasing the benefits for e-commerce sites
+            and retailers, such as faster delivery times and optimized costs.
+            The campaign was divided into generic visuals to introduce the
+            concept and its features, as well as targeted visuals emphasizing
+            specific advantages for each audience, positioning Express Relais as
+            an essential solution to streamline parcel logistics.
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -91,7 +96,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Category</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                Delivery Service
               </p>
             </motion.div>
             <motion.div
@@ -103,7 +108,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Client</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Centrale Automobile Chérifienne
+                Express Relais
               </p>
             </motion.div>
             <motion.div
@@ -115,7 +120,7 @@ const Porschefestival = () => {
             >
               <p className="text-lg">Brand</p>
               <p className="text-md tablet:text-lg text-redeclic text-center">
-                Porsche
+                Express Relais
               </p>
             </motion.div>
           </div>
@@ -123,57 +128,86 @@ const Porschefestival = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          Master Visual
+          The logo
         </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify laptop:text-lg desktop:text-xl">
+                As part of the rebranding of FAST PRO, we designed a logo that
+                reflects the values of speed, performance, and expertise. This
+                modern logo, with clean lines and carefully chosen colors,
+                embodies Foramag’s innovative vision for its automotive service
+                centers. Through this design, we aimed to symbolize FAST PRO’s
+                commitment to providing quick and quality service while
+                maintaining a strong connection to the brand’s core values.
+              </p>
+            </div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          className="w-full laptop:max-w-6xl desktop:max-w-7xl my-10 pl-3 tablet:pl-0 mx-auto"
-          setApi={setApi}
-        >
-          <CarouselContent className="">
-            {affiches.map((it, index) => (
-              <CarouselItem key={index} className="laptop:basis-1/3">
-                <div className="p-1">
-                  <Image
-                    src={it.image}
-                    width={5020}
-                    height={5020}
-                    alt="image"
-                    className="w-96 "
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="hidden tablet:block">
-            <CarouselPrevious />
-            <CarouselNext />
+            <div className="">
+              <Image
+                alt="fastpro-logo"
+                src="/Clients/Refs-logos/FastPro.png"
+                width={2000}
+                height={2000}
+              />
+            </div>
           </div>
-
-          <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
-            {current} / {count}
-          </div>
-        </Carousel>
+        </div>
         <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The Porsche experience
+          The campaign
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
+                As part of the rebranding of FAST PRO, we designed a logo that
+                reflects the values of speed, performance, and expertise. This
+                modern logo, with clean lines and carefully chosen colors,
+                embodies Foramag’s innovative vision for its automotive service
+                centers. Through this design, we aimed to symbolize FAST PRO’s
+                commitment to providing quick and quality service while
+                maintaining a strong connection to the brand’s core values.
+              </p>
+            </div>
+
+            <div className=" py-5">
+              <Image
+                alt="fastpro-campaign"
+                src="/Fastpro/Campain/FastPro_compain.webp"
+                width={2000}
+                height={2000}
+              />
+            </div>
+          </div>
+        </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+        >
+          The centers
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-0 gap-y-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                Relive the best moments in images from this exceptional day.
-                From workshops to encounters, each moment was captured to keep a
-                lasting memory of this unique festival.
+                The new FAST PRO service centers offer an entirely new customer
+                experience, with modernized garages, a polished atmosphere, and
+                state-of-the-art equipment. We reimagined every visual and
+                functional aspect of these centers to provide a smoother, more
+                enjoyable experience while ensuring the expertise and quality
+                service that have built Foramag’s reputation. These new centers
+                reflect the brand’s commitment to evolve while staying true to
+                its values of competence, speed, and professionalism. Through
+                this transformation, we helped make every visit to these centers
+                a moment of trust and reassurance for customers.
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -202,7 +236,7 @@ const Porschefestival = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {staticimg.map((jj, index) => (
+                  {centers.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -227,7 +261,7 @@ const Porschefestival = () => {
             </div>
           </div>
         </div>
-        <TextAnimate
+        {/* <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
@@ -236,7 +270,7 @@ const Porschefestival = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify justify-center  gap-y-5">
+            <div className="flex flex-col text-justify justify-center laptop:text-start gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
                 A day full of experiences and sharing. Participants had the
                 chance to discover and enjoy various workshops, indulge in tasty
@@ -258,14 +292,14 @@ const Porschefestival = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
   );
 };
 
-export default Porschefestival;
+export default Expressrelais;
 
 const affiches = [
   {
@@ -300,17 +334,16 @@ const affiches = [
   },
 ];
 
-const staticimg = [
-  { img: "/Porschefestival/shooting/1.webp" },
-  { img: "/Porschefestival/shooting/2.webp" },
-  { img: "/Porschefestival/shooting/3.webp" },
-  { img: "/Porschefestival/shooting/4.webp" },
-  { img: "/Porschefestival/shooting/5.webp" },
-  { img: "/Porschefestival/shooting/6.webp" },
-  { img: "/Porschefestival/shooting/7.webp" },
-  { img: "/Porschefestival/shooting/8.webp" },
-  { img: "/Porschefestival/shooting/9.webp" },
-  { img: "/Porschefestival/shooting/10.webp" },
-  { img: "/Porschefestival/shooting/11.webp" },
-  { img: "/Porschefestival/shooting/12.webp" },
+const centers = [
+  { img: "/Fastpro/Centers/fp1.webp" },
+  { img: "/Fastpro/Centers/fp2.webp" },
+  { img: "/Fastpro/Centers/fp3.webp" },
+  { img: "/Fastpro/Centers/fp4.webp" },
+  { img: "/Fastpro/Centers/fp5.webp" },
+  { img: "/Fastpro/Centers/fp6.webp" },
+  { img: "/Fastpro/Centers/fp7.webp" },
+  { img: "/Fastpro/Centers/fp8.webp" },
+  { img: "/Fastpro/Centers/fp9.webp" },
+  { img: "/Fastpro/Centers/fp10.webp" },
+  { img: "/Fastpro/Centers/fp11.webp" },
 ];

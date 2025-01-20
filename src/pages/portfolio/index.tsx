@@ -374,7 +374,7 @@ export default function Portfolio() {
           ) : null}
           {visibleWorks < work.length && (
             <button
-              className="fontmed mt-10 mx-auto block px-6 py-2 bg-redeclic text-white"
+              className="fontmed my-10 mx-auto block px-6 py-2 bg-redeclic text-white"
               onClick={loadMoreWorks}
             >
               View More
@@ -497,7 +497,7 @@ const work = [
     brand: "L'Clicka Dialna",
   },
   {
-    title: "Porsche Morocco",
+    title: "Porsche Festival 2024",
     image: "/Porschefestival/Slider_porsche_desktop.webp",
     category: "Automotive",
 
@@ -506,7 +506,7 @@ const work = [
   },
 
   {
-    title: "Casablanca Beer",
+    title: "Feel the spirit of morocco",
     image: "/AboutUs/CasablancaBeer.jpg",
     category: "Beverages",
     link: "/portfolio/project/casablancabeer",
@@ -528,5 +528,25 @@ const work = [
     link: "/portfolio/project/fastpro",
     brand: "Fast Pro",
   },
-  
+  {
+    title: "Aïn Ifrane",
+    image: "/AinIfrane/Slider_ifran_desktop.webp",
+    category: "Beverages",
+    link: "/portfolio/project/ainifrane",
+    brand: "Aïn Ifrane",
+  },
+  {
+    title: "Express Relais",
+    image: "/Expressrelais/ExpressRelais.webp",
+    category: "Delivery Service",
+    link: "/portfolio/project/expressrelais",
+    brand: "Express Relais",
+  },
+  {
+    title: "Cupra",
+    image: "/Cupra/Slider_cupra_desktop.webp",
+    category: "Automotive",
+    link: "/portfolio/project/cupra",
+    brand: "Cupra",
+  },
 ];

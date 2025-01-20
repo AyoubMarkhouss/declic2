@@ -206,7 +206,7 @@ const Clickadialna = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {staticimg.map((jj, index) => (
+                  {shooting.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -240,13 +240,13 @@ const Clickadialna = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify laptop:text-start gap-y-10">
-              <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
+            <div className="flex flex-col text-justify  gap-y-10">
+              <p className="laptop:text-lg  desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
                 "Bla Tferniss" is a Moroccan version of the global concept "Try
                 Not to Laugh," with an added touch of football—because why not?
                 It pits guests against each other in a laid-back and humorous
                 atmosphere that reflects our brand, without making any reference
-                to our product. <br />
+                to our product. 
                 Between discoveries, discussions, and fun activities, each
                 moment captured the true spirit of the festival. Thank you to
                 everyone who helped make this event a success. See you soon for
@@ -281,7 +281,7 @@ const Clickadialna = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-5">
             <div className="flex flex-col justify-center gap-y-5">
-              <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
+              <p className=" text-justify laptop:text-lg desktop:text-xl">
                 Dive into the behind-the-scenes of CLICKA DIALNA, where laughter
                 and surprises were the main attraction! Discover exclusive
                 moments and unseen footage from this unique concept, where our
@@ -314,7 +314,7 @@ const Clickadialna = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {staticimg.map((jj, index) => (
+                  {staticpost.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -380,7 +380,7 @@ export default Clickadialna;
 //   },
 // ];
 
-const staticimg = [
+const shooting = [
   { img: "/Clickadialna/shooting/BTS1.webp" },
   { img: "/Clickadialna/shooting/BTS2.webp" },
   { img: "/Clickadialna/shooting/BTS3.webp" },
@@ -389,4 +389,10 @@ const staticimg = [
   { img: "/Clickadialna/shooting/BTS6.webp" },
   { img: "/Clickadialna/shooting/BTS7.webp" },
   { img: "/Clickadialna/shooting/BTS8.webp" },
+];
+
+const staticpost = [
+  { img: "/Clickadialna/Static-posts/C1.webp" },
+  { img: "/Clickadialna/Static-posts/C2.webp" },
+  { img: "/Clickadialna/Static-posts/C3.webp" },
 ];

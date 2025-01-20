@@ -262,7 +262,7 @@ const Seat = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-10 gap-x-10">
             <div className="col-span-1 laptop:col-span-2">
-              <p className="text-justify laptop:text-start">
+              <p className="text-justify ">
                 The SEAT Attitude campaign also stood out through a series of
                 video displays designed to showcase the SEAT Arona and SEAT
                 Ateca. Each video highlights a unique aspect of SEAT’s universe,
@@ -346,7 +346,7 @@ const Seat = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-10">
             <div className="col-span-1 flex items-center ">
-              <p className="text-justify laptop:text-start">
+              <p className="text-justify ">
                 The SEAT Attitude campaign also extended to Moroccan press with
                 two prominent publications, showcasing the SEAT Arona and SEAT
                 Ateca. These features reflect the brand’s universe while
@@ -386,7 +386,7 @@ const Seat = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
-              <p className=" text-justify  laptop:text-start laptop:text-lg desktop:text-xl">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
                 The SEAT Attitude campaign gained even greater momentum through
                 a strategic rollout on social media and a powerful advertising
                 campaign. Through interactive challenges, immersive videos, and
@@ -457,7 +457,7 @@ const Seat = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 laptop:gap-x-20 ">
             <div className="flex flex-col justify-center gap-y-5">
-              <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
                 The SEAT Attitude campaign was not limited to digital platforms;
                 it also came to life on the ground through unique and memorable
                 activations: At the Ain Diab Surf School, we introduced

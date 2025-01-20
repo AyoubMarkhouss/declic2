@@ -1,101 +1,87 @@
+import Image from "next/image";
+import { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import React, { useState, useEffect, useRef } from "react";
+// logos
+import ainIfrane from "/public/Clients/Refs-logos/AinIfrane.png";
+import casablanca from "/public/Clients/Refs-logos/Casablanca.png";
+import alJabr from "/public/Clients/Refs-logos/AlJabr.png";
+import anatolia from "/public/Clients/Refs-logos/Anatolia.png";
+import audi from "/public/Clients/Refs-logos/Audi.png";
+import beachMama from "/public/Clients/Refs-logos/BeachMama.png";
+// prods
+import AinIfran from "./halloffame-projects/ainIfran";
+import AlJabr from "./halloffame-projects/alJabr";
+import Anatolia from "./halloffame-projects/anatolia";
+import Audi from "./halloffame-projects/audi";
+import BeachMama from "./halloffame-projects/beachMama";
+import Casablanca from "./halloffame-projects/casablanca";
 import Slider from "react-slick";
-import Image from "next/image";
-function HalloffameCarousel() {
-  const [brand, setBrand] = useState<string>("brand1");
 
+function HalloffameCarousel() {
+  function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "red" }}
+        onClick={onClick}
+      />
+    );
+  }
+
+  function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", background: "green" }}
+        onClick={onClick}
+      />
+    );
+  }
+  const [brand, setBrand] = useState<string>("ainIfran");
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
+    prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
+  };
   return (
-    <div className="max-w-screen-lg py-28 mx-auto">
-      <div className="flex justify-between w-full">
-        {brands.map((g) => (
-          <p
-            onClick={() => setBrand(g)}
-            className="hover:text-red-500 cursor-pointer"
-            key={g}
-          >
-            {g}
-          </p>
-        ))}
+    <div className="max-w-screen-lg pb-20 mx-auto">
+      <div className="slider-container">
+        <Slider className="flex justify-between w-full" {...settings}>
+          {brandsLink.map((g) => (
+            <div
+              onClick={() => setBrand(g.brand)}
+              className="hover:text-red-500 cursor-pointer"
+              key={g.brand}
+            >
+              <Image src={g.logo} width={500} height={500} alt="logo" />
+            </div>
+          ))}
+        </Slider>
       </div>
-      {brand === "brand1" && <Sliders sliderClicked={brand} />}
-      {brand === "brand2" && <Sliders sliderClicked={brand} />}
-      {brand === "brand3" && <Sliders sliderClicked={brand} />}
-      {brand === "brand4" && <Sliders sliderClicked={brand} />}
-      {brand === "brand5" && <Sliders sliderClicked={brand} />}
-      {brand === "brand6" && <Sliders sliderClicked={brand} />}
+      {brand === "ainIfran" && <AinIfran />}
+      {brand === "casablanca" && <Casablanca />}
+      {brand === "alJabr" && <AlJabr />}
+      {brand === "anatolia" && <Anatolia />}
+      {brand === "audi" && <Audi />}
+      {brand === "beachMama" && <BeachMama />}
     </div>
   );
 }
 
 export default HalloffameCarousel;
 
-const Sliders = ({ sliderClicked }: { sliderClicked: string }) => {
-  const [nav1, setNav1] = useState<Slider | undefined>(undefined);
-  const [nav2, setNav2] = useState<Slider | undefined>(undefined);
-
-  const sliderRef1 = useRef<Slider | null>(null);
-  const sliderRef2 = useRef<Slider | null>(null);
-
-  useEffect(() => {
-    if (sliderRef1.current && sliderRef2.current) {
-      setNav1(sliderRef1.current);
-      setNav2(sliderRef2.current);
-    }
-  }, []);
-  return (
-    <div>
-      <p>you clicked on: {sliderClicked}</p>
-      <Slider
-        asNavFor={nav2}
-        ref={(slider) => {
-          if (slider) sliderRef1.current = slider;
-        }}
-      >
-        {images.map((g, j) => (
-          <Image
-            className="w-96 h-96 object-contain"
-            key={j}
-            src={g}
-            alt="image"
-            width={500}
-            height={500}
-          />
-        ))}
-      </Slider>
-      <Slider
-        className="space-x-3"
-        asNavFor={nav1}
-        ref={(slider) => {
-          if (slider) sliderRef2.current = slider;
-        }}
-        slidesToShow={4}
-        swipeToSlide={true}
-        focusOnSelect={true}
-      >
-        {images.map((g, j) => (
-          <Image
-            className="w-5 h-fit px-3 object-cover"
-            key={j}
-            src={g}
-            alt="image"
-            width={500}
-            height={500}
-          />
-        ))}
-      </Slider>
-    </div>
-  );
-};
-
-const images = [
-  "/AboutUs/CasablancaBeer.jpg",
-  "/AboutUs/CasablancaBeer.jpg",
-  "/AboutUs/CasablancaBeer.jpg",
-  "/AboutUs/CasablancaBeer.jpg",
-  "/AboutUs/CasablancaBeer.jpg",
-  "/AboutUs/CasablancaBeer.jpg",
+const brandsLink = [
+  { brand: "ainIfran", logo: ainIfrane },
+  { brand: "alJabr", logo: alJabr },
+  { brand: "anatolia", logo: anatolia },
+  { brand: "audi", logo: audi },
+  { brand: "beachMama", logo: beachMama },
+  { brand: "casablanca", logo: casablanca },
 ];
-
-const brands = ["brand1", "brand2", "brand3", "brand4"];
