@@ -71,7 +71,7 @@ const Cupra = () => {
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Express Relais
+            CUPRA
           </h1>
           <p className=" tablet:text-lg text-justify">
             We had the privilege of accompanying Cupra in its launch in Morocco
@@ -125,103 +125,111 @@ const Cupra = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
         >
-          The logo
+          Master Visual
         </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
-            <div className="flex flex-col justify-center">
-              <p className=" text-justify laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
-              </p>
-            </div>
 
-            <div className="">
-              <Image
-                alt="fastpro-logo"
-                src="/Clients/Refs-logos/FastPro.png"
-                width={2000}
-                height={2000}
-              />
-            </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full laptop:max-w-6xl desktop:max-w-7xl my-10 pl-3 tablet:pl-0 mx-auto"
+          setApi={setApi}
+        >
+          <CarouselContent className="">
+            {affiches.map((it, index) => (
+              <CarouselItem key={index} className="laptop:basis-1/3">
+                <div className="p-1">
+                  <Image
+                    src={it.image}
+                    width={5020}
+                    height={5020}
+                    alt="image"
+                    className="w-96 "
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden tablet:block">
+            <CarouselPrevious />
+            <CarouselNext />
           </div>
-        </div>
+
+          <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
+            {current} / {count}
+          </div>
+        </Carousel>
         <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The campaign
+          Video display
         </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
-          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
-            <div className="flex flex-col justify-center">
-              <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
+            <div className="flex flex-col text-justify justify-center  gap-y-5">
+              <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
+                For the first time in Morocco, we created an immersive video
+                display with a 3D illusion for the Cupra Formentor campaign.
+                This cutting-edge technology captured the public's attention
+                spectacularly, bringing the bold design of the Formentor to life
+                and enhancing the visual impact of the campaign. A creative
+                choice that perfectly reflected the spirit of the Cupra brand.
               </p>
             </div>
-
-            <div className=" py-5">
-              <Image
-                alt="fastpro-campaign"
-                src="/Fastpro/Campain/FastPro_compain.webp"
-                width={2000}
-                height={2000}
-              />
-            </div>
-          </div>
-        </div>
-        <TextAnimate
-          animation="blurInUp"
-          by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
-        >
-          The centers
-        </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
-            <div className="flex flex-col justify-center gap-y-5">
-              <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                The new FAST PRO service centers offer an entirely new customer
-                experience, with modernized garages, a polished atmosphere, and
-                state-of-the-art equipment. We reimagined every visual and
-                functional aspect of these centers to provide a smoother, more
-                enjoyable experience while ensuring the expertise and quality
-                service that have built Foramag’s reputation. These new centers
-                reflect the brand’s commitment to evolve while staying true to
-                its values of competence, speed, and professionalism. Through
-                this transformation, we helped make every visit to these centers
-                a moment of trust and reassurance for customers.
-              </p>
-            </div>
-            {/* <div className="flex items-center justify-center">
-              <Iphone15Pro
-                className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=J9Mm59Q2bNR8l7rE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
-              />
-             
+            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
               <iframe
-                className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
+                src="https://www.youtube.com/embed/N79DyNnVKh4?si=73xGTDEBKOrFTV3t?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-            </div> */}
+            </div>
+          </div>
+        </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+        >
+          Social media
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
+          <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
+            <div className="flex flex-col justify-center gap-y-5">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
+                For the launch of Cupra in Morocco, an ambassador was tasked
+                with driving the Cupra BORN from Barcelona to Casablanca, an
+                epic journey followed in real-time. The images of this journey
+                were shared on our social media, creating a strong connection
+                with our audience. The climax came when the ambassador arrived
+                in Casablanca on the day of the press conference and event,
+                marking the official start of the media and social media
+                campaign. This digital deployment strengthened engagement and
+                excitement around Cupra's launch in Morocco.
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <Iphone15Pro
+                className="hidden laptop:block h-[500px] desktop:h-[550px]"
+                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=J9Mm59Q2bNR8l7rE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+              />
+
+              <iframe
+                className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
+                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
 
             <div className="flex justify-center items-center w-full">
               <Carousel
@@ -233,7 +241,7 @@ const Cupra = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {centers.map((jj, index) => (
+                  {staticpost.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -261,35 +269,92 @@ const Cupra = () => {
         {/* <TextAnimate
           animation="blurInUp"
           by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The Aftermovie
+          The logo
         </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
-            <div className="flex flex-col text-justify justify-center laptop:text-start gap-y-5">
-              <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
-                A day full of experiences and sharing. Participants had the
-                chance to discover and enjoy various workshops, indulge in tasty
-                moments at the food court, and explore a curated display of the
-                latest models and classic cars.Through discoveries, discussions,
-                and activities, each space allowed everyone to fully experience
-                the spirit of the festival. Thank you to everyone who helped
-                make this event a success. See you soon for more adventures!
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify laptop:text-lg desktop:text-xl">
+                As part of the rebranding of FAST PRO, we designed a logo that
+                reflects the values of speed, performance, and expertise. This
+                modern logo, with clean lines and carefully chosen colors,
+                embodies Foramag’s innovative vision for its automotive service
+                centers. Through this design, we aimed to symbolize FAST PRO’s
+                commitment to providing quick and quality service while
+                maintaining a strong connection to the brand’s core values.
               </p>
             </div>
-            <div className=" laptop:col-span-1 h-52 laptop:h-fit">
-              <iframe
-                className=" object-cover h-full laptop:h-[327px] desktop:h-[500px] w-full overflow-hidden"
-                src="https://www.youtube.com/embed/--8eCy6QWWs?si=oNjb0EtMhIJ0ytZM?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0"
-                title="Dailymotion video player"
-                frameBorder={0}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
+
+            <div className="">
+              <Image
+                alt="fastpro-logo"
+                src="/Clients/Refs-logos/FastPro.png"
+                width={2000}
+                height={2000}
               />
             </div>
           </div>
         </div> */}
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+        >
+          The campaign
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
+                During the launch of Cupra in Morocco, we had the honor of
+                welcoming the leaders of Cupra Spain for an exclusive press
+                conference. This event marked the beginning of the evening. To
+                offer a unique experience, we integrated artificial intelligence
+                and augmented reality activations, immersing guests in the
+                brand's futuristic universe. The Cupra NFT exhibition added an
+                innovative digital touch, highlighting Cupra’s commitment to the
+                future and technology. A memorable event that perfectly launched
+                the brand in the Moroccan market.
+              </p>
+            </div>
+
+            <div className="flex justify-center items-center w-full">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full laptop:max-w-2xl desktop:max-w-5xl"
+                setApi={setApi}
+              >
+                <CarouselContent>
+                  {shooting.map((jj, index) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Image
+                          alt="static"
+                          src={jj.img}
+                          width={1000}
+                          height={1000}
+                          className="w-full h-64 laptop:h-[390px] desktop:h-[600px] object-contain"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="hidden tablet:block">
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </div>
+                <div className=" py-2 text-center text-sm text-muted-foreground">
+                  {current} / {count}
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
@@ -302,45 +367,47 @@ const affiches = [
   {
     id: 1,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Cupra/master-visuals/kv1.webp",
   },
   {
     id: 2,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Cupra/master-visuals/kv2.webp",
   },
   {
     id: 3,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Cupra/master-visuals/kv3.webp",
   },
   {
     id: 4,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Cupra/master-visuals/kv1.webp",
   },
   {
     id: 5,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Cupra/master-visuals/kv2.webp",
   },
   {
     id: 6,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Cupra/master-visuals/kv3.webp",
   },
 ];
 
-const centers = [
-  { img: "/Fastpro/Centers/fp1.webp" },
-  { img: "/Fastpro/Centers/fp2.webp" },
-  { img: "/Fastpro/Centers/fp3.webp" },
-  { img: "/Fastpro/Centers/fp4.webp" },
-  { img: "/Fastpro/Centers/fp5.webp" },
-  { img: "/Fastpro/Centers/fp6.webp" },
-  { img: "/Fastpro/Centers/fp7.webp" },
-  { img: "/Fastpro/Centers/fp8.webp" },
-  { img: "/Fastpro/Centers/fp9.webp" },
-  { img: "/Fastpro/Centers/fp10.webp" },
-  { img: "/Fastpro/Centers/fp11.webp" },
+const staticpost = [
+  { img: "/Cupra/static-posts/s1.webp" },
+  { img: "/Cupra/static-posts/s2.webp" },
+  { img: "/Cupra/static-posts/s3.webp" },
+  { img: "/Cupra/static-posts/s4.webp" },
+ 
+];
+const shooting = [
+  { img: "/Cupra/shooting/shooting2.webp" },
+  { img: "/Cupra/shooting/shooting3.webp" },
+  { img: "/Cupra/shooting/shooting4.webp" },
+  { img: "/Cupra/shooting/shooting5.webp" },
+  { img: "/Cupra/shooting/shooting6.webp" },
+  { img: "/Cupra/shooting/shooting7.webp" },
 ];
