@@ -241,7 +241,7 @@ export default function Portfolio() {
             <TextAnimate
               animation="blurInUp"
               by="character"
-              className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-7xl desktop:text-9xl text-redeclic"
+              className="fontbold pb-3 bigmobile:text-3xl text-center  laptop:text-7xl desktop:text-8xl text-redeclic"
             >
               The Lab Of Creativity
             </TextAnimate>
