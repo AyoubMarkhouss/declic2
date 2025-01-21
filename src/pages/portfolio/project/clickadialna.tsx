@@ -246,11 +246,10 @@ const Clickadialna = () => {
                 Not to Laugh," with an added touch of football—because why not?
                 It pits guests against each other in a laid-back and humorous
                 atmosphere that reflects our brand, without making any reference
-                to our product. 
-                Between discoveries, discussions, and fun activities, each
-                moment captured the true spirit of the festival. Thank you to
-                everyone who helped make this event a success. See you soon for
-                more adventures!
+                to our product. Between discoveries, discussions, and fun
+                activities, each moment captured the true spirit of the
+                festival. Thank you to everyone who helped make this event a
+                success. See you soon for more adventures!
               </p>
               <Link
                 href="https://www.youtube.com/@LClickaDialna"
@@ -291,12 +290,12 @@ const Clickadialna = () => {
             <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=J9Mm59Q2bNR8l7rE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                iframevid="https://www.youtube.com/embed/98lc1HQjFB0?si=yn-gsX5wgXloUOZj?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
               />
 
               <iframe
                 className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                src="https://www.youtube.com/embed/98lc1HQjFB0?si=yn-gsX5wgXloUOZj?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

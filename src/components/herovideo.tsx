@@ -6,8 +6,15 @@ const Herovideo = () => {
     <div className="relative h-screen w-full overflow-hidden ">
       {/* Video Background */}
       <Image
-        className="absolute top-0 left-0 h-full w-full object-cover "
+        className="hidden laptop:block absolute top-0 left-0 h-full w-full object-cover "
         src="/declic-glitched.gif"
+        alt="dd"
+        width={2500}
+        height={2500}
+      />
+      <Image
+        className="laptop:hidden  h-full w-full object-cover "
+        src="/declic-glitched-mobile.gif"
         alt="dd"
         width={2500}
         height={2500}

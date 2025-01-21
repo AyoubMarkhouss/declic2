@@ -130,101 +130,76 @@ const Ainifrane = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The logo
+          Master visual
         </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
-            <div className="flex flex-col justify-center">
-              <p className=" text-justify laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
-              </p>
-            </div>
-
-            <div className="">
-              <Image
-                alt="fastpro-logo"
-                src="/Clients/Refs-logos/FastPro.png"
-                width={2000}
-                height={2000}
-              />
-            </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full laptop:max-w-6xl desktop:max-w-7xl my-10 pl-3 tablet:pl-0 mx-auto"
+          setApi={setApi}
+        >
+          <CarouselContent className="">
+            {affiches.map((it, index) => (
+              <CarouselItem key={index} className="laptop:basis-1/3">
+                <div className="p-1">
+                  <Image
+                    src={it.image}
+                    width={5020}
+                    height={5020}
+                    alt="image"
+                    className="w-96 "
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden tablet:block">
+            <CarouselPrevious />
+            <CarouselNext />
           </div>
-        </div>
+
+          <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
+            {current} / {count}
+          </div>
+        </Carousel>
         <TextAnimate
           animation="blurInUp"
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The campaign
-        </TextAnimate>
-        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
-          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
-            <div className="flex flex-col justify-center">
-              <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
-              </p>
-            </div>
-
-            <div className=" py-5">
-              <Image
-                alt="fastpro-campaign"
-                src="/Fastpro/Campain/FastPro_compain.webp"
-                width={2000}
-                height={2000}
-              />
-            </div>
-          </div>
-        </div>
-        <TextAnimate
-          animation="blurInUp"
-          by="character"
-          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
-        >
-          The centers
+          Social media
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-10 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                The new FAST PRO service centers offer an entirely new customer
-                experience, with modernized garages, a polished atmosphere, and
-                state-of-the-art equipment. We reimagined every visual and
-                functional aspect of these centers to provide a smoother, more
-                enjoyable experience while ensuring the expertise and quality
-                service that have built Foramag’s reputation. These new centers
-                reflect the brand’s commitment to evolve while staying true to
-                its values of competence, speed, and professionalism. Through
-                this transformation, we helped make every visit to these centers
-                a moment of trust and reassurance for customers.
+                In parallel, we orchestrated an ambitious digital deployment,
+                blending innovation with consistency. A campaign focused on the
+                "Aïn Ifrane chez vous" home delivery service was launched to
+                meet the modern needs of consumers while ensuring their daily
+                replenishment. Simultaneously, we spread the new brand idea
+                through captivating content and a strengthened presence across
+                all digital platforms, ensuring optimal visibility and authentic
+                engagement with the brand’s diverse audiences.
               </p>
             </div>
-            {/* <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=J9Mm59Q2bNR8l7rE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                iframevid="https://www.youtube.com/embed/9GDzW1m0ICM?si=3n5Zvg5q8-mfG9LU?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
               />
-             
+
               <iframe
                 className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1&playlist=_5EVk40zITs"
+                src="https://www.youtube.com/embed/9GDzW1m0ICM?si=3n5Zvg5q8-mfG9LU?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-            </div> */}
+            </div>
 
             <div className="flex justify-center items-center w-full">
               <Carousel
@@ -236,7 +211,7 @@ const Ainifrane = () => {
                 setApi={setApi}
               >
                 <CarouselContent>
-                  {centers.map((jj, index) => (
+                  {staticpost.map((jj, index) => (
                     <CarouselItem key={index}>
                       <div className="p-1">
                         <Image
@@ -261,6 +236,65 @@ const Ainifrane = () => {
             </div>
           </div>
         </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
+        >
+          Activation
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
+          <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
+            <div className="flex flex-col justify-center">
+              <p className=" text-justify  laptop:text-lg desktop:text-xl">
+                In response to the water shortage, Aïn Ifrane turned a challenge
+                into an opportunity for meaningful engagement. By branding its
+                trucks with a bold and unexpected message – "Don’t wash me,
+                water is scarce!" – the brand took a stand on a crucial social
+                responsibility issue. This simple yet impactful gesture not only
+                raised public awareness about the importance of conserving this
+                precious resource but also reinforced Aïn Ifrane’s image as a
+                committed and responsible brand. An initiative widely praised
+                for its relevance and authenticity.
+              </p>
+            </div>
+
+            <div className="flex justify-center items-center w-full">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full laptop:max-w-2xl desktop:max-w-5xl"
+                setApi={setApi}
+              >
+                <CarouselContent>
+                  {activation.map((jj, index) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Image
+                          alt="static"
+                          src={jj.img}
+                          width={1000}
+                          height={1000}
+                          className="w-full h-64 laptop:h-[390px] desktop:h-[600px] object-contain"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="hidden tablet:block">
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </div>
+                <div className=" py-2 text-center text-sm text-muted-foreground">
+                  {current} / {count}
+                </div>
+              </Carousel>
+            </div>
+          </div>
+        </div>
+
         {/* <TextAnimate
           animation="blurInUp"
           by="character"
@@ -305,45 +339,50 @@ const affiches = [
   {
     id: 1,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Ainifrane/master-visuals/kv1.webp",
   },
   {
     id: 2,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Ainifrane/master-visuals/kv2.webp",
   },
   {
     id: 3,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Ainifrane/master-visuals/kv3.webp",
   },
   {
     id: 4,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Ainifrane/master-visuals/kv1.webp",
   },
   {
     id: 5,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Ainifrane/master-visuals/kv2.webp",
   },
   {
     id: 6,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Ainifrane/master-visuals/kv3.webp",
   },
 ];
 
-const centers = [
-  { img: "/Fastpro/Centers/fp1.webp" },
-  { img: "/Fastpro/Centers/fp2.webp" },
-  { img: "/Fastpro/Centers/fp3.webp" },
-  { img: "/Fastpro/Centers/fp4.webp" },
-  { img: "/Fastpro/Centers/fp5.webp" },
-  { img: "/Fastpro/Centers/fp6.webp" },
-  { img: "/Fastpro/Centers/fp7.webp" },
-  { img: "/Fastpro/Centers/fp8.webp" },
-  { img: "/Fastpro/Centers/fp9.webp" },
-  { img: "/Fastpro/Centers/fp10.webp" },
-  { img: "/Fastpro/Centers/fp11.webp" },
+const staticpost = [
+  { img: "/Ainifrane/static-posts/post1.webp" },
+  { img: "/Ainifrane/static-posts/post2.webp" },
+  { img: "/Ainifrane/static-posts/post3.webp" },
+  { img: "/Ainifrane/static-posts/post4.webp" },
+  { img: "/Ainifrane/static-posts/post5.webp" },
+  { img: "/Ainifrane/static-posts/post6.webp" },
+  { img: "/Ainifrane/static-posts/post7.webp" },
+  { img: "/Ainifrane/static-posts/post8.webp" },
+  { img: "/Ainifrane/static-posts/post9.webp" },
+  
+];
+
+const activation = [
+  { img: "/Ainifrane/activations/activation1.webp" },
+  { img: "/Ainifrane/activations/activation2.webp" },
+  
 ];
