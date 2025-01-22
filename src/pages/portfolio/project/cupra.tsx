@@ -218,12 +218,12 @@ const Cupra = () => {
             <div className="flex items-center justify-center">
               <Iphone15Pro
                 className="hidden laptop:block h-[500px] desktop:h-[550px]"
-                iframevid="https://www.youtube.com/embed/n1bdY9z7WpY?si=J9Mm59Q2bNR8l7rE?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+                iframevid="https://www.youtube.com/embed/EbUy-WGneDE?si=_556kFfqNlnMlGB-?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
               />
 
               <iframe
                 className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
-                src="https://www.youtube.com/embed/n1bdY9z7WpY?si=uk63L4XKPj6goSym?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+                src="https://www.youtube.com/embed/EbUy-WGneDE?si=_556kFfqNlnMlGB-?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
                 title="Dailymotion video player"
                 frameBorder={0}
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
