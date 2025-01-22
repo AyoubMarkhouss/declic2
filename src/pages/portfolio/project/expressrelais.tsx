@@ -128,6 +128,46 @@ const Expressrelais = () => {
         <TextAnimate
           animation="blurInUp"
           by="character"
+          className="fontmed laptop:text-7xl bg-redeclic text-white fontmed justify-center tablet:justify-start text-4xl w-full  h-24  px-20 flex  items-center"
+        >
+          Master Visual
+        </TextAnimate>
+
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full laptop:max-w-6xl desktop:max-w-7xl my-10 pl-3 tablet:pl-0 mx-auto"
+          setApi={setApi}
+        >
+          <CarouselContent className="">
+            {affiches.map((it, index) => (
+              <CarouselItem key={index} className="laptop:basis-1/3">
+                <div className="p-1">
+                  <Image
+                    src={it.image}
+                    width={5020}
+                    height={5020}
+                    alt="image"
+                    className="w-96 "
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="hidden tablet:block">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+
+          <div className=" laptop:hidden py-2 text-center text-sm text-muted-foreground">
+            {current} / {count}
+          </div>
+        </Carousel>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
           The logo
@@ -305,32 +345,52 @@ const affiches = [
   {
     id: 1,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Expressrelais/master-visuals/kv1.webp",
   },
   {
     id: 2,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Expressrelais/master-visuals/kv2.webp",
   },
   {
     id: 3,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Expressrelais/master-visuals/kv3.webp",
   },
   {
     id: 4,
     content: "Item 1",
-    image: "/Porschefestival/master-visual/OffRoad-1.webp",
+    image: "/Expressrelais/master-visuals/kv4.webp",
   },
   {
     id: 5,
     content: "Item 2",
-    image: "/Porschefestival/master-visual/OffRoad-2.webp",
+    image: "/Expressrelais/master-visuals/kv5.webp",
   },
   {
     id: 6,
     content: "Item 3",
-    image: "/Porschefestival/master-visual/porsche.webp",
+    image: "/Expressrelais/master-visuals/kv6.webp",
+  },
+  {
+    id: 7,
+    content: "Item 3",
+    image: "/Expressrelais/master-visuals/kv7.webp",
+  },
+  {
+    id: 8,
+    content: "Item 3",
+    image: "/Expressrelais/master-visuals/kv8.webp",
+  },
+  {
+    id: 9,
+    content: "Item 3",
+    image: "/Expressrelais/master-visuals/kv9.webp",
+  },
+  {
+    id: 10,
+    content: "Item 3",
+    image: "/Expressrelais/master-visuals/kv10.webp",
   },
 ];
 

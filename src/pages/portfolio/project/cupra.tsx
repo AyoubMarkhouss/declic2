@@ -302,7 +302,7 @@ const Cupra = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The campaign
+          Event
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
           <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">

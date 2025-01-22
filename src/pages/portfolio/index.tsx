@@ -57,7 +57,7 @@ export const clients = [
     image: "/Clients/Refs-logos/AinIfrane.png",
     title: "Aïn Ifrane",
     description:
-      " Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
+      "Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
   },
   {
     image: "/Clients/Refs-logos/UM.png",

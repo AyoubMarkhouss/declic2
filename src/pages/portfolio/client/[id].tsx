@@ -29,7 +29,7 @@ export default function Portfolio() {
             <TextAnimate
               animation="blurInUp"
               by="character"
-              className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-8xl desktop:text-8xl text-redeclic"
+              className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-7xl desktop:text-7xl text-redeclic"
             >
               The Lab Of Creativity
             </TextAnimate>
@@ -171,28 +171,28 @@ const work = [
     brand: "Fast Pro Morocco",
   },
   {
-    title: "Project 2",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
-    category: "Automobile",
+    title: "Aïn Ifrane",
+    image: "/Ainifrane/AinIfrane.webp",
+    category: "Beverages",
     date: "26 avril 2024",
-    link: "",
-    brand: "",
+    link: "/portfolio/project/ainifrane",
+    brand: "Aïn Ifrane",
   },
   {
-    title: "Project 2",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+    title: "Cupra Morocco",
+    image: "/Cupra/Cupra.webp",
     category: "Automobile",
     date: "26 avril 2024",
-    link: "",
-    brand: "",
+    link: "/portfolio/project/cupra",
+    brand: "Cupra Morocco",
   },
   {
-    title: "Project 3",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg",
-    category: "Automobile",
+    title: "Express Relais",
+    image: "/Expressrelais/ExpressRelais.webp",
+    category: "Automotive maintenance",
     date: "27 avril 2024",
-    link: "",
-    brand: "",
+    link: "/portfolio/project/expressrelais",
+    brand: "Express Relais",
   },
   {
     title: "Project 4",
