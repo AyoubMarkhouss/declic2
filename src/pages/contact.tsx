@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FormEvent, useState } from "react";
+import { useRef } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { ImYoutube } from "react-icons/im";
 import Footer from "~/components/footer";
@@ -10,51 +11,76 @@ import Facebook from "~/components/icons/facebook";
 import LinkedIn from "~/components/icons/linkedIn";
 import Location from "~/components/icons/location";
 import Youtube from "~/components/icons/youtube";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  async function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setIsLoading(true);
+  // async function onSubmit(event: FormEvent<HTMLFormElement>) {
+  //   event.preventDefault();
+  //   setIsLoading(true);
 
-    try {
-      const formData = new FormData(event.currentTarget);
-      const jsonData: { [key: string]: string } = {};
-      formData.forEach((value, key) => {
-        jsonData[key] = value.toString();
-      });
+  //   try {
+  //     const formData = new FormData(event.currentTarget);
+  //     const jsonData: { [key: string]: string } = {};
+  //     formData.forEach((value, key) => {
+  //       jsonData[key] = value.toString();
+  //     });
 
-      const response = await fetch("/api/send", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(jsonData),
-      });
+  //     const response = await fetch("/api/send", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(jsonData),
+  //     });
 
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
-  }
+  //     const data = await response.json();
+  //     console.log(data);
+  //   } catch (error) {
+  //     console.error(error);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // }
   const [open, setOpen] = useState<boolean>(false);
+  const form = useRef(null);
+  const sendmail = (e: any) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_47akfid",
+        "template_yz5j35d",
+        form.current ?? "",
+        "Ul_MQWKc5I8gI90Gt"
+      )
 
+      .then(
+        () => {
+          toast.success("message envoyé!");
+        },
+        () => {
+          toast.error("Quelque chose ne va pas :(");
+        }
+      );
+    e.target.reset();
+  };
   return (
     <div className="h-screen">
       <Header open={open} setOpen={setOpen} />
       <div className="my-20 px-5 laptop:px-20">
         <div className="grid grid-cols-12 gap-y-10 laptop:gap-y-0">
           <form
-            onSubmit={onSubmit}
-            className="col-span-12 laptop:hidden laptop:col-span-7 space-y-20  laptop:px-10 rounded-3xl "
+            // onSubmit={onSubmit}
+            ref={form}
+            onSubmit={sendmail}
+            className="col-span-12 laptop:hidden laptop:col-span-7 space-y-20 m-4 laptop:px-10 rounded-3xl "
           >
             <div className="space-y-4">
               <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-redeclic">
-                Say hi !
+                Say Hi!
               </h2>
               <h4 className="text-gray-400 scroll-m-20 text-xl font-semibold tracking-tight">
                 We are always excited to welcome new projects and partners. So,
@@ -66,7 +92,8 @@ export default function Page() {
                 <input
                   className="peer  h-fit w-full outline-none px-2 py-1 bg-transparent border-black focus:border-redeclic border-b placeholder-transparent"
                   type="text"
-                  name="firstName"
+                  id="First_name"
+                  name="First_name"
                   placeholder="First name"
                   required
                 />
@@ -78,7 +105,8 @@ export default function Page() {
                 <input
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
                   type="text"
-                  name="Last name"
+                  id="Last_name"
+                  name="Last_name"
                   placeholder="Last name"
                   required
                 />
@@ -89,9 +117,10 @@ export default function Page() {
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="text"
-                  name=" E-mail"
+                  type="email"
                   placeholder="E-mail"
+                  name="email"
+                  id="email"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -101,9 +130,10 @@ export default function Page() {
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full outline-none bg-transparent px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="text"
-                  name="   Phone number"
-                  placeholder="  Phone number"
+                  type="tel"
+                  placeholder="Phone number"
+                  name="phone"
+                  id="phone"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -113,8 +143,9 @@ export default function Page() {
               <div className="relative col-span-2 w-full">
                 <textarea
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  name=" Message"
                   placeholder="Message"
+                  id="message"
+                  name="message"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -223,7 +254,9 @@ export default function Page() {
             </div>
           </div>
           <form
-            onSubmit={onSubmit}
+            // onSubmit={onSubmit}
+            ref={form}
+            onSubmit={sendmail}
             className="col-span-12 hidden laptop:block laptop:col-span-7 space-y-20 m-4 laptop:px-10 rounded-3xl "
           >
             <div className="space-y-4">
@@ -240,7 +273,8 @@ export default function Page() {
                 <input
                   className="peer  h-fit w-full outline-none px-2 py-1 bg-transparent border-black focus:border-redeclic border-b placeholder-transparent"
                   type="text"
-                  name="firstName"
+                  id="First_name"
+                  name="First_name"
                   placeholder="First name"
                   required
                 />
@@ -252,7 +286,8 @@ export default function Page() {
                 <input
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
                   type="text"
-                  name="Last name"
+                  id="Last_name"
+                  name="Last_name"
                   placeholder="Last name"
                   required
                 />
@@ -263,9 +298,10 @@ export default function Page() {
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="text"
-                  name=" E-mail"
+                  type="email"
                   placeholder="E-mail"
+                  name="email"
+                  id="email"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -275,9 +311,10 @@ export default function Page() {
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full outline-none bg-transparent px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="text"
-                  name="   Phone number"
-                  placeholder="  Phone number"
+                  type="tel"
+                  placeholder="Phone number"
+                  name="phone"
+                  id="phone"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -287,8 +324,9 @@ export default function Page() {
               <div className="relative col-span-2 w-full">
                 <textarea
                   className="peer h-fit w-full bg-transparent outline-none px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  name=" Message"
                   placeholder="Message"
+                  id="message"
+                  name="message"
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
@@ -306,6 +344,12 @@ export default function Page() {
             </div>
           </form>
         </div>
+        <ToastContainer
+          position="bottom-right"
+          hideProgressBar={true}
+          theme="light"
+          autoClose={2000}
+        />
       </div>
       <Footer />
     </div>
