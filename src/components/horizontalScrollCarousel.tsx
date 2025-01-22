@@ -66,7 +66,7 @@ const HorizontalScrollCarousel = () => {
       <div className="flex justify-center items-center mb-20">
         <Link
           href="/portfolio?section=work"
-          className="fontmed shadow-lg z-0 px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
+          className="fontmed shadow-lg z-10 px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
         >
           VIEW MORE
         </Link>

@@ -466,11 +466,12 @@ export default function Portfolio() {
         <div className="relative h-[470px] bg-white flex gap-y-7 flex-col justify-center items-center overflow-hidden">
           <div className="absolute cursor-not-allowed inset-0">
             <video
-              src="/goat-HD.webm" // Replace with your GIF path in the public folder
+              src="/goat-HD.webm" // Replace with your video path in the public folder
               autoPlay
               loop
               muted
-              className="object-cover cursor-not-allowed pointer-events-none absolute bottom-0 w-full h-full "
+              playsInline
+              className="object-cover pointer-events-none absolute bottom-0 w-full h-full"
             />
           </div>
 
@@ -482,6 +483,7 @@ export default function Portfolio() {
             <a href="/">Discover</a>
           </button>
         </div>
+
         <Footer />
       </div>
     </>

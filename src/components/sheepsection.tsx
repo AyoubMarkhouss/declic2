@@ -1,5 +1,3 @@
-
-
 export default function Sheepsection() {
   return (
     <div className="relative h-screen bg-white flex overflow-hidden">
@@ -29,13 +27,13 @@ export default function Sheepsection() {
         {/* Right Column: Paragraphs */}
         <div className="col-span-1 z-30 text-white text-justify laptop:text-start text-md flex flex-col justify-center">
           <p className=" desktop:text-2xl">
-            At <span className=" text-redeclic">Declic Agency</span>, we
-            don't do things halfway. With boundless creativity and a healthy
-            dose of humor, we've earned our place as the GOATs (Greatest of All
-            Time) of communication in Morocco. <br /> Our secret? Bold ideas,
-            memorable campaigns, and a clear vision: turning your projects into
-            true successes. We combine originality and strategy to craft
-            concepts that resonate and captivate. Stop looking for the spark...
+            At <span className=" text-redeclic">Declic Agency</span>, we don't
+            do things halfway. With boundless creativity and a healthy dose of
+            humor, we've earned our place as the GOATs (Greatest of All Time) of
+            communication in Morocco. <br /> Our secret? Bold ideas, memorable
+            campaigns, and a clear vision: turning your projects into true
+            successes. We combine originality and strategy to craft concepts
+            that resonate and captivate. Stop looking for the spark...
             you've found it.
           </p>
         </div>
