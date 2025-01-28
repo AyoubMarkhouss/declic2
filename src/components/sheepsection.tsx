@@ -1,4 +1,10 @@
+
+import { useTranslation } from "react-i18next";
+
 export default function Sheepsection() {
+ 
+ const { t, i18n } = useTranslation("common"); // Destructure both t and i18n
+
   return (
     <div className="relative h-screen bg-white flex overflow-hidden">
       <div className="absolute inset-0">
@@ -19,6 +25,7 @@ export default function Sheepsection() {
               GOATs <br /> Of Advertising
             </span>
           </h1>
+          
         </div>
 
         {/* Middle Column: Sheep GIF */}

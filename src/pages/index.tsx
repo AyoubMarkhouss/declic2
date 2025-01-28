@@ -8,6 +8,7 @@ import Sheepsection from "~/components/sheepsection";
 import Header from "~/components/header-burger";
 import { useState } from "react";
 import Bangers from "~/components/bangers";
+
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
   return (

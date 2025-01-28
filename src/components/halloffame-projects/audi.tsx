@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import g from "/public/AboutUs/FastPro.webp";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 const Audi = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
@@ -18,6 +19,61 @@ const Audi = () => {
       setNav2(sliderRef2.current);
     }
   }, []);
+   function SampleNextArrow(props: {
+     className: any;
+     style: any;
+     onClick: any;
+   }) {
+     const { className, style, onClick } = props;
+     return (
+       <div>
+         <button
+           className={className}
+           style={{ ...style, display: "block", color: "black" }}
+           onClick={onClick}
+         >
+           <ArrowRight className="stroke-redeclic" />
+         </button>
+       </div>
+     );
+   }
+
+   function SamplePrevArrow(props: {
+     className: any;
+     style: any;
+     onClick: any;
+   }) {
+     const { className, style, onClick } = props;
+     return (
+       <div>
+         <button
+           className={className}
+           style={{ ...style, display: "block", color: "black" }}
+           onClick={onClick}
+         >
+           <ArrowLeft className="stroke-redeclic" />
+         </button>
+       </div>
+     );
+   }
+
+   const settings = {
+     
+     nextArrow: (
+       <SampleNextArrow
+         className={undefined}
+         style={undefined}
+         onClick={undefined}
+       />
+     ),
+     prevArrow: (
+       <SamplePrevArrow
+         className={undefined}
+         style={undefined}
+         onClick={undefined}
+       />
+     ),
+   };
   return (
     <div>
       <div className="space-y-5">
@@ -26,12 +82,13 @@ const Audi = () => {
           ref={(slider) => {
             if (slider) sliderRef1.current = slider;
           }}
+          {...settings}
         >
-          {images.map((g, j) => (
+          {images.map((image, j) => (
             <Image
               className="w-96 h-96 object-contain"
               key={j}
-              src={g}
+              src={image.g}
               alt="image"
               width={500}
               height={500}
@@ -48,11 +105,11 @@ const Audi = () => {
           swipeToSlide={true}
           focusOnSelect={true}
         >
-          {images.map((g, j) => (
+          {images.map((image, j) => (
             <Image
               className="w-5 h-fit px-3 object-cover"
               key={j}
-              src={g}
+              src={image.g}
               alt="image"
               width={500}
               height={500}
@@ -66,4 +123,25 @@ const Audi = () => {
 
 export default Audi;
 
-const images = [g, g, g, g, g];
+const images = [
+  { g: "/Halloffame-images/audi/2.webp" },
+  { g: "/Halloffame-images/audi/1.webp" },
+  { g: "/Halloffame-images/audi/3.webp" },
+  { g: "/Halloffame-images/audi/4.webp" },
+  { g: "/Halloffame-images/audi/5.webp" },
+  { g: "/Halloffame-images/audi/6.webp" },
+  { g: "/Halloffame-images/audi/7.webp" },
+  { g: "/Halloffame-images/audi/8.webp" },
+  { g: "/Halloffame-images/audi/9.webp" },
+  { g: "/Halloffame-images/audi/10.webp" },
+  { g: "/Halloffame-images/audi/11.webp" },
+  { g: "/Halloffame-images/audi/12.webp" },
+  { g: "/Halloffame-images/audi/13.webp" },
+  { g: "/Halloffame-images/audi/14.webp" },
+  { g: "/Halloffame-images/audi/15.webp" },
+  { g: "/Halloffame-images/audi/16.webp" },
+  { g: "/Halloffame-images/audi/17.webp" },
+  { g: "/Halloffame-images/audi/18.webp" },
+  { g: "/Halloffame-images/audi/19.webp" },
+  { g: "/Halloffame-images/audi/20.webp" },
+];

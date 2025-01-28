@@ -17,59 +17,94 @@ import Audi from "./halloffame-projects/audi";
 import BeachMama from "./halloffame-projects/beachMama";
 import Casablanca from "./halloffame-projects/casablanca";
 import Slider from "react-slick";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 function HalloffameCarousel() {
-  function SampleNextArrow(props: { className: any; style: any; onClick: any; }) {
+  function SampleNextArrow(props: {
+    className: any;
+    style: any;
+    onClick: any;
+  }) {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "red" }}
-        onClick={onClick}
-      />
+      <div>
+        <button
+          className="absolute bottom-14 -right-10"
+          style={{ ...style, display: "block", color: "black" }}
+          onClick={onClick}
+        >
+          <ArrowRight />
+        </button>
+      </div>
     );
   }
 
-  function SamplePrevArrow(props: { className: any; style: any; onClick: any; }) {
+  function SamplePrevArrow(props: {
+    className: any;
+    style: any;
+    onClick: any;
+  }) {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={className}
-        style={{ ...style, display: "block", background: "green" }}
-        onClick={onClick}
-      />
+      <div>
+        <button
+          className="absolute bottom-14 -left-10"
+          style={{ ...style, display: "block", color: "black" }}
+          onClick={onClick}
+        >
+          <ArrowLeft />
+        </button>
+      </div>
     );
   }
   const [brand, setBrand] = useState<string>("ainIfran");
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    nextArrow: <SampleNextArrow className={undefined} style={undefined} onClick={undefined} />,
-    prevArrow: <SamplePrevArrow className={undefined} style={undefined} onClick={undefined} />,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    nextArrow: (
+      <SampleNextArrow
+        className={undefined}
+        style={undefined}
+        onClick={undefined}
+      />
+    ),
+    prevArrow: (
+      <SamplePrevArrow
+        className={undefined}
+        style={undefined}
+        onClick={undefined}
+      />
+    ),
   };
   return (
-    <div className="max-w-screen-lg pb-20 mx-auto">
-      <div className="slider-container">
-        <Slider className="flex justify-between w-full" {...settings}>
+    <div className="max-w-screen-lg mx-auto mb-20">
+      <div className="slider-container mb-10 ">
+        <Slider className="flex justify-between w-full " {...settings}>
           {brandsLink.map((g) => (
             <div
               onClick={() => setBrand(g.brand)}
-              className="hover:text-red-500 cursor-pointer"
+              className="hover:text-red-500 cursor-pointer w-32 h-32 flex justify-center items-center"
               key={g.brand}
             >
-              <Image src={g.logo} width={500} height={500} alt="logo" />
+              <Image
+                src={g.logo}
+                width={500}
+                height={500}
+                alt="logo"
+                className="w-32 object-contain"
+              />
             </div>
           ))}
         </Slider>
       </div>
+      {brand === "audi" && <Audi />}
       {brand === "ainIfran" && <AinIfran />}
       {brand === "casablanca" && <Casablanca />}
       {brand === "alJabr" && <AlJabr />}
       {brand === "anatolia" && <Anatolia />}
-      {brand === "audi" && <Audi />}
+
       {brand === "beachMama" && <BeachMama />}
     </div>
   );
@@ -78,10 +113,11 @@ function HalloffameCarousel() {
 export default HalloffameCarousel;
 
 const brandsLink = [
+  { brand: "audi", logo: audi },
   { brand: "ainIfran", logo: ainIfrane },
   { brand: "alJabr", logo: alJabr },
   { brand: "anatolia", logo: anatolia },
-  { brand: "audi", logo: audi },
+
   { brand: "beachMama", logo: beachMama },
   { brand: "casablanca", logo: casablanca },
 ];
