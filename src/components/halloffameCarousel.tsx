@@ -33,7 +33,7 @@ function HalloffameCarousel() {
           style={{ ...style, display: "block", color: "black" }}
           onClick={onClick}
         >
-          <ArrowRight />
+          <ArrowRight className="hidden lg:block" />
         </button>
       </div>
     );
@@ -52,7 +52,7 @@ function HalloffameCarousel() {
           style={{ ...style, display: "block", color: "black" }}
           onClick={onClick}
         >
-          <ArrowLeft />
+          <ArrowLeft className="hidden lg:block"/>
         </button>
       </div>
     );
@@ -79,7 +79,7 @@ function HalloffameCarousel() {
     ),
   };
   return (
-    <div className="max-w-screen-lg mx-auto mb-20">
+    <div className="w-screen max-w-screen-lg mx-auto mb-20">
       <div className="slider-container mb-10 ">
         <Slider className="flex justify-between w-full " {...settings}>
           {brandsLink.map((g) => (

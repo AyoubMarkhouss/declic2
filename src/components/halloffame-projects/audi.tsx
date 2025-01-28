@@ -19,65 +19,65 @@ const Audi = () => {
       setNav2(sliderRef2.current);
     }
   }, []);
-   function SampleNextArrow(props: {
-     className: any;
-     style: any;
-     onClick: any;
-   }) {
-     const { className, style, onClick } = props;
-     return (
-       <div>
-         <button
-           className={className}
-           style={{ ...style, display: "block", color: "black" }}
-           onClick={onClick}
-         >
-           <ArrowRight className="stroke-redeclic" />
-         </button>
-       </div>
-     );
-   }
+  function SampleNextArrow(props: {
+    className: any;
+    style: any;
+    onClick: any;
+  }) {
+    const { className, style, onClick } = props;
+    return (
+      <div>
+        <button
+          className={className}
+          style={{ ...style, display: "block", color: "black" }}
+          onClick={onClick}
+        >
+          <ArrowRight className="stroke-redeclic" />
+        </button>
+      </div>
+    );
+  }
 
-   function SamplePrevArrow(props: {
-     className: any;
-     style: any;
-     onClick: any;
-   }) {
-     const { className, style, onClick } = props;
-     return (
-       <div>
-         <button
-           className={className}
-           style={{ ...style, display: "block", color: "black" }}
-           onClick={onClick}
-         >
-           <ArrowLeft className="stroke-redeclic" />
-         </button>
-       </div>
-     );
-   }
+  function SamplePrevArrow(props: {
+    className: any;
+    style: any;
+    onClick: any;
+  }) {
+    const { className, style, onClick } = props;
+    return (
+      <div>
+        <button
+          className={className}
+          style={{ ...style, display: "block", color: "black" }}
+          onClick={onClick}
+        >
+          <ArrowLeft className="stroke-redeclic" />
+        </button>
+      </div>
+    );
+  }
 
-   const settings = {
-     
-     nextArrow: (
-       <SampleNextArrow
-         className={undefined}
-         style={undefined}
-         onClick={undefined}
-       />
-     ),
-     prevArrow: (
-       <SamplePrevArrow
-         className={undefined}
-         style={undefined}
-         onClick={undefined}
-       />
-     ),
-   };
+  const settings = {
+    nextArrow: (
+      <SampleNextArrow
+        className={undefined}
+        style={undefined}
+        onClick={undefined}
+      />
+    ),
+    prevArrow: (
+      <SamplePrevArrow
+        className={undefined}
+        style={undefined}
+        onClick={undefined}
+      />
+    ),
+  };
   return (
-    <div>
-      <div className="space-y-5">
+    <div className="w-[90%] tablet:w-full">
+      <div className="space-y-5 ">
         <Slider
+          className="ml-10 tablet:ml-0"
           asNavFor={nav2}
           ref={(slider) => {
             if (slider) sliderRef1.current = slider;
@@ -96,7 +96,7 @@ const Audi = () => {
           ))}
         </Slider>
         <Slider
-          className="space-x-3"
+          className="ml-10 tablet:ml-0"
           asNavFor={nav1}
           ref={(slider) => {
             if (slider) sliderRef2.current = slider;

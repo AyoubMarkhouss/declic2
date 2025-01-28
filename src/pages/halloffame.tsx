@@ -12,7 +12,7 @@ export default function Halloffame() {
     <>
       <Header open={open} setOpen={setOpen} />
       <div className={`${open ? "" : "block"}`}>
-        <div className="bigmobile:px-5 laptop:px-36 relative  h-full pt-20">
+        <div className="bigmobile:px-5 laptop:px-36 relative  h-full pt-28">
           <div className="h-60  flex flex-col justify-center items-center">
             <TextAnimate
               animation="blurInUp"
