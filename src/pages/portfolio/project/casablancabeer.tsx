@@ -84,7 +84,16 @@ const Casablancabeer = () => {
             offering a holistic experience that unites local craftsmanship and
             cultural authenticity.
           </p>
-
+          <div className="">
+            <iframe
+              src="https://open.spotify.com/embed/album/5gwzIvlKdciryiRCzcOWoy?utm_source=generator"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
           <div className="grid grid-cols-3 pt-10">
             <motion.div
               ref={ref}
