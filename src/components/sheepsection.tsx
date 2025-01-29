@@ -32,7 +32,7 @@ export default function Sheepsection() {
         <div className="col-span-2 relative "></div>
 
         {/* Right Column: Paragraphs */}
-        <div className="col-span-1 z-30 text-white text-justify laptop:text-start text-md flex flex-col justify-center">
+        <div className="col-span-1 z-30 text-white text-justify  text-md flex flex-col justify-center">
           <p className=" desktop:text-2xl">
             At <span className=" text-redeclic">Declic Agency</span>, we don't
             do things halfway. With boundless creativity and a healthy dose of
