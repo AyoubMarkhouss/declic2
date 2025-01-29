@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-const AlJabr = () => {
+const Seat = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
@@ -64,7 +64,7 @@ const AlJabr = () => {
   );
 };
 
-export default AlJabr;
+export default Seat;
 
 const images = [
   "/AboutUs/CasablancaBeer.jpg",

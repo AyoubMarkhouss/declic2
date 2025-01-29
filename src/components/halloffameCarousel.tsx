@@ -9,15 +9,23 @@ import alJabr from "/public/Clients/Refs-logos/AlJabr.png";
 import anatolia from "/public/Clients/Refs-logos/Anatolia.png";
 import audi from "/public/Clients/Refs-logos/Audi.png";
 import beachMama from "/public/Clients/Refs-logos/BeachMama.png";
+import seat from "/public/Clients/Refs-logos/SEAT.png";
+import midas from "/public/Clients/Refs-logos/Midas.png";
+import renault from "/public/Clients/Refs-logos/Renault.png";
+import dacia from "/public/Clients/Refs-logos/Dacia.png";
 // prods
-import AinIfran from "./halloffame-projects/ainIfran";
-import AlJabr from "./halloffame-projects/alJabr";
-import Anatolia from "./halloffame-projects/anatolia";
+import AinIfran from "./halloffame-projects/seat";
+import AlJabr from "./halloffame-projects/renault";
+import Anatolia from "./halloffame-projects/dacia";
 import Audi from "./halloffame-projects/audi";
 import BeachMama from "./halloffame-projects/beachMama";
-import Casablanca from "./halloffame-projects/casablanca";
+import Casablanca from "./halloffame-projects/midas";
 import Slider from "react-slick";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Seat from "./halloffame-projects/seat";
+import Midas from "./halloffame-projects/midas";
+import Renault from "./halloffame-projects/renault";
+import Dacia from "./halloffame-projects/dacia";
 
 function HalloffameCarousel() {
   function SampleNextArrow(props: {
@@ -52,7 +60,7 @@ function HalloffameCarousel() {
           style={{ ...style, display: "block", color: "black" }}
           onClick={onClick}
         >
-          <ArrowLeft className="hidden lg:block"/>
+          <ArrowLeft className="hidden lg:block" />
         </button>
       </div>
     );
@@ -99,13 +107,12 @@ function HalloffameCarousel() {
           ))}
         </Slider>
       </div>
-      {brand === "audi" && <Audi />}
-      {brand === "ainIfran" && <AinIfran />}
-      {brand === "casablanca" && <Casablanca />}
-      {brand === "alJabr" && <AlJabr />}
-      {brand === "anatolia" && <Anatolia />}
 
-      {brand === "beachMama" && <BeachMama />}
+      {brand === "seat" && <Seat />}
+      {brand === "audi" && <Audi />}
+      {brand === "midas" && <Midas />}
+      {brand === "renault" && <Renault />}
+      {brand === "dacia" && <Dacia />}
     </div>
   );
 }
@@ -113,11 +120,9 @@ function HalloffameCarousel() {
 export default HalloffameCarousel;
 
 const brandsLink = [
+  { brand: "seat", logo: seat },
   { brand: "audi", logo: audi },
-  { brand: "ainIfran", logo: ainIfrane },
-  { brand: "alJabr", logo: alJabr },
-  { brand: "anatolia", logo: anatolia },
-
-  { brand: "beachMama", logo: beachMama },
-  { brand: "casablanca", logo: casablanca },
+  { brand: "midas", logo: midas },
+  { brand: "renault", logo: renault },
+  { brand: "dacia", logo: dacia },
 ];

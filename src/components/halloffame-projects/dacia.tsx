@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import bin from "/public/AboutUs/SeatAttitude.jpg";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-const Anatolia = () => {
+const Dacia = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
@@ -119,6 +119,6 @@ const Anatolia = () => {
   );
 };
 
-export default Anatolia;
+export default Dacia;
 
 const images = [bin, bin, bin, bin, bin, bin];

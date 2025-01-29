@@ -86,7 +86,7 @@ const Audi = () => {
         >
           {images.map((image, j) => (
             <Image
-              className="w-96 h-96 object-contain"
+              className="w-[26rem] h-[26rem] object-contain"
               key={j}
               src={image.g}
               alt="image"
@@ -107,7 +107,7 @@ const Audi = () => {
         >
           {images.map((image, j) => (
             <Image
-              className="w-5 h-fit px-3 object-cover"
+              className="w-5 px-10 h-fit object-cover"
               key={j}
               src={image.g}
               alt="image"

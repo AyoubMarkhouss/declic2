@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
-const Casablanca = () => {
+const Midas = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
@@ -62,7 +62,7 @@ const Casablanca = () => {
   );
 };
 
-export default Casablanca;
+export default Midas;
 
 const images = [
   "/AboutUs/CasablancaBeer.jpg",
