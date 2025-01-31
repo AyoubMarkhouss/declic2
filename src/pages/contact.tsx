@@ -203,8 +203,7 @@ export default function Page() {
                   </p>
                   {/* <p className="leading-7">Mon-Fri from 9:00 to 18:00</p> */}
 
-                  <p className=" text-lg font-semibold">+212 (0) 522 206 546</p>
-                  <p className=" text-lg font-semibold">+212 (0) 522 206 544</p>
+                  <p className=" text-lg font-semibold">+212 (0) 661325808</p>
                 </div>
               </div>
             </div>

@@ -27,7 +27,7 @@ const Footer = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="col-span-4 flex justify-center items-center py-5"
       >
-        <Link href='/portfolio?section=work'>
+        <Link href="/portfolio?section=work">
           <Image
             alt="declic"
             src="/declic-white.png"
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
         <div className="hidden tablet:block col-span-1">
           <h2 className="fontmed text-2xl text-white ">Get in touch</h2>
-          <p className="text-white">+212 (0) 522 206 546 / 544</p>
+          <p className="text-white">+212 (0) 661325808</p>
           <p className="text-white pb-2">Contact@declicagency.ma</p>
           <div className="flex items-center gap-x-4">
             <Link
@@ -147,7 +147,7 @@ const Footer = () => {
             href="/halloffame"
             className="fontmed flex tablet:justify-center text-xl text-white  transition-all duration-300 transform hover:scale-125"
           >
-           Hall of fame
+            Hall of fame
           </Link>
           <Link
             href="/"
