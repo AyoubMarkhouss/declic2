@@ -195,6 +195,22 @@ const work = [
     brand: "Express Relais",
   },
   {
+    title: "Flag Spéciale Original",
+    image: "/FSO/fso-cover.webp",
+    category: "Beverages",
+    date: "27 avril 2024",
+    link: "/portfolio/project/flagspecialeoriginal",
+    brand: "Flag Speciale Original",
+  },
+  {
+    title: "Volkswagen Cinema",
+    image: "/VW/vw-cover.webp",
+    category: "Automotive",
+    date: "27 avril 2024",
+    link: "/portfolio/project/vw",
+    brand: "Volkswagen Morocco",
+  },
+  {
     title: "Project 4",
     image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
     category: "Automobile",
