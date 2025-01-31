@@ -14,7 +14,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-67%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-73%"]);
   const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-89%"]);
 
   return (
@@ -205,5 +205,19 @@ const cards: CardType[] = [
     desc: "Automotive",
     id: 8,
     page: "/portfolio/project/cupra",
+  },
+  {
+    url: "/FSO/fso-cover.webp",
+    title: "Flag Spéciale Original",
+    desc: "Beverages",
+    id: 8,
+    page: "/portfolio/project/flagspecialeoriginal",
+  },
+  {
+    url: "/VW/vw-cover.webp",
+    title: "VW Cinema",
+    desc: "Automotive",
+    id: 8,
+    page: "/portfolio/project/vw",
   },
 ];

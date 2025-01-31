@@ -551,4 +551,19 @@ const work = [
     link: "/portfolio/project/cupra",
     brand: "Cupra",
   },
+  {
+    title: "Flag Spéciale Original",
+    image: "/FSO/fso-cover.webp",
+    category: "Beverages",
+    link: "/portfolio/project/flagspecialeoriginal",
+    brand: "Flag Speciale Original",
+  },
+
+  {
+    title: "VW Cinema",
+    image: "/VW/slider-desktop.webp",
+    category: "Automotive",
+    link: "/portfolio/project/vw",
+    brand: "VW Cinema",
+  },
 ];
