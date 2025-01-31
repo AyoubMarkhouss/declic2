@@ -14,8 +14,8 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-73%"]);
-  const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-89%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["2.5%", "-54%"]);
+  const m = useTransform(scrollYProgress, [0, 1], ["0.7%", "-85.7%"]);
 
   return (
     <div>
@@ -191,32 +191,32 @@ const cards: CardType[] = [
     id: 8,
     page: "/portfolio/project/ainifrane",
   },
-  {
-    url: "/Expressrelais/ExpressRelais.webp",
-    title: "Express Relais",
-    desc: "Delivery Service",
-    id: 8,
-    page: "/portfolio/project/expressrelais",
-  },
-  {
-    url: "/Cupra/Cupra.webp",
-    title: "CUPRA",
-    desc: "Automotive",
-    id: 8,
-    page: "/portfolio/project/cupra",
-  },
-  {
-    url: "/FSO/fso-cover.webp",
-    title: "Flag Spéciale Original",
-    desc: "Beverages",
-    id: 8,
-    page: "/portfolio/project/flagspecialeoriginal",
-  },
-  {
-    url: "/VW/vw-cover.webp",
-    title: "VW Cinema",
-    desc: "Automotive",
-    id: 8,
-    page: "/portfolio/project/vw",
-  },
+  // {
+  //   url: "/Expressrelais/ExpressRelais.webp",
+  //   title: "Express Relais",
+  //   desc: "Delivery Service",
+  //   id: 8,
+  //   page: "/portfolio/project/expressrelais",
+  // },
+  // {
+  //   url: "/Cupra/Cupra.webp",
+  //   title: "CUPRA",
+  //   desc: "Automotive",
+  //   id: 8,
+  //   page: "/portfolio/project/cupra",
+  // },
+  // {
+  //   url: "/FSO/fso-cover.webp",
+  //   title: "Flag Spéciale Original",
+  //   desc: "Beverages",
+  //   id: 8,
+  //   page: "/portfolio/project/flagspecialeoriginal",
+  // },
+  // {
+  //   url: "/VW/vw-cover.webp",
+  //   title: "VW Cinema",
+  //   desc: "Automotive",
+  //   id: 8,
+  //   page: "/portfolio/project/vw",
+  // },
 ];
