@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
-import bin from "/public/AboutUs/SeatAttitude.jpg";
+import g from "/public/AboutUs/FastPro.webp";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 const Dacia = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
@@ -32,7 +32,7 @@ const Dacia = () => {
           style={{ ...style, display: "block", color: "black" }}
           onClick={onClick}
         >
-          <ArrowRight />
+          <ArrowRight className="stroke-redeclic" />
         </button>
       </div>
     );
@@ -51,11 +51,12 @@ const Dacia = () => {
           style={{ ...style, display: "block", color: "black" }}
           onClick={onClick}
         >
-          <ArrowLeft />
+          <ArrowLeft className="stroke-redeclic" />
         </button>
       </div>
     );
   }
+
   const settings = {
     nextArrow: (
       <SampleNextArrow
@@ -73,20 +74,21 @@ const Dacia = () => {
     ),
   };
   return (
-    <div>
-      <div className="space-y-5 relative">
+    <div className="w-[90%] tablet:w-full">
+      <div className="space-y-5 ">
         <Slider
+          className="ml-10 tablet:ml-0"
           asNavFor={nav2}
           ref={(slider) => {
             if (slider) sliderRef1.current = slider;
           }}
           {...settings}
         >
-          {images.map((g, j) => (
+          {images.map((image, j) => (
             <Image
-              className="w-96 h-96 object-contain"
+              className="w-[26rem] h-[26rem] object-contain"
               key={j}
-              src={g}
+              src={image.g}
               alt="image"
               width={500}
               height={500}
@@ -94,7 +96,7 @@ const Dacia = () => {
           ))}
         </Slider>
         <Slider
-          className="space-x-3"
+          className="ml-10 tablet:ml-0"
           asNavFor={nav1}
           ref={(slider) => {
             if (slider) sliderRef2.current = slider;
@@ -103,11 +105,11 @@ const Dacia = () => {
           swipeToSlide={true}
           focusOnSelect={true}
         >
-          {images.map((g, j) => (
+          {images.map((image, j) => (
             <Image
-              className="w-5 h-fit px-3 object-cover"
+              className="w-5 px-10 h-fit object-cover"
               key={j}
-              src={g}
+              src={image.g}
               alt="image"
               width={500}
               height={500}
@@ -121,4 +123,12 @@ const Dacia = () => {
 
 export default Dacia;
 
-const images = [bin, bin, bin, bin, bin, bin];
+const images = [
+  { g: "/Halloffame-images/DACIA/1.webp" },
+  { g: "/Halloffame-images/DACIA/2.webp" },
+  { g: "/Halloffame-images/DACIA/3.webp" },
+  { g: "/Halloffame-images/DACIA/4.webp" },
+  { g: "/Halloffame-images/DACIA/5.webp" },
+  { g: "/Halloffame-images/DACIA/6.webp" },
+  { g: "/Halloffame-images/DACIA/7.webp" },
+];

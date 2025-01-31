@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import g from "/public/AboutUs/FastPro.webp";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-const Seat = () => {
+const Stork = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
@@ -121,14 +121,14 @@ const Seat = () => {
   );
 };
 
-export default Seat;
+export default Stork;
 
 const images = [
-  { g: "/Halloffame-images/SEAT/2.webp" },
-  { g: "/Halloffame-images/SEAT/1.webp" },
-  { g: "/Halloffame-images/SEAT/3.webp" },
-  { g: "/Halloffame-images/SEAT/4.webp" },
-  { g: "/Halloffame-images/SEAT/5.webp" },
-  { g: "/Halloffame-images/SEAT/6.webp" },
- 
+  { g: "/Halloffame-images/STORK/1.webp" },
+  { g: "/Halloffame-images/STORK/2.webp" },
+  { g: "/Halloffame-images/STORK/3.webp" },
+  { g: "/Halloffame-images/STORK/4.webp" },
+  { g: "/Halloffame-images/STORK/5.webp" },
+  { g: "/Halloffame-images/STORK/6.webp" },
+  { g: "/Halloffame-images/STORK/7.webp" },
 ];

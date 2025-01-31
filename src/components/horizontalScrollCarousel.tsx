@@ -19,7 +19,6 @@ const HorizontalScrollCarousel = () => {
 
   return (
     <div>
-      
       <TextAnimate
         animation="blurInUp"
         by="character"

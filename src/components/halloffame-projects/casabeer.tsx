@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import g from "/public/AboutUs/FastPro.webp";
 import { ArrowLeft, ArrowRight } from "lucide-react";
-const Seat = () => {
+const Casabeer = () => {
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
 
@@ -121,14 +121,19 @@ const Seat = () => {
   );
 };
 
-export default Seat;
+export default Casabeer;
 
 const images = [
-  { g: "/Halloffame-images/SEAT/2.webp" },
-  { g: "/Halloffame-images/SEAT/1.webp" },
-  { g: "/Halloffame-images/SEAT/3.webp" },
-  { g: "/Halloffame-images/SEAT/4.webp" },
-  { g: "/Halloffame-images/SEAT/5.webp" },
-  { g: "/Halloffame-images/SEAT/6.webp" },
- 
+  { g: "/Halloffame-images/CASA/1.webp" },
+  { g: "/Halloffame-images/CASA/2.webp" },
+  { g: "/Halloffame-images/CASA/3.webp" },
+  { g: "/Halloffame-images/CASA/4.webp" },
+  { g: "/Halloffame-images/CASA/5.webp" },
+  { g: "/Halloffame-images/CASA/6.webp" },
+  { g: "/Halloffame-images/CASA/7.webp" },
+  { g: "/Halloffame-images/CASA/8.webp" },
+  { g: "/Halloffame-images/CASA/9.webp" },
+  { g: "/Halloffame-images/CASA/10.webp" },
+  { g: "/Halloffame-images/CASA/11.webp" },
+  { g: "/Halloffame-images/CASA/11.webp" },
 ];

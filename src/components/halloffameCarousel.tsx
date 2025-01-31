@@ -13,12 +13,17 @@ import seat from "/public/Clients/Refs-logos/SEAT.png";
 import midas from "/public/Clients/Refs-logos/Midas.png";
 import renault from "/public/Clients/Refs-logos/Renault.png";
 import dacia from "/public/Clients/Refs-logos/Dacia.png";
+import fso from "/public/Clients/Refs-logos/FSO.png";
+import fsg from "/public/Clients/Refs-logos/FSG.png";
+import casabeer from "/public/Clients/Refs-logos/Casablanca.png";
+import stork from "/public/Clients/Refs-logos/Stork.png";
+import dml from "/public/Clients/Refs-logos/DML.png";
 // prods
 import AinIfran from "./halloffame-projects/seat";
 import AlJabr from "./halloffame-projects/renault";
 import Anatolia from "./halloffame-projects/dacia";
 import Audi from "./halloffame-projects/audi";
-import BeachMama from "./halloffame-projects/beachMama";
+
 import Casablanca from "./halloffame-projects/midas";
 import Slider from "react-slick";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -26,6 +31,11 @@ import Seat from "./halloffame-projects/seat";
 import Midas from "./halloffame-projects/midas";
 import Renault from "./halloffame-projects/renault";
 import Dacia from "./halloffame-projects/dacia";
+import Fso from "./halloffame-projects/fso";
+import Fsg from "./halloffame-projects/fsg";
+import Casabeer from "./halloffame-projects/casabeer";
+import Dml from "./halloffame-projects/dml";
+import Stork from "./halloffame-projects/stork";
 
 function HalloffameCarousel() {
   function SampleNextArrow(props: {
@@ -113,6 +123,11 @@ function HalloffameCarousel() {
       {brand === "midas" && <Midas />}
       {brand === "renault" && <Renault />}
       {brand === "dacia" && <Dacia />}
+      {brand === "fso" && <Fso />}
+      {brand === "fsg" && <Fsg />}
+      {brand === "casabeer" && <Casabeer />}
+      {brand === "stork" && <Stork />}
+      {brand === "dml" && <Dml />}
     </div>
   );
 }
@@ -125,4 +140,9 @@ const brandsLink = [
   { brand: "midas", logo: midas },
   { brand: "renault", logo: renault },
   { brand: "dacia", logo: dacia },
+  { brand: "fso", logo: fso },
+  { brand: "fsg", logo: fsg },
+  { brand: "casabeer", logo: casabeer },
+  { brand: "stork", logo: stork },
+  { brand: "dml", logo: dml },
 ];
