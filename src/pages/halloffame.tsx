@@ -5,9 +5,11 @@ import HalloffameCarousel from "~/components/halloffameCarousel";
 import Header from "~/components/header-burger";
 import HorizontalScrollCarousel from "~/components/horizontalScrollCarousel";
 import { TextAnimate } from "~/components/ui/text-animate";
+import { useTranslation } from "../context/TranslationContext";
 
 export default function Halloffame() {
   const [open, setOpen] = useState<boolean>(false);
+  const { t } = useTranslation();
   return (
     <>
       <Header open={open} setOpen={setOpen} />
@@ -26,7 +28,7 @@ export default function Halloffame() {
               by="character"
               className="fontbold pb-3 bigmobile:text-xl text-center laptop:text-4xl desktop:text-5xl text-redeclic"
             >
-              Our greatest hits !
+              {t.halloffame.subtitle}
             </TextAnimate>
             <motion.p
               initial={{ opacity: 0, y: 0 }}
@@ -34,10 +36,8 @@ export default function Halloffame() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-md laptop:max-w-[70%] pb-5"
             >
-              Here’s where we showcase our proudest moments in Morocco. Projects
-              that made an impact and left their mark. Take a peek at what we do
-              best (and yes, we love to brag a little)! 😉 <br /> 👉 Click on a
-              client to explore their success story!
+              {t.halloffame.description} <br />
+              {t.halloffame.desc2}
             </motion.p>
           </div>
         </div>

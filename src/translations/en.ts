@@ -45,4 +45,11 @@ export const en = {
     phonenumber: "Phone",
     submit: "Let's get started",
   },
+  halloffame: {
+    title: "Hall of Fame",
+    subtitle: "Our greatest hits !",
+    description:
+      "Here’s where we showcase our proudest moments in Morocco. Projects that made an impact and left their mark. Take a peek at what we do best (and yes, we love to brag a little)! 😉",
+    desc2: "👉 Click on a client to explore their success story!",
+  },
 };

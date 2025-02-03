@@ -47,6 +47,14 @@ export const fr = {
     firstname: "Prénom",
     lastname: "Nom",
     phonenumber: "téléphone",
-    submit: "Envoyer"
+    submit: "Envoyer",
+  },
+
+  halloffame: {
+    title: "Hall of Fame",
+    subtitle: "Nos plus grands succès !",
+    description:
+      "Voici les moments dont nous sommes les plus fiers au Maroc. Des projets qui ont eu un impact et qui ont laissé leur marque. Jetez un coup d'œil à ce que nous faisons de mieux (et oui, nous aimons nous vanter un peu) !😉",
+    desc2: "👉Cliquez sur un client pour découvrir son histoire de réussite !",
   },
 };
