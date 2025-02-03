@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import Header from "~/components/header-burger";
 import { TextAnimate } from "~/components/ui/text-animate";
 import ViewMore from "~/components/icons/viewMore";
+import { useTranslation } from "~/context/TranslationContext";
+
 // import { useRouter } from "next/router";
 
 export const clients = [
@@ -206,6 +208,7 @@ export const clients = [
 ];
 export default function Portfolio() {
   const searchParams = useSearchParams();
+  const { t } = useTranslation();
   // const router = useRouter();
   const section = searchParams.get("section");
   const [visibleWorks, setVisibleWorks] = useState(6);
@@ -243,7 +246,7 @@ export default function Portfolio() {
               by="character"
               className="fontbold pb-3 bigmobile:text-3xl text-center  laptop:text-7xl desktop:text-8xl text-redeclic"
             >
-              The Lab Of Creativity
+              {t.home.title}
             </TextAnimate>
             <motion.p
               initial={{ opacity: 0, y: 0 }}
@@ -251,10 +254,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-md laptop:max-w-[70%] pb-5"
             >
-              At Declic Agency, we’ve had the privilege of working with brands
-              and clients who share our bold vision of communication. Each
-              project is an opportunity to push boundaries, innovate, and create
-              unforgettable campaigns
+              {t.home.description}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -268,7 +268,7 @@ export default function Portfolio() {
                   section === "work" ? "text-redeclic" : "text-black"
                 }`}
               >
-                Work
+                {t.home.work}
               </Link>
               <Link
                 href={"?section=client"}
@@ -364,7 +364,9 @@ export default function Portfolio() {
                             </h1>
                             <FaChevronRight className="group-hover:fill-redeclic" />
                           </div>
-                          <p className="text-sm">{g.category}</p>
+                          <p className="text-sm">
+                            {t.home.workCategories[g.category]}
+                          </p>
                         </motion.div>
                       </Link>
                     ))}
@@ -374,10 +376,10 @@ export default function Portfolio() {
           ) : null}
           {section === "work" && visibleWorks < work.length && (
             <button
-              className="fontmed my-10 mx-auto block px-6 py-2 bg-redeclic text-white"
+              className="fontmed my-10 uppercase mx-auto block px-6 py-2 bg-redeclic text-white"
               onClick={loadMoreWorks}
             >
-              View More
+              {t.Horizontalscroll.viewmorebtn}
             </button>
           )}
 
@@ -476,11 +478,11 @@ export default function Portfolio() {
           </div>
 
           <div className="bg-black/30 w-screen h-[470px] absolute"></div>
-          <h1 className="fontreg text-white text-center text-5xl z-10">
-            THE GOAT OF MOROCCO
+          <h1 className="fontreg uppercase text-white text-center text-5xl z-10">
+            {t.home.goat}
           </h1>
-          <button className="z-10 border-2 text-white text-xl border-white hover:bg-redeclic hover:border-redeclic transition-all transform delay-100 px-5 py-3">
-            <a href="/">Discover</a>
+          <button className="z-10 border-2 uppercase text-white text-xl border-white hover:bg-redeclic hover:border-redeclic transition-all transform delay-100 px-5 py-3">
+            <a href="/">{t.home.discover}</a>
           </button>
         </div>
 
@@ -489,19 +491,32 @@ export default function Portfolio() {
     </>
   );
 }
+type WorkCategory =
+  | "entertainment"
+  | "automotive"
+  | "beverages"
+  | "automotiveMaintenance"
+  | "deliveryService";
+interface WorkItem {
+  title: string;
+  image: string;
+  category: WorkCategory;
+  link: string;
+  brand: string;
+}
 
-const work = [
+const work: WorkItem[] = [
   {
     title: "L'Clicka Dialna",
     image: "/AboutUs/ClickaDialna.jpg",
-    category: "Entertainment",
+    category: "entertainment",
     link: "/portfolio/project/clickadialna",
     brand: "L'Clicka Dialna",
   },
   {
     title: "Porsche Festival 2024",
     image: "/Porschefestival/Slider_porsche_desktop.webp",
-    category: "Automotive",
+    category: "automotive",
 
     link: "/portfolio/project/porschefestival",
     brand: "Porsche Morocco",
@@ -510,7 +525,7 @@ const work = [
   {
     title: "Feel the spirit of morocco",
     image: "/AboutUs/CasablancaBeer.jpg",
-    category: "Beverages",
+    category: "beverages",
     link: "/portfolio/project/casablancabeer",
     brand: "Casablanca beer",
   },
@@ -518,7 +533,7 @@ const work = [
   {
     title: "SEAT Attitude",
     image: "/Seat/Slider.jpg",
-    category: "Automotive",
+    category: "automotive",
 
     link: "/portfolio/project/seat",
     brand: "SEAT Morocco",
@@ -526,35 +541,35 @@ const work = [
   {
     title: "Fast Pro",
     image: "/AboutUs/FastPro.webp",
-    category: "Automotive maintenance",
+    category: "automotiveMaintenance",
     link: "/portfolio/project/fastpro",
     brand: "Fast Pro",
   },
   {
     title: "Aïn Ifrane",
     image: "/Ainifrane/Slider_ifran_desktop.webp",
-    category: "Beverages",
+    category: "beverages",
     link: "/portfolio/project/ainifrane",
     brand: "Aïn Ifrane",
   },
   {
     title: "Express Relais",
     image: "/Expressrelais/ExpressRelais.webp",
-    category: "Delivery Service",
+    category: "deliveryService",
     link: "/portfolio/project/expressrelais",
     brand: "Express Relais",
   },
   {
     title: "Cupra",
     image: "/Cupra/Slider_cupra_desktop.webp",
-    category: "Automotive",
+    category: "automotive",
     link: "/portfolio/project/cupra",
     brand: "Cupra",
   },
   {
     title: "Flag Spéciale Original",
     image: "/FSO/fso-cover.webp",
-    category: "Beverages",
+    category: "beverages",
     link: "/portfolio/project/flagspecialeoriginal",
     brand: "Flag Speciale Original",
   },
@@ -562,7 +577,7 @@ const work = [
   {
     title: "VW Cinema",
     image: "/VW/slider-desktop.webp",
-    category: "Automotive",
+    category: "automotive",
     link: "/portfolio/project/vw",
     brand: "VW Cinema",
   },

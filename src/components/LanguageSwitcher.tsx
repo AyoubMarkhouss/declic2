@@ -28,7 +28,6 @@ export default function LanguageSwitcher() {
     >
       {/* Bouton principal */}
       <button className="flex items-center gap-2 px-4 py-2  hover:bg-gray-300 transition">
-   
         <IoLanguageSharp className="w-5 h-5" />
         <FiChevronDown className="w-4 h-4" />
       </button>
@@ -47,7 +46,7 @@ export default function LanguageSwitcher() {
             setIsOpen(false);
           }}
           className={`w-full flex items-center justify-center px-4 py-2 hover:bg-gray-100 ${
-            language === "en" ? "font-semibold" : ""
+            language === "en" ? "font-semibold text-redeclic" : ""
           }`}
         >
           🇺🇸
@@ -58,7 +57,7 @@ export default function LanguageSwitcher() {
             setIsOpen(false);
           }}
           className={`w-full flex items-center justify-center px-4 py-2 hover:bg-gray-100 ${
-            language === "fr" ? "font-semibold" : ""
+            language === "fr" ? "font-semibold text-redeclic" : ""
           }`}
         >
           🇫🇷

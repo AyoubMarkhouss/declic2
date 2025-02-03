@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const fr = {
   scroll: "Défiler pour explorer",
   Sheepsection: {
@@ -18,5 +20,21 @@ export const fr = {
     localisation: "Nous sommes à cet endroit",
     contact: "Contactez-nous",
     copyright: "Tous Droits Réservés",
+  },
+
+  home: {
+    title: "Le Labo de la créativité",
+    description:
+      "À l'agence Declic, nous avons eu le privilège de travailler avec des marques et des clients qui partagent notre vision audacieuse de la communication. Chaque projet est l'occasion de repousser les limites, d'innover et de créer des campagnes inoubliables.",
+    work: "Projets",
+    workCategories: {
+      entertainment: "Divertissement",
+      automotive: "Automobile",
+      beverages: "Boissons",
+      automotiveMaintenance: "Entretien Automobile",
+      deliveryService: "Service de Livraison",
+    },
+    goat: "La GOAT du Maroc",
+    discover: "Découvrir",
   },
 };

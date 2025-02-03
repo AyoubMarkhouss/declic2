@@ -18,4 +18,20 @@ export const en = {
     contact: "Get in touch",
     copyright: "All Rights Reserved",
   },
+
+  home: {
+    title: "The Lab Of Creativity",
+    description:
+      "At Declic Agency, we’ve had the privilege of working with brands and clients who share our bold vision of communication. Each project is an opportunity to push boundaries, innovate, and create unforgettable campaigns",
+    work: "Work",
+    workCategories: {
+      entertainment: "Entertainment",
+      automotive: "Automotive",
+      beverages: "Beverages",
+      automotiveMaintenance: "Automotive Maintenance",
+      deliveryService: "Delivery Service",
+    },
+    goat: "The GOAT OF MOROCCO",
+    discover: "Discover",
+  },
 };
