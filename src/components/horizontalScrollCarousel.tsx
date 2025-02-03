@@ -84,7 +84,7 @@ type CardType = {
   url: string;
   title: string;
   id: number;
-  desc: string;
+  desc: WorkCategory;
   page: string;
 };
 
@@ -146,53 +146,59 @@ const Card = ({
             isOtherHovered ? "text-gray-400" : "text-gray-400"
           }`}
         >
-          {card.desc}
+          {t.home.workCategories[card.desc]}
         </p>
       </div>
     </Link>
   );
 };
+type WorkCategory =
+  | "entertainment"
+  | "automotive"
+  | "beverages"
+  | "automotiveMaintenance"
+  | "deliveryService";
 
 const cards: CardType[] = [
   {
     url: "/AboutUs/CasablancaBeer.jpg",
     title: "Feel the spirit of Morocco",
-    desc: "Beverages",
+    desc: "beverages",
     id: 1,
     page: "/portfolio/project/casablancabeer",
   },
   {
     url: "/AboutUs/ClickaDialna.jpg",
     title: "Clicka Dialna",
-    desc: "Entertainment",
+    desc: "entertainment",
     id: 2,
     page: "/portfolio/project/clickadialna",
   },
   {
     url: "/AboutUs/PorscheFestival.jpg",
     title: "Porsche Festival 2024",
-    desc: "Automotive",
+    desc: "automotive",
     id: 3,
     page: "/portfolio/project/porschefestival",
   },
   {
     url: "/AboutUs/SeatAttitude.jpg",
     title: "SEAT Attitude",
-    desc: "Automotive",
+    desc: "automotive",
     id: 6,
     page: "/portfolio/project/seat",
   },
   {
     url: "/AboutUs/FastPro.webp",
     title: "Fast Pro",
-    desc: "Automotive maintenance",
+    desc: "automotiveMaintenance",
     id: 7,
     page: "/portfolio/project/fastpro",
   },
   {
     url: "/Ainifrane/AinIfrane.webp",
     title: "Aïn Ifrane",
-    desc: "Beverages",
+    desc: "beverages",
     id: 8,
     page: "/portfolio/project/ainifrane",
   },
