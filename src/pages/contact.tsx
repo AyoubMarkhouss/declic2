@@ -14,10 +14,11 @@ import Youtube from "~/components/icons/youtube";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "../context/TranslationContext";
 
 export default function Page() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
+  const { t } = useTranslation();
   // async function onSubmit(event: FormEvent<HTMLFormElement>) {
   //   event.preventDefault();
   //   setIsLoading(true);
@@ -172,6 +173,7 @@ export default function Page() {
                   <p className="scroll-m-20 text-xl font-semibold tracking-tight">
                     Chat with us
                   </p>
+
                   {/* <p className="leading-7">Our friendly team is here to help</p> */}
                   <p className="text-lg font-semibold">
                     contact@declicagency.ma

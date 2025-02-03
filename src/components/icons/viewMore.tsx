@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "~/context/TranslationContext";
 import { cn } from "~/utils";
 
 const ViewMore = ({ className }: { className?: string }) => {
+  const { t } = useTranslation();
   return (
     <svg
       className={cn(
@@ -25,7 +27,7 @@ const ViewMore = ({ className }: { className?: string }) => {
           startOffset="0"
           dominant-baseline="Central"
         >
-          ✦ VIEW ✦ MORE ✦ VIEW ✦ MORE
+          {t.Horizontalscroll.viewmoreicon}
         </textPath>
       </text>
     </svg>

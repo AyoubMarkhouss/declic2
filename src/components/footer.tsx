@@ -12,12 +12,14 @@ import { ImYoutube } from "react-icons/im";
 import Link from "next/link";
 
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "../context/TranslationContext";
 
 const Footer = () => {
   // const emptyArray = Array.from({ length: 5 });
   // const duplicatedSlides = [...emptyArray, ...emptyArray];
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const { t } = useTranslation();
   return (
     <div className=" px-5 tablet:px-20 w-full grid grid-cols-2 tablet:grid-cols-4 bg-gradient-to-b from-redeclic to-[#b0011c] ">
       <motion.div
@@ -40,14 +42,14 @@ const Footer = () => {
       <div className="col-span-4 flex justify-between border-t-2 pt-10">
         <div className="col-span-1">
           <h2 className="fontmed text-2xl text-white ">
-            We are in this location
+            {t.footer.localisation}
           </h2>
           <p className="text-gray-300">Rue de L’Adjudant Jean Chelle,</p>
           <p className="text-gray-300">Quartier Oasis,</p>
           <p className="text-gray-300">Casablanca, Maroc</p>
         </div>
         <div className="hidden tablet:block col-span-1">
-          <h2 className="fontmed text-2xl text-white ">Get in touch</h2>
+          <h2 className="fontmed text-2xl text-white ">{t.footer.contact}</h2>
           <p className="text-white">+212 (0) 661325808</p>
           <p className="text-white pb-2">Contact@declicagency.ma</p>
           <div className="flex items-center gap-x-4">
@@ -91,7 +93,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="block tablet:hidden col-span-1 pt-5 ">
-        <h2 className="fontmed text-xl text-white ">Get in touch</h2>
+        <h2 className="fontmed text-xl text-white ">{t.footer.contact}</h2>
         <p className="text-white ">+212 (0) 522 206 546</p>
         <p className="text-white ">+212 (0) 522 206 544</p>
         <p className="text-white pb-2">Contact@declicagency.ma</p>
@@ -165,7 +167,8 @@ const Footer = () => {
       </div>
       <div className="col-span-4 justify-center items-center pb-5">
         <p className="flex items-center justify-center text-xs text-gray-200">
-          Declic Agency 2025 <FaRegCopyright className="" /> All Rights Reserved{" "}
+          Declic Agency 2025 <FaRegCopyright className="" />
+          {t.footer.copyright}
         </p>
       </div>
 

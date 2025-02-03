@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "../context/TranslationContext";
 
 const Herovideo = () => {
+  const { t } = useTranslation();
   return (
     <div className="relative h-screen w-full overflow-hidden ">
       {/* Video Background */}
@@ -33,7 +35,7 @@ const Herovideo = () => {
       <div className="absolute bottom-8 w-full flex justify-center">
         <div className="flex flex-col items-center">
           <span className="text-white text-sm uppercase tracking-wide mb-4">
-            Scroll for more
+           {t.scroll}
           </span>
           {/* Mouse Icon */}
           <div className="relative w-8 h-14 border-2 border-white rounded-full flex items-center justify-center">

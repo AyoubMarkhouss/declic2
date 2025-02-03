@@ -8,12 +8,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { cn } from "~/utils";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header: React.FC<{
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }> = ({ open, setOpen }) => {
-  // const [open, setOpen] = useState<boolean>(false);
   const [isHovered, setIsHovered] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
   const linkVariants = {
@@ -32,9 +32,9 @@ const Header: React.FC<{
 
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (latest: number) => {
-    console.log({ latest });
     setViva(latest);
   });
+
   useEffect(() => {
     let timeout: NodeJS.Timeout;
 
@@ -46,6 +46,7 @@ const Header: React.FC<{
 
     return () => clearTimeout(timeout);
   }, [isHovered, showLinks]);
+
   return (
     <div
       className={cn(
@@ -68,7 +69,7 @@ const Header: React.FC<{
           </motion.div>
         </AnimatePresence>
       )}
-      <div className="flex fixed z-50 top-0 left-0  h-20 w-full items-center justify-between px-10">
+      <div className="flex fixed z-50 top-0 left-0 h-20 w-full items-center justify-between px-10">
         <Link href="/portfolio?section=work">
           <Image
             alt="logo"
@@ -111,14 +112,17 @@ const Header: React.FC<{
             )
           )}
 
-          {/* Button */}
+          {/* Language Switcher - Ajouté ici pour être aligné */}
+          <LanguageSwitcher />
+
+          {/* Burger Button */}
           <button
             onMouseEnter={() => {
-              setIsHovered(true); // Set hover state to true
-              setShowLinks(true); // Show links when button is hovered
+              setIsHovered(true);
+              setShowLinks(true);
             }}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={() => setOpen(!open)} // Toggle menu
+            onClick={() => setOpen(!open)}
             className="flex flex-col gap-2 z-50 bg-transparent group w-14 items-end"
           >
             <span className="w-12 h-1 bg-redeclic rounded-full" />
@@ -137,7 +141,7 @@ const Header: React.FC<{
                 exit={{ height: 0 }}
                 transition={{ ...transition, ease: "linear" }}
                 className="bg-black top-0 w-full h-7 z-50"
-                style={{ zIndex: transitions.length - index }} // Ensure proper stacking order
+                style={{ zIndex: transitions.length - index }}
               />
             ))}
         </AnimatePresence>

@@ -5,10 +5,11 @@ import { motion, useInView, useTransform, useScroll } from "framer-motion";
 import Link from "next/link";
 import ViewMore from "./icons/viewMore";
 import { TextAnimate } from "./ui/text-animate";
+import { useTranslation } from "../context/TranslationContext";
 
 const HorizontalScrollCarousel = () => {
   const [hoveredCardId, setHoveredCardId] = useState<number | null>(null);
-
+  const { t } = useTranslation();
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -22,14 +23,17 @@ const HorizontalScrollCarousel = () => {
       <TextAnimate
         animation="blurInUp"
         by="character"
-        className="fontmed justify-center tablet:justify-start text-4xl laptop:text-7xl w-full bg-redeclic text-white h-24  px-20 flex  items-center"
+        className="fontmed justify-center uppercase tablet:justify-start text-4xl laptop:text-7xl w-full bg-redeclic text-white h-24  px-20 flex  items-center"
       >
-        OUR WORK
+        {t.Horizontalscroll.title}
       </TextAnimate>
-      <section ref={targetRef} className="-my-28 tablet:-my-0 relative h-[300vh] z-10">
+      <section
+        ref={targetRef}
+        className="-my-28 tablet:-my-0 relative h-[300vh] z-10"
+      >
         <div className="sticky top-0 laptop:top-0 desktop:top-20">
           <div className="absolute top-0  -z-10 h-[calc(100vh_-_50vh)] w-full left-0" />
-         
+
           <div className="flex h-screen items-center overflow-hidden ">
             <motion.div
               style={{ x }}
@@ -65,9 +69,9 @@ const HorizontalScrollCarousel = () => {
       <div className="flex justify-center items-center mb-20">
         <Link
           href="/portfolio?section=work"
-          className="fontmed shadow-lg z-10 px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
+          className="fontmed shadow-lg uppercase z-10 px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
         >
-          VIEW MORE
+          {t.Horizontalscroll.viewmorebtn}
         </Link>
       </div>
     </div>
@@ -99,6 +103,7 @@ const Card = ({
   const isOtherHovered = hoveredCardId !== null && hoveredCardId !== card.id;
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const { t } = useTranslation();
   return (
     <Link href={card.page}>
       <div

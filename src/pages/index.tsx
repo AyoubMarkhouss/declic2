@@ -8,6 +8,7 @@ import Sheepsection from "~/components/sheepsection";
 import Header from "~/components/header-burger";
 import { useState } from "react";
 import Bangers from "~/components/bangers";
+import LanguageSwitcher from "~/components/LanguageSwitcher";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
@@ -16,6 +17,7 @@ export default function Home() {
       <Header open={open} setOpen={setOpen} />
       <div className={`${open ? "" : "block"}`}>
         <Herovideo />
+        
         <Sheepsection />
         <HorizontalScrollCarousel />
         {/* <Bangers /> */}
