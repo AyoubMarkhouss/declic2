@@ -37,4 +37,16 @@ export const fr = {
     goat: "La GOAT du Maroc",
     discover: "Découvrir",
   },
+
+  contact: {
+    hi: "Laissez un petit coucou !",
+    text: "Nous sommes toujours ravis d'accueillir de nouveaux projets et partenaires. Alors, envoyez-nous un message ou dites-nous simplement bonjour !",
+    chat: "Chatez avec nous",
+    visit: "Visitez-nous",
+    call: "Appelez-nous",
+    firstname: "Prénom",
+    lastname: "Nom",
+    phonenumber: "téléphone",
+    submit: "Envoyer"
+  },
 };

@@ -34,4 +34,15 @@ export const en = {
     goat: "The GOAT OF MOROCCO",
     discover: "Discover",
   },
+  contact: {
+    hi: "Say Hi!",
+    text: " We are always excited to welcome new projects and partners. So, drop us a message or simply say hello!",
+    chat: "Chat with us",
+    visit: "Visit us",
+    call: "Call us",
+    firstname: "First name",
+    lastname: "Last name",
+    phonenumber: "Phone",
+    submit: "Let's get started",
+  },
 };

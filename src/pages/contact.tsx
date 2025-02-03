@@ -81,11 +81,10 @@ export default function Page() {
           >
             <div className="space-y-4">
               <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-redeclic">
-                Say Hi!
+                {t.contact.hi}
               </h2>
               <h4 className="text-gray-400 scroll-m-20 text-xl font-semibold tracking-tight">
-                We are always excited to welcome new projects and partners. So,
-                drop us a message or simply say hello!
+                {t.contact.text}
               </h4>
             </div>
             <div className="grid grid-cols-2 gap-10">
@@ -99,7 +98,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  First name
+                  {t.contact.firstname}
                 </label>
               </div>
               <div className="relative w-full">
@@ -112,7 +111,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10  left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  Last name
+                  {t.contact.lastname}
                 </label>
               </div>
               <div className="relative  w-full">
@@ -138,7 +137,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  Phone number
+                  {t.contact.phonenumber}
                 </label>
               </div>
               <div className="relative col-span-2 w-full">
@@ -157,9 +156,10 @@ export default function Page() {
               <button
                 className="col-span-2 text-white bg-redeclic py-4 hover:scale-95 transition-all transform "
                 type="submit"
-                disabled={isLoading}
+                // disabled={isLoading}
               >
-                {isLoading ? "Loading..." : "Let's get started!"}
+                {/* {isLoading ? "Loading..." : "Let's get started!"} */}
+                {t.contact.submit}
               </button>
             </div>
           </form>
@@ -171,7 +171,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="scroll-m-20 text-xl font-semibold tracking-tight">
-                    Chat with us
+                    {t.contact.chat}
                   </p>
 
                   {/* <p className="leading-7">Our friendly team is here to help</p> */}
@@ -186,7 +186,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="scroll-m-20 text-xl font-semibold tracking-tight">
-                    Visit us
+                    {t.contact.visit}
                   </p>
                   {/* <p className="leading-7">Come say hello at Our office HQ</p> */}
                   <p className="text-lg font-semibold">
@@ -201,7 +201,7 @@ export default function Page() {
                 </div>
                 <div>
                   <p className="scroll-m-20 text-xl font-semibold tracking-tight">
-                    Call us
+                    {t.contact.call}
                   </p>
                   {/* <p className="leading-7">Mon-Fri from 9:00 to 18:00</p> */}
 
@@ -262,11 +262,10 @@ export default function Page() {
           >
             <div className="space-y-4">
               <h2 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-redeclic">
-                Say Hi!
+                {t.contact.hi}
               </h2>
               <h4 className="text-gray-400 scroll-m-20 text-xl font-semibold tracking-tight">
-                We are always excited to welcome new projects and partners. So,
-                drop us a message or simply say hello!
+                {t.contact.text}
               </h4>
             </div>
             <div className="grid grid-cols-2 gap-10">
@@ -280,7 +279,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  First name
+                  {t.contact.firstname}
                 </label>
               </div>
               <div className="relative w-full">
@@ -293,7 +292,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10  left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  Last name
+                  {t.contact.lastname}
                 </label>
               </div>
               <div className="relative  w-full">
@@ -319,7 +318,7 @@ export default function Page() {
                   required
                 />
                 <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
-                  Phone number
+                  {t.contact.phonenumber}
                 </label>
               </div>
               <div className="relative col-span-2 w-full">
@@ -338,9 +337,10 @@ export default function Page() {
               <button
                 className="col-span-2 text-white bg-redeclic py-4 hover:scale-95 transition-all transform "
                 type="submit"
-                disabled={isLoading}
+                // disabled={isLoading}
               >
-                {isLoading ? "Loading..." : "Let's get started!"}
+                {/* {isLoading ? "Loading..." : "Let's get started!"} */}
+                {t.contact.submit}
               </button>
             </div>
           </form>
