@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { useTranslation } from "../context/TranslationContext";
 import { FiGlobe, FiChevronDown } from "react-icons/fi";
 import { IoLanguageSharp } from "react-icons/io5";
-
+import { LuGlobe } from "react-icons/lu";
 
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useTranslation();
@@ -22,13 +22,13 @@ export default function LanguageSwitcher() {
 
   return (
     <div
-      className="relative"
+      className="relative -mr-5 tablet:-mr-0"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {/* Bouton principal */}
       <button className="flex items-center gap-2 px-4 py-2  hover:bg-gray-300 transition">
-        <IoLanguageSharp className="w-5 h-5" />
+        <LuGlobe className="w-5 h-5" />
         <FiChevronDown className="w-4 h-4" />
       </button>
 
