@@ -9,10 +9,12 @@ import { TextAnimate } from "~/components/ui/text-animate";
 import Header from "~/components/header-burger";
 import { useState } from "react";
 import ViewMore from "~/components/icons/viewMore";
+import { useTranslation } from "~/context/TranslationContext";
+
 
 export default function Portfolio() {
   // Function to load more works
-
+  const { t } = useTranslation();
   const path = usePathname();
   const brand = path?.split("/")[3];
   const section = path?.split("/")[2];
@@ -31,7 +33,7 @@ export default function Portfolio() {
               by="character"
               className="fontbold pb-3 bigmobile:text-3xl text-center laptop:text-7xl desktop:text-7xl text-redeclic"
             >
-              The Lab Of Creativity
+              {t.home.title}
             </TextAnimate>
             <motion.p
               initial={{ opacity: 0, y: 0 }}
@@ -39,10 +41,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-lg laptop:max-w-[70%] pb-5"
             >
-              At Declic Agency, we’ve had the privilege of working with brands
-              and clients who share our bold vision of communication. Each
-              project is an opportunity to push boundaries, innovate, and create
-              unforgettable campaigns
+             {t.home.description}
             </motion.p>
             <div className="flex gap-x-5">
               <Link
@@ -51,7 +50,7 @@ export default function Portfolio() {
                   section === "work" ? "text-redeclic" : "text-black"
                 }`}
               >
-                Work
+                {t.home.work}
               </Link>
               <button
                 className={`text-2xl px-4 py-2 rounded ${

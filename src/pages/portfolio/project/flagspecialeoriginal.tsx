@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Flagspecialeoriginal = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Flagspecialeoriginal = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -70,14 +71,10 @@ const Flagspecialeoriginal = () => {
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Flag Spéciale Original{" "}
+            Flag Spéciale Original
           </h1>
           <p className=" tablet:text-lg text-justify">
-            Since half a century, Flag Spéciale has been part of the daily life
-            of Moroccans. 50 years of shared moments, conviviality, and
-            authentic flavors that have made it the most popular beer in the
-            country. 50 years of being Spéciale, and to celebrate, we’ve
-            prepared a year full of surprises, events, and exclusive offers.
+            {t.project.fso.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -88,9 +85,9 @@ const Flagspecialeoriginal = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Beverages
+                {t.project.categories.beverages}
               </p>
             </motion.div>
             <motion.div
@@ -169,15 +166,7 @@ const Flagspecialeoriginal = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl">
-                50 years of history, shared moments, and brewed passion, yet no
-                one seemed to remember. So, Flag Spéciale decided to take
-                matters into its own hands. First, a teaser on social media
-                where the bottle, upset, was sulking at its audience. Then, the
-                big reveal: no hard feelings, quite the opposite. To mark this
-                historic milestone, we launched a full year of celebration with
-                spectacular giveaways, exclusive promotions, and a tailor-made
-                influencer strategy. After all, 50 years of being Spéciale
-                deserves a celebration to match.
+                {t.project.fso.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -243,19 +232,13 @@ const Flagspecialeoriginal = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The Marchandising
+          {t.project.fso.marchandising.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
-                To mark its 50th anniversary, Flag Spéciale wanted to leave an
-                impression beyond the glass. The idea? To offer its audience
-                collector’s items, designed as souvenirs of a shared story
-                that’s been unfolding for half a century. Iconic glasses,
-                exclusive t-shirts, unique accessories… Each item tells a part
-                of this journey, a bit of the passion that made Spéciale the
-                most popular beer in Morocco.
+                {t.project.fso.marchandising.description}
               </p>
             </div>
             <div className=" laptop:col-span-1 ">

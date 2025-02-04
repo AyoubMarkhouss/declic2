@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Seat = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,6 +26,8 @@ const Seat = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
+
+  const { t } = useTranslation();
 
   React.useEffect(() => {
     if (!api) {
@@ -73,16 +76,7 @@ const Seat = () => {
             SEAT Attitude
           </h1>
           <p className=" tablet:text-lg text-justify">
-            After introducing "Level Up," marking the new strategic partnership
-            between SEAT and CAC, its new importer, it became essential to
-            affirm the brand's DNA and solidify its identity. This vision came
-            to life through the SEAT Attitude campaign, which activated four key
-            platforms represented by renowned ambassadors: Othman Choufani,
-            Lilias Tebbai, ReqTeq, Aezaddy, Aidance, Sara Morbi, and Sika. This
-            campaign brilliantly highlighted SEAT’s core values, encapsulated by
-            its signature "Born in the Sun." More than just a car, SEAT offers
-            its customers a unique experience and mindset, celebrating a dynamic
-            and inspiring lifestyle.
+            {t.project.seat.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -93,9 +87,9 @@ const Seat = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                {t.project.categories.automotive}
               </p>
             </motion.div>
             <motion.div
@@ -133,10 +127,7 @@ const Seat = () => {
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-14 laptop:gap-y-5 py-10 mb-10">
           <div className="laptop:pb-5">
-            <p>
-              Discover SEAT’s universe through 6 captivating videos, each
-              telling a unique story of the SEAT Attitude campaign.
-            </p>
+            <p>{t.project.seat.filmad}</p>
           </div>
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-14 laptop:gap-y-5 laptop:gap-x-5">
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">
@@ -262,15 +253,7 @@ const Seat = () => {
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-10 gap-x-10">
             <div className="col-span-1 laptop:col-span-2">
-              <p className="text-justify ">
-                The SEAT Attitude campaign also stood out through a series of
-                video displays designed to showcase the SEAT Arona and SEAT
-                Ateca. Each video highlights a unique aspect of SEAT’s universe,
-                brought to life by our ambassadors and their passions. From the
-                freedom of the waves to urban dynamism, these displays reflect
-                the essence of SEAT Attitude: a bold, vibrant, and resolutely
-                modern mindset embodied by these two iconic models.
-              </p>
+              <p className="text-justify ">{t.project.seat.ooh}</p>
             </div>
 
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">
@@ -341,19 +324,13 @@ const Seat = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Prints
+          {t.project.seat.print.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-10">
             <div className="col-span-1 flex items-center ">
               <p className="text-justify ">
-                The SEAT Attitude campaign also extended to Moroccan press with
-                two prominent publications, showcasing the SEAT Arona and SEAT
-                Ateca. These features reflect the brand’s universe while
-                highlighting the distinctive lines and strengths of these two
-                iconic models. Published in strategic outlets, these pieces
-                further amplify the campaign’s impact and solidify the SEAT
-                Attitude spirit among the Moroccan audience.
+                {t.project.seat.print.description}
               </p>
             </div>
 
@@ -387,13 +364,7 @@ const Seat = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                The SEAT Attitude campaign gained even greater momentum through
-                a strategic rollout on social media and a powerful advertising
-                campaign. Through interactive challenges, immersive videos, and
-                static posts, each communication platform was highlighted,
-                driven by our ambassadors and their unique worlds. In parallel,
-                an Ads campaign was launched to amplify SEAT Attitude's reach
-                and connect with an even wider audience.
+                {t.project.seat.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -458,20 +429,7 @@ const Seat = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 laptop:gap-x-20 ">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                The SEAT Attitude campaign was not limited to digital platforms;
-                it also came to life on the ground through unique and memorable
-                activations: At the Ain Diab Surf School, we introduced
-                enthusiasts to the thrill of the waves, embodying the freedom
-                and adventure of SEAT Attitude. In our showrooms, fans had the
-                opportunity to meet their favorite artists, creating
-                unforgettable moments of connection. A surf competition brought
-                together amateurs and professionals to celebrate the passion and
-                performance of the sport. Finally, arcade gaming stations,
-                dressed in SEAT Attitude branding, were strategically placed in
-                key locations, adding a playful and unexpected touch. These
-                activations brought the SEAT Attitude spirit closer to the
-                audience, transforming it into tangible, dynamic, and engaging
-                experiences.
+                {t.project.seat.activation.description}
               </p>
             </div>
             {/* <div className="flex items-center justify-center">

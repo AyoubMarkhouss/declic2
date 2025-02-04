@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Cupra = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Cupra = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -74,13 +75,7 @@ const Cupra = () => {
             CUPRA
           </h1>
           <p className=" tablet:text-lg text-justify">
-            We had the privilege of accompanying Cupra in its launch in Morocco
-            in 2023. In close collaboration with the brand in both Morocco and
-            Spain, we orchestrated an inaugural event and a press conference to
-            unveil its bold identity. At the same time, we designed and deployed
-            a campaign dedicated to the Cupra Formentor, the brand's flagship
-            model, highlighting its innovative design and exceptional
-            performance.
+            {t.project.cupra.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -91,9 +86,9 @@ const Cupra = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                {t.project.categories.automotive}
               </p>
             </motion.div>
             <motion.div
@@ -173,12 +168,7 @@ const Cupra = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center  gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
-                For the first time in Morocco, we created an immersive video
-                display with a 3D illusion for the Cupra Formentor campaign.
-                This cutting-edge technology captured the public's attention
-                spectacularly, bringing the bold design of the Formentor to life
-                and enhancing the visual impact of the campaign. A creative
-                choice that perfectly reflected the spirit of the Cupra brand.
+                {t.project.cupra.display}
               </p>
             </div>
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">
@@ -204,15 +194,7 @@ const Cupra = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                For the launch of Cupra in Morocco, an ambassador was tasked
-                with driving the Cupra BORN from Barcelona to Casablanca, an
-                epic journey followed in real-time. The images of this journey
-                were shared on our social media, creating a strong connection
-                with our audience. The climax came when the ambassador arrived
-                in Casablanca on the day of the press conference and event,
-                marking the official start of the media and social media
-                campaign. This digital deployment strengthened engagement and
-                excitement around Cupra's launch in Morocco.
+                {t.project.cupra.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -302,21 +284,13 @@ const Cupra = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          Event
+          {t.project.cupra.eventt}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
           <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
             <div className="flex flex-col justify-center">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                During the launch of Cupra in Morocco, we had the honor of
-                welcoming the leaders of Cupra Spain for an exclusive press
-                conference. This event marked the beginning of the evening. To
-                offer a unique experience, we integrated artificial intelligence
-                and augmented reality activations, immersing guests in the
-                brand's futuristic universe. The Cupra NFT exhibition added an
-                innovative digital touch, highlighting Cupra’s commitment to the
-                future and technology. A memorable event that perfectly launched
-                the brand in the Moroccan market.
+                {t.project.cupra.events}
               </p>
             </div>
 
@@ -401,7 +375,6 @@ const staticpost = [
   { img: "/Cupra/static-posts/s2.webp" },
   { img: "/Cupra/static-posts/s3.webp" },
   { img: "/Cupra/static-posts/s4.webp" },
- 
 ];
 const shooting = [
   { img: "/Cupra/shooting/shooting2.webp" },

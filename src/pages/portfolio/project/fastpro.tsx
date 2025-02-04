@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Fastpro = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Fastpro = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -74,17 +75,7 @@ const Fastpro = () => {
             Fast Pro
           </h1>
           <p className=" tablet:text-lg text-justify">
-            We had the privilege of participating in the creation of FAST PRO, a
-            new brand of automotive service centers established by Foramag.
-            After making the strategic decision not to renew the MIDAS license
-            in 2018, Foramag sought to bring a breath of fresh air while
-            retaining the expertise of its teams. We supported this
-            transformation by creating a new visual identity, ensuring that the
-            same professionals—automotive maintenance experts—continue to
-            deliver quality service in the renovated and rebranded garages. Our
-            mission was to build clear and engaging communication around this
-            evolution, highlighting the continuity of excellent service while
-            asserting this dynamic and modern new image.
+            {t.project.fastpro.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -95,9 +86,9 @@ const Fastpro = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive Maintenance
+                {t.project.categories.automotiveMaintenance}
               </p>
             </motion.div>
             <motion.div
@@ -131,19 +122,13 @@ const Fastpro = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The logo
+          {t.project.fastpro.logo.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
           <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:-my-14 desktop:-my-28 laptop:gap-x-20 desktop:gap-x-20 py-5">
             <div className="flex flex-col justify-center">
               <p className=" text-justify laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
+                {t.project.fastpro.logo.description}
               </p>
             </div>
 
@@ -162,19 +147,13 @@ const Fastpro = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The campaign
+          {t.project.fastpro.campaign.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col  gap-y-5 ">
           <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
             <div className="flex flex-col justify-center">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                As part of the rebranding of FAST PRO, we designed a logo that
-                reflects the values of speed, performance, and expertise. This
-                modern logo, with clean lines and carefully chosen colors,
-                embodies Foramag’s innovative vision for its automotive service
-                centers. Through this design, we aimed to symbolize FAST PRO’s
-                commitment to providing quick and quality service while
-                maintaining a strong connection to the brand’s core values.
+                {t.project.fastpro.campaign.description}
               </p>
             </div>
 
@@ -193,22 +172,13 @@ const Fastpro = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The centers
+          {t.project.fastpro.centers.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                The new FAST PRO service centers offer an entirely new customer
-                experience, with modernized garages, a polished atmosphere, and
-                state-of-the-art equipment. We reimagined every visual and
-                functional aspect of these centers to provide a smoother, more
-                enjoyable experience while ensuring the expertise and quality
-                service that have built Foramag’s reputation. These new centers
-                reflect the brand’s commitment to evolve while staying true to
-                its values of competence, speed, and professionalism. Through
-                this transformation, we helped make every visit to these centers
-                a moment of trust and reassurance for customers.
+                {t.project.fastpro.centers.description}
               </p>
             </div>
             {/* <div className="flex items-center justify-center">

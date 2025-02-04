@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Porschefestival = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Porschefestival = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -73,12 +74,7 @@ const Porschefestival = () => {
             Porsche Festival 2024
           </h1>
           <p className=" tablet:text-lg text-justify">
-            The Porsche Festival 2024, held in Oued Zem, brought together for
-            the second consecutive year the passionate community of the brand.
-            This annual event, now a must-attend, welcomed around a hundred
-            guests and a hundred Porsches, setting a record for the largest
-            gathering of sports cars in Morocco, including the highest
-            concentration of 911s ever seen in the country.
+            {t.project.porsche.dsecription}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -89,9 +85,9 @@ const Porschefestival = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                {t.project.categories.automotive}
               </p>
             </motion.div>
             <motion.div
@@ -101,7 +97,7 @@ const Porschefestival = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center "
             >
-              <p className="text-lg">Client</p>
+              <p className="text-lg">{t.project.ccb.client}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
                 Centrale Automobile Chérifienne
               </p>
@@ -113,7 +109,7 @@ const Porschefestival = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-l-[1px] border-gray-500"
             >
-              <p className="text-lg">Brand</p>
+              <p className="text-lg">{t.project.ccb.brand}</p>
               <p className="text-md tablet:text-lg text-redeclic text-center">
                 Porsche
               </p>
@@ -165,15 +161,13 @@ const Porschefestival = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-3xl w-full h-24  px-20 flex  items-center"
         >
-          The Porsche experience
+          {t.project.porsche.porsheexperience.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
           <div className="grid grid-cols-1 laptop:grid-cols-2 laptop:gap-x-20 desktop:gap-x-0 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                Relive the best moments in images from this exceptional day.
-                From workshops to encounters, each moment was captured to keep a
-                lasting memory of this unique festival.
+                {t.project.porsche.porsheexperience.description}
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -232,19 +226,13 @@ const Porschefestival = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The Aftermovie
+          {t.project.porsche.aftermovie.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center  gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
-                A day full of experiences and sharing. Participants had the
-                chance to discover and enjoy various workshops, indulge in tasty
-                moments at the food court, and explore a curated display of the
-                latest models and classic cars.Through discoveries, discussions,
-                and activities, each space allowed everyone to fully experience
-                the spirit of the festival. Thank you to everyone who helped
-                make this event a success. See you soon for more adventures!
+                {t.project.porsche.aftermovie.description}
               </p>
             </div>
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">

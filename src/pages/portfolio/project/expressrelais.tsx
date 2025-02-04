@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Expressrelais = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Expressrelais = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -74,16 +75,7 @@ const Expressrelais = () => {
             Express Relais
           </h1>
           <p className=" tablet:text-lg text-justify">
-            For the launch of Express Relais, an innovative delivery system
-            using automated lockers, our mission was to design a communication
-            strategy tailored to two main targets: B2B, highlighting the
-            simplicity and speed of use for consumers receiving their parcels
-            independently, and B2C, showcasing the benefits for e-commerce sites
-            and retailers, such as faster delivery times and optimized costs.
-            The campaign was divided into generic visuals to introduce the
-            concept and its features, as well as targeted visuals emphasizing
-            specific advantages for each audience, positioning Express Relais as
-            an essential solution to streamline parcel logistics.
+            {t.project.expressrelais.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -94,9 +86,9 @@ const Expressrelais = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Delivery Service
+                {t.project.categories.deliveryService}
               </p>
             </motion.div>
             <motion.div
@@ -287,7 +279,6 @@ const Expressrelais = () => {
             </div>
           </div>
         </div> */}
-        
       </div>
       <Footer />
     </>

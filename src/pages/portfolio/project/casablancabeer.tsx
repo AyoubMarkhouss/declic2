@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Casablancabeer = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,6 +26,7 @@ const Casablancabeer = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
+  const { t } = useTranslation();
 
   React.useEffect(() => {
     if (!api) {
@@ -73,16 +75,7 @@ const Casablancabeer = () => {
             Feel The Spirit of Morocco
           </h1>
           <p className=" tablet:text-lg text-justify">
-            "Feel The Spirit of Morocco" is an immersive celebration of Moroccan
-            soul, blending authenticity and modernity through a unique
-            multisensory campaign. Driven by exclusive collaborations with
-            exceptional ambassadors – artist Blizzart for the limited-edition
-            design, chef Baya for inspired recipes, and musician ReqTeq for the
-            track and playlist "Spirits of Morocco" – this initiative embodies
-            Morocco's richness and diversity. From visual art to gastronomy and
-            music, each collaboration amplifies the essence of the country,
-            offering a holistic experience that unites local craftsmanship and
-            cultural authenticity.
+            {t.project.casabeer.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -93,9 +86,9 @@ const Casablancabeer = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Beverages
+                {t.project.categories.beverages}
               </p>
             </motion.div>
             <motion.div
@@ -168,16 +161,13 @@ const Casablancabeer = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Limited Edition
+          {t.project.casabeer.limitededition.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
-                This limited edition beer embodies the elegance and power of the
-                modern Berber queen, a symbol of the Moroccan spirit. Through
-                this unique design, we pay tribute to the richness of our
-                heritage while celebrating the fusion of tradition and modernity
+                {t.project.casabeer.limitededition.description}
               </p>
             </div>
             <div className=" laptop:col-span-1">
@@ -195,20 +185,13 @@ const Casablancabeer = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          Casablanca Anthem
+          {t.project.casabeer.anthem.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
-                Spirits of Morocco by ReqTeq is a musical journey that captures
-                the essence of Morocco in every beat. Fusing traditional rhythms
-                with contemporary soundscapes, this track immerses listeners in
-                the soul of the country, evoking its vibrant culture and rich
-                heritage. With ReqTeq's unique touch, "Spirits of Morocco"
-                brings to life the spirit of the land, creating an unforgettable
-                auditory experience that resonates deeply with the
-                heart of Morocco.
+                {t.project.casabeer.anthem.description}
               </p>
             </div>
             <div className=" laptop:col-span-1">
@@ -234,22 +217,7 @@ const Casablancabeer = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5">
             <div className="flex flex-col text-justify  gap-y-5">
               <p className="laptop:text-lg desktop:text-xl">
-                To accompany the launch of "Feel The Spirit of Morocco," we
-                carried out a massive digital deployment aimed at engaging our
-                community and maximizing the campaign's impact.
-              </p>
-              <p className="laptop:text-lg desktop:text-xl">
-                Captivating content was created to tell the story of the
-                campaign, showcase our collaborations with ambassadors, and
-                bring Morocco's essence to life through striking visuals. We
-                also organized interactive contests, giving the audience a
-                chance to win limited editions, exclusive goodies, and even
-                invitations to prestigious events.
-              </p>
-              <p className="laptop:text-lg desktop:text-xl">
-                This digital rollout was designed to reach as many people as
-                possible, creating moments of sharing and discovery while
-                strengthening the connection between our brand and the consumer.
+                {t.project.casabeer.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -315,19 +283,13 @@ const Casablancabeer = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The Aftermovie
+          {t.project.casabeer.aftermovie.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
-                Relive the highlights of our launch event, "Feel The Spirit of
-                Morocco," through this exclusive aftermovie. Immerse yourself in
-                a unique experience where art, music, gastronomy, and Moroccan
-                authenticity came together in an exceptional setting. Discover
-                the key moments, shared emotions, and inspiring collaborations
-                that brought Morocco's essence to life. A complete immersion in
-                a universe where every detail tells a story.
+                {t.project.casabeer.aftermovie.description}
               </p>
             </div>
             <div className=" laptop:col-span-1">

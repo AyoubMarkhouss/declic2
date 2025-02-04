@@ -19,6 +19,7 @@ import {
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Clickadialna = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -27,7 +28,7 @@ const Clickadialna = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -75,13 +76,7 @@ const Clickadialna = () => {
             Clicka Dialna
           </h1>
           <p className=" tablet:text-lg text-justify">
-            An innovative brand content concept, aligned with the communication
-            pillars of the Flag Spéciale brand, creating an engagement space
-            with our community beyond our Meta networks. This concept addresses
-            the challenge of promoting a beer brand in Morocco while respecting
-            the constraints related to collaborations with influencers and the
-            limitations of direct product visibility on platforms like YouTube
-            and TikTok.
+           {t.project.clicka.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -92,9 +87,9 @@ const Clickadialna = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Entertainment
+                {t.project.categories.entertainment}
               </p>
             </motion.div>
             <motion.div
@@ -171,13 +166,10 @@ const Clickadialna = () => {
           Behind The Scenes
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
-          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-5">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-20">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-start laptop:text-lg desktop:text-xl">
-                Dive into the behind-the-scenes of CLICKA DIALNA, where laughter
-                and surprises were the main attraction! Discover exclusive
-                moments and unseen footage from this unique concept, where our
-                influencer guests joined in on the fun with jokes.
+                {t.project.clicka.bts}
               </p>
             </div>
             {/* <div className="flex items-center justify-center">
@@ -242,20 +234,13 @@ const Clickadialna = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2 py-5 laptop:py-0 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify  gap-y-10">
               <p className="laptop:text-lg  desktop:text-xl laptop:max-w-lg  desktop:max-w-full">
-                "Bla Tferniss" is a Moroccan version of the global concept "Try
-                Not to Laugh," with an added touch of football—because why not?
-                It pits guests against each other in a laid-back and humorous
-                atmosphere that reflects our brand, without making any reference
-                to our product. Between discoveries, discussions, and fun
-                activities, each moment captured the true spirit of the
-                festival. Thank you to everyone who helped make this event a
-                success. See you soon for more adventures!
+                {t.project.clicka.episode}
               </p>
               <Link
                 href="https://www.youtube.com/@LClickaDialna"
-                className="fontmed flex justify-center items-center gap-x-3 shadow-lg w-full tablet:w-fit px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
+                className="fontmed flex uppercase justify-center items-center gap-x-3 shadow-lg w-full tablet:w-fit px-4 py-4 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
               >
-                MORE EPISODES <FaPlay />
+                {t.project.clicka.cta} <FaPlay />
               </Link>
             </div>
             <div className=" laptop:col-span-1 h-52 laptop:h-fit">

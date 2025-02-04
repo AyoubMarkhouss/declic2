@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Vw = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,6 +26,7 @@ const Vw = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
+  const { t } = useTranslation();
 
   React.useEffect(() => {
     if (!api) {
@@ -70,17 +72,10 @@ const Vw = () => {
         </div>
         <div className="flex flex-col gap-y-3 px-5 py-10 laptop:px-52 laptop:py-20">
           <h1 className="fontmed text-center laptop:text-start text-4xl">
-            Volkswagen Cinema
+            {t.project.vw.title}
           </h1>
           <p className=" tablet:text-lg text-justify">
-            Volkswagen Maroc partners with the Fête du Cinéma to celebrate the
-            7th art in four major cities across Morocco. As the official
-            sponsor, the brand shares this journey with the audience by offering
-            a unique cinematic experience. This partnership is an opportunity to
-            explore the world of cinema together, while highlighting the spirit
-            of innovation and conviviality that defines Volkswagen. Through this
-            event, the brand invites everyone to experience cinema in a new way,
-            with passion and authenticity.
+            {t.project.vw.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -91,9 +86,9 @@ const Vw = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Automotive
+                {t.project.categories.automotive}
               </p>
             </motion.div>
             <motion.div
@@ -259,21 +254,13 @@ const Vw = () => {
           by="character"
           className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
         >
-          The Deployement
+          {t.project.vw.deployement.title}
         </TextAnimate>
         <div className="px-5 laptop:px-20 flex flex-col gap-y-5 py-5 laptop:py-20">
           <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-7">
             <div className="flex flex-col text-justify justify-center gap-y-5">
               <p className="laptop:text-lg desktop:text-xl laptop:max-w-lg  desktop:w-full">
-                As part of our partnership with the Fête du Cinéma, Volkswagen
-                Maroc made a bold statement in cinemas through innovative
-                branding and an immersive exhibition. From visual elements to
-                carefully designed décor, every space was transformed to reflect
-                the spirit of the brand and the event. The audience was immersed
-                in a unique atmosphere where the worlds of Volkswagen and cinema
-                harmoniously merged. A true sensory journey that allowed
-                everyone to experience cinema in a fresh way, while showcasing
-                the brand’s core values: innovation, passion, and sharing.
+                {t.project.vw.deployement.description}
               </p>
             </div>
             <div className=" laptop:col-span-1 ">
@@ -342,5 +329,4 @@ const deployement = [
   { img: "/VW/deploiement/d6.webp" },
   { img: "/VW/deploiement/d7.webp" },
   { img: "/VW/deploiement/d8.webp" },
-  
 ];

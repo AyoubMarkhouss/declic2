@@ -17,6 +17,7 @@ import {
 } from "~/components/carousel";
 import { TextAnimate } from "~/components/ui/text-animate";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "~/context/TranslationContext";
 
 const Ainifrane = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -25,7 +26,7 @@ const Ainifrane = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -74,16 +75,7 @@ const Ainifrane = () => {
             Aïn Ifrane
           </h1>
           <p className=" tablet:text-lg text-justify">
-            As part of our collaboration with Aïn Ifrane, we designed and
-            deployed a comprehensive strategy encompassing all aspects of the
-            brand, from digital to trade. This strategy revolves around the
-            iconic claim, "Ressourcez-vous où que vous soyez" ("Recharge
-            wherever you are"), highlighting the importance of recharging in
-            every moment of life. By developing impactful campaigns and creative
-            concepts that embody this commitment, we also supported the launch
-            of the "Aïn Ifrane chez vous" delivery service, further
-            strengthening the brand's connection with its consumers and its role
-            as a trusted daily partner.
+            {t.project.ainifrane.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -94,9 +86,9 @@ const Ainifrane = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="flex gap-2 flex-col fontmed items-center justify-center border-r-[1px] border-gray-500"
             >
-              <p className="text-lg">Category</p>
+              <p className="text-lg">{t.project.ccb.category}</p>
               <p className="text-md tablet:text-lg text-redeclic  text-center">
-                Beverages
+                {t.project.categories.beverages}
               </p>
             </motion.div>
             <motion.div
@@ -175,14 +167,7 @@ const Ainifrane = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-3 laptop:gap-x-10 desktop:gap-x-20 gap-y-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                In parallel, we orchestrated an ambitious digital deployment,
-                blending innovation with consistency. A campaign focused on the
-                "Aïn Ifrane chez vous" home delivery service was launched to
-                meet the modern needs of consumers while ensuring their daily
-                replenishment. Simultaneously, we spread the new brand idea
-                through captivating content and a strengthened presence across
-                all digital platforms, ensuring optimal visibility and authentic
-                engagement with the brand’s diverse audiences.
+                {t.project.ainifrane.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -247,15 +232,7 @@ const Ainifrane = () => {
           <div className="grid grid-cols-1 laptop:grid-cols-2  laptop:gap-x-20 laptop:py-10 desktop:gap-x-20 py-5">
             <div className="flex flex-col justify-center">
               <p className=" text-justify  laptop:text-lg desktop:text-xl">
-                In response to the water shortage, Aïn Ifrane turned a challenge
-                into an opportunity for meaningful engagement. By branding its
-                trucks with a bold and unexpected message – "Don’t wash me,
-                water is scarce!" – the brand took a stand on a crucial social
-                responsibility issue. This simple yet impactful gesture not only
-                raised public awareness about the importance of conserving this
-                precious resource but also reinforced Aïn Ifrane’s image as a
-                committed and responsible brand. An initiative widely praised
-                for its relevance and authenticity.
+                {t.project.ainifrane.activation}
               </p>
             </div>
 
@@ -378,11 +355,9 @@ const staticpost = [
   { img: "/Ainifrane/static-posts/post7.webp" },
   { img: "/Ainifrane/static-posts/post8.webp" },
   { img: "/Ainifrane/static-posts/post9.webp" },
-  
 ];
 
 const activation = [
   { img: "/Ainifrane/activations/activation1.webp" },
   { img: "/Ainifrane/activations/activation2.webp" },
-  
 ];
