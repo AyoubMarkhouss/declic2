@@ -11,7 +11,7 @@ export default function Sheepsection() {
           autoPlay
           loop
           muted
-          className="object-cover cursor-not-allowed absolute bottom-0 w-full h-full "
+          className="object-cover pointer-events-none cursor-not-allowed absolute bottom-0 w-full h-full "
         />
       </div>
       <div className="relative grid grid-cols-1 md:grid-cols-4 tablet:gap-x-5 px-5 tablet:px-20">
