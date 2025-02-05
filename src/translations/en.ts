@@ -201,4 +201,68 @@ export const en = {
       },
     },
   },
+
+  clients: {
+    cta:"Back to clients",
+    audi: "Porsche is synonymous with sports car excellence, offering vehicles that boast unmatched precision, performance, and style. From racetracks to the open road, Porsche delivers a thrilling driving experience like no other.",
+    flagSpecialeOriginal:
+      "Beer produced locally by Brasseries du Maroc, appreciated for its authentic taste.",
+    casablancaBeer:
+      "An iconic Moroccan beer, known for its quality and subtle aroma, symbolizing conviviality and hospitality.",
+    porscheMorocco:
+      "Official representative of Porsche in Morocco, distributed by the Centrale Automobile Chérifienne. Porsche Morocco offers luxury vehicles combining performance, design, and technology.",
+    cupraMorocco:
+      "A brand derived from SEAT, specializing in sports and high-performance cars.",
+    seatMorocco:
+      "A subsidiary of the Spanish brand, SEAT Morocco offers modern and accessible models, combining safety and innovation.",
+    flagSpecialeGold:
+      "Premium Moroccan beer, recognized for its superior quality and refined taste.",
+    ainIfrane:
+      "Natural spring water from the Ifrane region, renowned for its purity and health benefits.",
+    universalMusicMaghreb:
+      "The branch of the giant Universal Music, representing music and artists from the Maghreb, contributing to the global reach of regional musical culture.",
+    volkswagenMorocco:
+      "Presence of the German brand, offering reliable and high-performance vehicles adapted to the Moroccan market.",
+    motulAfrica:
+      "Specialist in vehicle oils and lubricants, Motul Africa stands out for the quality and performance of its products used by professionals and individuals.",
+    castelFrance:
+      "A French wine group, including prestigious brands like Châteaux Castel and Maison Castel, known for its expertise in producing quality wines.",
+    volkswagenFleet:
+      "A service that groups all Volkswagen Group brands for corporate clients, offering fleet management solutions tailored to business needs.",
+    lClickaDialna:
+      "A Moroccan YouTube channel creating diverse content that showcases local culture and trends.",
+    vinsDici:
+      "A range of Moroccan wines including Comptesse, Kasbaha, Halana, Bonassia, and Vignes d'Azour, offering a diverse selection of locally produced quality wines.",
+    stork:
+      "Popular Moroccan beer, appreciated for its refreshing taste and accessibility.",
+    alJabr:
+      "A Moroccan school offering modern and high-quality education, promoting skill development and student growth.",
+    yassamine:
+      "A school in Casablanca offering a comprehensive educational program, focusing on both academic and personal development for students.",
+    britishInternationalSchoolOfCasablancaBISC:
+      "A high-quality British educational institution, offering a multicultural environment and a rigorous academic program.",
+    seriderm:
+      "Importer of aesthetic and medical laser machines, offering state-of-the-art equipment for professionals in the beauty and healthcare sectors.",
+    marinaShopping:
+      "A luxury shopping mall in Casablanca, featuring both international and local brands.",
+    tachfineCenter:
+      "A shopping mall in Casablanca, offering a wide selection of stores, restaurants, and services for a complete shopping experience.",
+    g4s: "An international security group specializing in risk management and security services globally.",
+    flagSpecialeBlack:
+      "Moroccan amber beer, offering a rich and intense flavor, ideal for lovers of stronger beers.",
+    renaultMorocco:
+      "A French automotive manufacturer offering a wide range of vehicles, from city cars to utility vehicles, combining technology and performance.",
+    daciaMorocco:
+      "A brand of the Renault Group, offering affordable, robust, and reliable cars, perfect for the Moroccan market.",
+    fastProMorocco:
+      "An automotive service center providing vehicle maintenance and repair services.",
+    midasMorocco:
+      "A network of auto centers offering quality maintenance and repair services across Morocco.",
+    beachMama:
+      "A beachfront restaurant in Casablanca and pool club in Marrakech, offering a unique culinary experience with a relaxed and modern ambiance.",
+    anatolia:
+      "Premium Turkish restaurant in Casablanca, offering authentic cuisine in a warm atmosphere.",
+    expressRelais:
+      "A delivery and automated parcel locker service in Morocco, facilitating the quick and secure sending and receiving of packages.",
+  },
 };

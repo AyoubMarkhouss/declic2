@@ -11,7 +11,6 @@ import { useState } from "react";
 import ViewMore from "~/components/icons/viewMore";
 import { useTranslation } from "~/context/TranslationContext";
 
-
 export default function Portfolio() {
   // Function to load more works
   const { t } = useTranslation();
@@ -41,7 +40,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="text-center text-gray-500 text-sm tablet:text-lg laptop:max-w-[70%] pb-5"
             >
-             {t.home.description}
+              {t.home.description}
             </motion.p>
             <div className="flex gap-x-5">
               <Link
@@ -77,7 +76,8 @@ export default function Portfolio() {
                 {client?.title}
               </h1>
               <p className="text-lg text-justify text-gray-700">
-                {client?.description}
+                {/* {client?.description} */}
+                {t.clients[client?.description as keyof typeof t.clients]}
               </p>
 
               {work
@@ -108,7 +108,13 @@ export default function Portfolio() {
                           </h1>
                           <FaChevronRight className="group-hover:fill-redeclic" />
                         </div>
-                        <p className="text-sm ">{g.category}</p>
+                        <p className="text-sm ">
+                          {
+                            t.home.workCategories[
+                              g.category as keyof typeof t.home.workCategories
+                            ]
+                          }
+                        </p>
                       </div>
                     </Link>
                   );
@@ -117,7 +123,7 @@ export default function Portfolio() {
                 href="/portfolio?section=client"
                 className="fontmed mt-20 px-4 py-2 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
               >
-                Back to Clients
+                {t.clients.cta}
               </Link>
             </div>
             <div></div>
@@ -128,133 +134,146 @@ export default function Portfolio() {
     </>
   );
 }
+type WorkCategory =
+  | "entertainment"
+  | "automotive"
+  | "beverages"
+  | "automotiveMaintenance"
+  | "deliveryService";
+interface WorkItem {
+  title: string;
+  image: string;
+  category: WorkCategory;
+  link: string;
+  brand: string;
+}
 
-const work = [
+const work: WorkItem[] = [
   {
     title: "L'Clicka Dialna",
     image: "/AboutUs/ClickaDialna.jpg",
-    category: "Entertainment",
-    date: "25 avril 2024",
+    category: "entertainment",
+   
     link: "/portfolio/project/clickadialna",
     brand: "L'Clicka Dialna",
   },
   {
     title: "Porsche Morocco",
     image: "/AboutUs/PorscheFestival.jpg",
-    category: "Automotive",
-    date: "25 avril 2024",
+    category: "automotive",
+    
     link: "/portfolio/project/porschefestival",
     brand: "Porsche Morocco",
   },
   {
     title: "Casablanca Beer",
     image: "/AboutUs/CasablancaBeer.jpg",
-    category: "Beverages",
+    category: "beverages",
     link: "/portfolio/project/casablancabeer",
     brand: "Casablanca beer",
   },
   {
     title: "SEAT Attitude",
     image: "/AboutUs/SeatAttitude.jpg",
-    category: "Automotive",
-    date: "26 avril 2024",
+    category: "automotive",
+   
     link: "/portfolio/project/seat",
     brand: "SEAT Morocco",
   },
   {
     title: "Fast Pro",
     image: "/AboutUs/FastPro.webp",
-    category: "Automotive maintenance",
-    date: "26 avril 2024",
+    category: "automotiveMaintenance",
+ 
     link: "/portfolio/project/fastpro",
     brand: "Fast Pro Morocco",
   },
   {
     title: "Aïn Ifrane",
     image: "/Ainifrane/AinIfrane.webp",
-    category: "Beverages",
-    date: "26 avril 2024",
+    category: "beverages",
+
     link: "/portfolio/project/ainifrane",
     brand: "Aïn Ifrane",
   },
   {
     title: "Cupra Morocco",
     image: "/Cupra/Cupra.webp",
-    category: "Automobile",
-    date: "26 avril 2024",
+    category: "automotive",
+  
     link: "/portfolio/project/cupra",
     brand: "Cupra Morocco",
   },
   {
     title: "Express Relais",
     image: "/Expressrelais/ExpressRelais.webp",
-    category: "Automotive maintenance",
-    date: "27 avril 2024",
+    category: "automotiveMaintenance",
+
     link: "/portfolio/project/expressrelais",
     brand: "Express Relais",
   },
   {
     title: "Flag Spéciale Original",
     image: "/FSO/fso-cover.webp",
-    category: "Beverages",
-    date: "27 avril 2024",
+    category: "beverages",
+
     link: "/portfolio/project/flagspecialeoriginal",
     brand: "Flag Speciale Original",
   },
   {
     title: "Volkswagen Cinema",
     image: "/VW/vw-cover.webp",
-    category: "Automotive",
-    date: "27 avril 2024",
+    category: "automotive",
+
     link: "/portfolio/project/vw",
     brand: "Volkswagen Morocco",
   },
-  {
-    title: "Project 4",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
-    category: "Automobile",
-    date: "28 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 5",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
-    category: "Automobile",
-    date: "29 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 6",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
-    category: "Automobile",
-    date: "30 avril 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 7",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg",
-    category: "Automobile",
-    date: "1 mai 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 8",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg",
-    category: "Automobile",
-    date: "2 mai 2024",
-    link: "",
-    brand: "",
-  },
-  {
-    title: "Project 9",
-    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
-    category: "Automobile",
-    date: "3 mai 2024",
-    link: "",
-    brand: "",
-  },
+  // {
+  //   title: "Project 4",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+  //   category: "Automobile",
+  //   date: "28 avril 2024",
+  //   link: "",
+  //   brand: "",
+  // },
+  // {
+  //   title: "Project 5",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
+  //   category: "Automobile",
+  //   date: "29 avril 2024",
+  //   link: "",
+  //   brand: "",
+  // },
+  // {
+  //   title: "Project 6",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
+  //   category: "Automobile",
+  //   date: "30 avril 2024",
+  //   link: "",
+  //   brand: "",
+  // },
+  // {
+  //   title: "Project 7",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg",
+  //   category: "Automobile",
+  //   date: "1 mai 2024",
+  //   link: "",
+  //   brand: "",
+  // },
+  // {
+  //   title: "Project 8",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg",
+  //   category: "Automobile",
+  //   date: "2 mai 2024",
+  //   link: "",
+  //   brand: "",
+  // },
+  // {
+  //   title: "Project 9",
+  //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg",
+  //   category: "Automobile",
+  //   date: "3 mai 2024",
+  //   link: "",
+  //   brand: "",
+  // },
 ];

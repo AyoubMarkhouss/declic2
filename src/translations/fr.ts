@@ -202,4 +202,68 @@ export const fr = {
       },
     },
   },
+
+  clients: {
+    cta: "Retour aux clients",
+    audi: "Audi est synonyme d'excellence dans le domaine des voitures de sport, offrant des véhicules qui se distinguent par une précision, une performance et un style incomparables. Des circuits aux routes, Audi offre une expérience de conduite inégalée.",
+    flagSpecialeOriginal:
+      "Bière produite localement par les Brasseries du Maroc, appréciée pour son goût authentique.",
+    casablancaBeer:
+      "Une bière marocaine emblématique, reconnue pour sa qualité et son arôme subtil, symbolisant la convivialité et l'hospitalité.",
+    porscheMorocco:
+      "Représentant officiel de Porsche au Maroc, distribué par la Centrale Automobile Chérifienne. Porsche Morocco propose des véhicules de luxe alliant performance, design et technologie.",
+    cupraMorocco:
+      "Une marque dérivée de SEAT, spécialisée dans les voitures sportives et haute performance.",
+    seatMorocco:
+      "Filiale de la marque espagnole, SEAT Morocco propose des modèles modernes et accessibles, alliant sécurité et innovation.",
+    flagSpecialeGold:
+      "Bière marocaine premium, reconnue pour sa qualité supérieure et son goût raffiné.",
+    ainIfrane:
+      "Eau de source naturelle provenant de la région d'Ifrane, réputée pour sa pureté et ses bienfaits pour la santé.",
+    universalMusicMaghreb:
+      "La branche du géant Universal Music, représentant la musique et les artistes du Maghreb, contribue à la diffusion mondiale de la culture musicale régionale.",
+    volkswagenMorocco:
+      "La présence de la marque allemande, offrant des véhicules fiables et performants, adaptés au marché marocain.",
+    motulAfrica:
+      "Spécialiste des huiles et lubrifiants automobiles, Motul Africa se distingue par la qualité et la performance de ses produits utilisés par les professionnels et les particuliers.",
+    castelFrance:
+      "Un groupe viticole français regroupant des marques prestigieuses telles que Châteaux Castel et Maison Castel, reconnu pour son expertise dans la production de vins de qualité.",
+    volkswagenFleet:
+      "Un service regroupant toutes les marques du groupe Volkswagen pour les entreprises, offrant des solutions de gestion de flotte adaptées aux besoins professionnels.",
+    lClickaDialna:
+      "Une chaîne YouTube marocaine qui crée un contenu diversifié mettant en valeur la culture et les tendances locales.",
+    vinsDici:
+      "Une gamme de vins marocains comprenant Comptesse, Kasbaha, Halana, Bonassia et Vignes d'Azour, offrant une sélection diversifiée de vins locaux de qualité.",
+    stork:
+      "Bière marocaine populaire, appréciée pour sa fraîcheur et son accessibilité.",
+    alJabr:
+      "Une école marocaine offrant une éducation moderne et de haute qualité, favorisant le développement des compétences et la croissance des élèves.",
+    yassamine:
+      "Une école à Casablanca proposant un programme éducatif complet, axé sur le développement académique et personnel des étudiants.",
+    britishInternationalSchoolOfCasablancaBISC:
+      "Une institution éducative britannique de haute qualité, offrant un environnement multiculturel et un programme académique rigoureux.",
+    seriderm:
+      "Importateur de machines laser esthétiques et médicales, fournissant du matériel de pointe pour les professionnels de la beauté et de la santé.",
+    marinaShopping:
+      "Un centre commercial de luxe à Casablanca, regroupant des marques internationales et locales.",
+    tachfineCenter:
+      "Un centre commercial à Casablanca offrant une large sélection de boutiques, de restaurants et de services pour une expérience de shopping complète.",
+    g4s: "Un groupe international de sécurité spécialisé dans la gestion des risques et les services de sécurité à l'échelle mondiale.",
+    flagSpecialeBlack:
+      "Bière ambrée marocaine, offrant une saveur riche et intense, idéale pour les amateurs de bières plus corsées.",
+    renaultMorocco:
+      "Un constructeur automobile français proposant une large gamme de véhicules, des citadines aux utilitaires, alliant technologie et performance.",
+    daciaMorocco:
+      "Une marque du groupe Renault, offrant des voitures abordables, robustes et fiables, parfaitement adaptées au marché marocain.",
+    fastProMorocco:
+      "Un centre de services automobiles fournissant des prestations d'entretien et de réparation de véhicules.",
+    midasMorocco:
+      "Un réseau de centres automobiles offrant des services d'entretien et de réparation de qualité à travers le Maroc.",
+    beachMama:
+      "Un restaurant en bord de mer à Casablanca et un club piscine à Marrakech, offrant une expérience culinaire unique dans une ambiance détendue et moderne.",
+    anatolia:
+      "Un restaurant turc haut de gamme à Casablanca, proposant une cuisine authentique dans une atmosphère chaleureuse.",
+    expressRelais:
+      "Un service de livraison et de consigne automatisée au Maroc, facilitant l'envoi et la réception rapide et sécurisé des colis.",
+  },
 };
