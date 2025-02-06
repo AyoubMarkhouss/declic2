@@ -124,15 +124,13 @@ const Fsg = () => {
 export default Fsg;
 
 const images = [
-  { g: "/Halloffame-images/FSO/1.webp" },
-  { g: "/Halloffame-images/FSO/2.webp" },
-  { g: "/Halloffame-images/FSO/3.webp" },
-  { g: "/Halloffame-images/FSO/4.webp" },
-  { g: "/Halloffame-images/FSO/5.webp" },
-  { g: "/Halloffame-images/FSO/6.webp" },
-  { g: "/Halloffame-images/FSO/7.webp" },
-  { g: "/Halloffame-images/FSO/8.webp" },
-  { g: "/Halloffame-images/FSO/9.webp" },
-  { g: "/Halloffame-images/FSO/10.webp" },
-  { g: "/Halloffame-images/FSO/11.webp" },
+  { g: "/Halloffame-images/FSG/1.webp" },
+  { g: "/Halloffame-images/FSG/2.webp" },
+  { g: "/Halloffame-images/FSG/3.webp" },
+  { g: "/Halloffame-images/FSG/4.webp" },
+  { g: "/Halloffame-images/FSG/5.webp" },
+  { g: "/Halloffame-images/FSG/6.webp" },
+  { g: "/Halloffame-images/FSG/7.webp" },
+  { g: "/Halloffame-images/FSG/8.webp" },
+ 
 ];
