@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import HorizontalScrollCarousel from "~/components/horizontalScrollCarousel";
 import Footer from "~/components/footer";
@@ -8,15 +8,17 @@ import Sheepsection from "~/components/sheepsection";
 import Header from "~/components/header-burger";
 import LanguageSwitcher from "~/components/LanguageSwitcher";
 
+export const metadata = {
+  title: "Declic Agency | Home",
+  description:
+    "Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success.",
+  icons: {
+    icon: "/declic-red.png",
+  },
+};
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
-  useEffect(() => {
-    const metaTag = document.querySelector('meta[name="description"]');
-    const metaDescription = metaTag
-      ? metaTag.getAttribute("content")
-      : "Default description";
-    console.log("Meta Description:", metaDescription);
-  }, []);
+
   return (
     <div>
       <Head>
