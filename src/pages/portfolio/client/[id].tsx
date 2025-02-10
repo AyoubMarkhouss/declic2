@@ -192,7 +192,6 @@ const work: WorkItem[] = [
     title: "Aïn Ifrane",
     image: "/Ainifrane/AinIfrane.webp",
     category: "beverages",
-
     link: "/portfolio/project/ainifrane",
     brand: "Aïn Ifrane",
   },

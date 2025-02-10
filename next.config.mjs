@@ -2,6 +2,7 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  // output: "export",
   images: {
     remotePatterns: [
       {
@@ -18,11 +19,11 @@ const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   swcMinify: true,
 
-  i18n: {
-    locales: ["en", "fr"], // Add your supported locales here
-    defaultLocale: "en",
-    localeDetection: true, // Set the default locale
-  },
+  // i18n: {
+  //   locales: ["en", "fr"],
+  //   defaultLocale: "en",
+  //   localeDetection: true,
+  // },
 };
 
 export default nextConfig;

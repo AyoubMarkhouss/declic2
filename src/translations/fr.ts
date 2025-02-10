@@ -95,7 +95,8 @@ export const fr = {
 
       cta: "Plus d’épisodes",
       bts: "Plongez dans les coulisses de CLICKA DIALNA, où rires et surprises étaient au rendez-vous ! Découvrez les moments inédits et behind the scenes de ce concept unique, où nos invités influenceurs se sont prêtés au jeu des blagues.",
-      socialmedia: "",
+      socialmedia:
+        "Sur les réseaux sociaux, une large opération de cross-posting a été mise en place avec la page Flag Spéciale Original pour assurer le linking. Les moments forts de l’émission ont également été diffusés sur TikTok et YouTube Shorts, permettant une stratégie de diffusion optimisée pour toucher une audience plus large et renforcer l’engagement à travers un contenu court, percutant et viral.",
     },
     fastpro: {
       description:
@@ -164,7 +165,6 @@ export const fr = {
       activation:
         "Face à la pénurie d’eau, Aïn Ifrane a choisi de transformer une problématique en opportunité d'engagement. En habillant ses camions d’un message fort et inattendu – 'Ne me lavez pas, l’eau se fait rare !'' – la marque a pris position sur une question cruciale de responsabilité sociétale. Ce geste simple mais impactant a non seulement sensibilisé le public à l’importance de préserver cette ressource précieuse, mais a également renforcé l’image d’Aïn Ifrane comme acteur engagé. Une initiative qui a été saluée pour sa pertinence et son authenticité.",
     },
-
     expressrelais: {
       description:
         "Pour le lancement d’Express Relais, un système innovant de livraison via des bornes automatiques, notre mission était de concevoir une stratégie de communication adaptée à deux cibles principales : le B2B, en mettant en avant la simplicité et la rapidité d’utilisation pour les consommateurs qui reçoivent leurs colis de manière autonome, et le B2C, en valorisant les avantages pour les sites d’achat en ligne et les commerçants, tels que la réduction des délais de livraison et l’optimisation des coûts. Nous avons décliné la campagne en visuels génériques, présentant le concept et ses fonctionnalités, et en visuels axés sur les avantages spécifiques pour chaque cible, positionnant ainsi Express Relais comme une solution incontournable pour simplifier la logistique des colis.",

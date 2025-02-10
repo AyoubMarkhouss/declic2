@@ -91,7 +91,8 @@ export const en = {
         "'Bla Tferniss' is a Moroccan version of the global concept 'Try Not to Laugh', with an added touch of football—because why not? It pits guests against each other in a laid-back and humorous atmosphere that reflects our brand, without making any reference to our product. Between discoveries, discussions, and fun activities, each moment captured the true spirit of the festival. Thank you to everyone who helped make this event a success. See you soon for more adventures!",
       cta: "more episodes",
       bts: "Dive into the behind-the-scenes of CLICKA DIALNA, where laughter and surprises were the main attraction! Discover exclusive moments and unseen footage from this unique concept, where our influencer guests joined in on the fun with jokes.",
-      socialmedia: "",
+      socialmedia:
+        "On social media, a wide cross-posting operation was implemented with the Flag Spéciale Original page to ensure linking. The highlights of the show were also shared on TikTok and YouTube Shorts, enabling an optimized distribution strategy to reach a wider audience and strengthen engagement through short, impactful, and viral content.",
     },
 
     fastpro: {
@@ -203,7 +204,7 @@ export const en = {
   },
 
   clients: {
-    cta:"Back to clients",
+    cta: "Back to clients",
     audi: "Porsche is synonymous with sports car excellence, offering vehicles that boast unmatched precision, performance, and style. From racetracks to the open road, Porsche delivers a thrilling driving experience like no other.",
     flagSpecialeOriginal:
       "Beer produced locally by Brasseries du Maroc, appreciated for its authentic taste.",

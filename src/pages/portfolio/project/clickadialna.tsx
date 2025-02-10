@@ -28,7 +28,7 @@ const Clickadialna = () => {
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
   const [api, setApi] = React.useState<CarouselApi>();
-const { t } = useTranslation();
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (!api) {
       return;
@@ -76,7 +76,7 @@ const { t } = useTranslation();
             Clicka Dialna
           </h1>
           <p className=" tablet:text-lg text-justify">
-           {t.project.clicka.description}
+            {t.project.clicka.description}
           </p>
 
           <div className="grid grid-cols-3 pt-10">
@@ -266,10 +266,7 @@ const { t } = useTranslation();
           <div className="grid grid-cols-1 laptop:grid-cols-3 gap-y-5 gap-x-5">
             <div className="flex flex-col justify-center gap-y-5">
               <p className=" text-justify laptop:text-lg desktop:text-xl">
-                Dive into the behind-the-scenes of CLICKA DIALNA, where laughter
-                and surprises were the main attraction! Discover exclusive
-                moments and unseen footage from this unique concept, where our
-                influencer guests joined in on the fun with jokes.
+                {t.project.clicka.socialmedia}
               </p>
             </div>
             <div className="flex items-center justify-center">
