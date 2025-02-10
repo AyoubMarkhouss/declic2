@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import HorizontalScrollCarousel from "~/components/horizontalScrollCarousel";
 import Footer from "~/components/footer";
@@ -10,11 +10,21 @@ import LanguageSwitcher from "~/components/LanguageSwitcher";
 
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
-
+  useEffect(() => {
+    const metaTag = document.querySelector('meta[name="description"]');
+    const metaDescription = metaTag
+      ? metaTag.getAttribute("content")
+      : "Default description";
+    console.log("Meta Description:", metaDescription);
+  }, []);
   return (
     <div>
       <Head>
         <title>Declic Agency | Home</title>
+        <meta
+          name="description"
+          content="Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success."
+        />
 
         <link rel="icon" href="/declic-red.png" />
       </Head>
