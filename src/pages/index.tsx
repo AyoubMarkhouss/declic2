@@ -15,10 +15,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Declic Agency | Home</title>
-        <meta
-          name="description"
-          content="Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success."
-        />
 
         <link rel="icon" href="/declic-red.png" />
       </Head>
