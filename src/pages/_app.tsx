@@ -12,14 +12,6 @@ import {
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-export const metadata = {
-  title: "Declic Agency | Home",
-  description:
-    "Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success.",
-  icons: {
-    icon: "/declic-red.png",
-  },
-};
 function App({ Component, pageProps }: AppProps) {
   return (
     <ReactLenis root>

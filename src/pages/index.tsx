@@ -8,14 +8,6 @@ import Sheepsection from "~/components/sheepsection";
 import Header from "~/components/header-burger";
 import LanguageSwitcher from "~/components/LanguageSwitcher";
 
-export const metadata = {
-  title: "Declic Agency | Home",
-  description:
-    "Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success.",
-  icons: {
-    icon: "/declic-red.png",
-  },
-};
 export default function Home() {
   const [open, setOpen] = useState<boolean>(false);
 
