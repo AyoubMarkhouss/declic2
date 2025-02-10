@@ -13,12 +13,36 @@ export default function Home() {
 
   return (
     <div>
-      <Header open={open} setOpen={setOpen} />
-      <div className={`${open ? "" : "block"}`}>
-        <Herovideo />
-        <Sheepsection />
-        <HorizontalScrollCarousel />
-        <Footer />
+      <Head>
+        <title>Declic Agency | Home</title>
+        <meta
+          name="description"
+          content="Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/declic-red.png" />
+
+        {/* Open Graph Meta Tags */}
+        <meta
+          property="og:title"
+          content="Declic Agency | Creative Communication Experts"
+        />
+        <meta
+          property="og:description"
+          content="Declic Agency redefines communication in Morocco with fearless creativity and strategic brilliance. We craft bold, memorable campaigns that captivate audiences and drive success."
+        />
+        <meta property="og:image" content="/declic-red.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://declicagency.com" />
+      </Head>
+      <div>
+        <Header open={open} setOpen={setOpen} />
+        <div className={`${open ? "" : "block"}`}>
+          <Herovideo />
+          <Sheepsection />
+          <HorizontalScrollCarousel />
+          <Footer />
+        </div>
       </div>
     </div>
   );
