@@ -33,7 +33,7 @@ export default function Home() {
         />
         <meta property="og:image" content="/declic-red.png" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://declicagency.com" />
+       
       </Head>
       <div>
         <Header open={open} setOpen={setOpen} />
