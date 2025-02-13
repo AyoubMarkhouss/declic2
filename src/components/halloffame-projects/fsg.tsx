@@ -101,13 +101,13 @@ const Fsg = () => {
           ref={(slider) => {
             if (slider) sliderRef2.current = slider;
           }}
-          slidesToShow={4}
+          slidesToShow={3}
           swipeToSlide={true}
           focusOnSelect={true}
         >
           {images.map((image, j) => (
             <Image
-              className="w-5 px-10 h-fit object-cover"
+              className="w-5 px-2 h-fit object-cover"
               key={j}
               src={image.g}
               alt="image"

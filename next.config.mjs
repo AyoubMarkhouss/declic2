@@ -4,6 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   // output: "export",
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -19,11 +20,7 @@ const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   swcMinify: true,
 
-  // i18n: {
-  //   locales: ["en", "fr"],
-  //   defaultLocale: "en",
-  //   localeDetection: true,
-  // },
+
 };
 
 export default nextConfig;
