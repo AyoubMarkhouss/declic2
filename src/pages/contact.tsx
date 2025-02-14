@@ -60,7 +60,7 @@ export default function Page() {
 
       .then(
         () => {
-          toast.success("message envoyé!");
+          toast.success("Message envoyé!");
         },
         () => {
           toast.error("Quelque chose ne va pas :(");
@@ -97,7 +97,7 @@ export default function Page() {
                   placeholder="First name"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.firstname}
                 </label>
               </div>
@@ -110,7 +110,7 @@ export default function Page() {
                   placeholder="Last name"
                   required
                 />
-                <label className="absolute -z-10  left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.lastname}
                 </label>
               </div>
@@ -123,20 +123,26 @@ export default function Page() {
                   id="email"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   E-mail
                 </label>
               </div>
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full outline-none bg-transparent px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="tel"
+                  type="text"
+                  inputMode="numeric"
+                  pattern="\d*"
                   placeholder="Phone number"
                   name="phone"
                   id="phone"
+                  onInput={(e) => {
+                    const input = e.target as HTMLInputElement;
+                    input.value = input.value.replace(/\D/g, "");
+                  }}
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.phonenumber}
                 </label>
               </div>
@@ -148,7 +154,7 @@ export default function Page() {
                   name="message"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   Message
                 </label>
               </div>
@@ -278,7 +284,7 @@ export default function Page() {
                   placeholder="First name"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.firstname}
                 </label>
               </div>
@@ -291,7 +297,7 @@ export default function Page() {
                   placeholder="Last name"
                   required
                 />
-                <label className="absolute -z-10  left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.lastname}
                 </label>
               </div>
@@ -304,20 +310,26 @@ export default function Page() {
                   id="email"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   E-mail
                 </label>
               </div>
               <div className="relative  w-full">
                 <input
                   className="peer h-fit w-full outline-none bg-transparent px-2 py-1 border-black focus:border-redeclic border-b placeholder-transparent"
-                  type="tel"
+                  type="text"
+                  inputMode="numeric"
+                  pattern="\d*"
                   placeholder="Phone number"
                   name="phone"
                   id="phone"
+                  onInput={(e) => {
+                    const input = e.target as HTMLInputElement;
+                    input.value = input.value.replace(/\D/g, "");
+                  }}
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   {t.contact.phonenumber}
                 </label>
               </div>
@@ -329,7 +341,7 @@ export default function Page() {
                   name="message"
                   required
                 />
-                <label className="absolute -z-10 left-2 top-1/2 transform -translate-y-1/2 text-black transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-sm peer-focus:text-redeclic">
+                <label className="absolute -z-10 left-2 transform text-black -top-3 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 text-sm peer-focus:text-redeclic">
                   Message
                 </label>
               </div>

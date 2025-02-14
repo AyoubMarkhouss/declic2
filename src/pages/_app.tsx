@@ -11,7 +11,7 @@ import {
 } from "~/context/TranslationContext";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-
+import { redirect } from "next/navigation";
 function App({ Component, pageProps }: AppProps) {
   return (
     <ReactLenis root>

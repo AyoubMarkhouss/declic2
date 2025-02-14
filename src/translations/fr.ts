@@ -46,7 +46,7 @@ export const fr = {
     call: "Appelez-nous",
     firstname: "Prénom",
     lastname: "Nom",
-    phonenumber: "téléphone",
+    phonenumber: "Téléphone",
     submit: "Envoyer",
   },
 

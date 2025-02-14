@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaChevronRight } from "react-icons/fa";
 import Footer from "~/components/footer";
-import { clients } from "..";
+import { clients } from "~/data/Clients";
 import { motion } from "framer-motion";
 import { TextAnimate } from "~/components/ui/text-animate";
 import Header from "~/components/header-burger";
@@ -44,7 +44,7 @@ export default function Portfolio() {
             </motion.p>
             <div className="flex gap-x-5">
               <Link
-                href={`/portfolio?section=work`}
+                href={`/?section=work`}
                 className={`px-4 text-2xl py-2 rounded ${
                   section === "work" ? "text-redeclic" : "text-black"
                 }`}
@@ -120,7 +120,7 @@ export default function Portfolio() {
                   );
                 })}
               <Link
-                href="/portfolio?section=client"
+                href="/?section=client"
                 className="fontmed mt-20 px-4 py-2 bg-redeclic hover:scale-95 transition-all duration-300 text-white"
               >
                 {t.clients.cta}
@@ -153,7 +153,7 @@ const work: WorkItem[] = [
     title: "L'Clicka Dialna",
     image: "/AboutUs/ClickaDialna.jpg",
     category: "entertainment",
-   
+
     link: "/portfolio/project/clickadialna",
     brand: "L'Clicka Dialna",
   },
@@ -161,7 +161,7 @@ const work: WorkItem[] = [
     title: "Porsche Morocco",
     image: "/AboutUs/PorscheFestival.jpg",
     category: "automotive",
-    
+
     link: "/portfolio/project/porschefestival",
     brand: "Porsche Morocco",
   },
@@ -176,7 +176,7 @@ const work: WorkItem[] = [
     title: "SEAT Attitude",
     image: "/AboutUs/SeatAttitude.jpg",
     category: "automotive",
-   
+
     link: "/portfolio/project/seat",
     brand: "SEAT Morocco",
   },
@@ -184,7 +184,7 @@ const work: WorkItem[] = [
     title: "Fast Pro",
     image: "/AboutUs/FastPro.webp",
     category: "automotiveMaintenance",
- 
+
     link: "/portfolio/project/fastpro",
     brand: "Fast Pro Morocco",
   },
@@ -199,7 +199,7 @@ const work: WorkItem[] = [
     title: "Cupra Morocco",
     image: "/Cupra/Cupra.webp",
     category: "automotive",
-  
+
     link: "/portfolio/project/cupra",
     brand: "Cupra Morocco",
   },

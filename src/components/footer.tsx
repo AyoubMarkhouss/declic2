@@ -29,7 +29,7 @@ const Footer = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="col-span-4 flex justify-center items-center py-5"
       >
-        <Link href="/portfolio?section=work">
+        <Link href="/">
           <Image
             alt="declic"
             src="/declic-white.png"
@@ -140,7 +140,7 @@ const Footer = () => {
       <div className="col-span-4 py-10">
         <div className="grid col-span-2 tablet:grid-cols-4 ">
           <Link
-            href="/portfolio?section=work"
+            href="/"
             className="fontmed flex tablet:justify-center text-xl text-white  transition-all duration-300 transform hover:scale-125"
           >
             Home
@@ -152,7 +152,7 @@ const Footer = () => {
             Hall of fame
           </Link>
           <Link
-            href="/"
+            href="/portfolio"
             className="fontmed flex tablet:justify-center text-xl text-white  transition-all duration-300 transform hover:scale-125"
           >
             About us

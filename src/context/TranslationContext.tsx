@@ -10,9 +10,10 @@ interface TranslationContextType {
   setLanguage: (lang: Language) => void;
 }
 
+// Set default values to French ("fr")
 const TranslationContext = createContext<TranslationContextType>({
-  t: translations.en,
-  language: "en",
+  t: translations.fr,
+  language: "fr",
   setLanguage: () => {},
 });
 
@@ -21,7 +22,8 @@ export const TranslationProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  // Initialize with "fr" as the default language
+  const [language, setLanguage] = useState<Language>("fr");
   const t = translations[language];
 
   return (

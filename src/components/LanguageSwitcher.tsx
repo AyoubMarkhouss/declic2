@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "../context/TranslationContext";
 import { FiChevronDown } from "react-icons/fi";
 import { LuGlobe } from "react-icons/lu";
@@ -6,22 +6,37 @@ import { LuGlobe } from "react-icons/lu";
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Detect if the device is mobile
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // You can adjust the width threshold as needed
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
 
   const handleMouseEnter = () => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsOpen(true);
+    if (!isMobile) {
+      setIsOpen(true);
+    }
   };
 
   const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
+    if (!isMobile) {
       setIsOpen(false);
-    }, 200);
+    }
   };
 
   // Toggle dropdown for mobile devices (or any click event)
   const toggleDropdown = () => {
-    setIsOpen((prev) => !prev);
+    if (isMobile) {
+      setIsOpen((prev) => !prev);
+    }
   };
 
   return (
@@ -30,7 +45,7 @@ export default function LanguageSwitcher() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Main button: now clickable via onClick */}
+      {/* Main button: now clickable via onClick for mobile */}
       <button
         onClick={toggleDropdown}
         className="flex items-center gap-2 px-4 py-2 hover:bg-gray-300 transition"

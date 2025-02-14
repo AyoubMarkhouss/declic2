@@ -131,8 +131,7 @@ const images = [
   { g: "/Halloffame-images/FSO/5.webp" },
   { g: "/Halloffame-images/FSO/6.webp" },
   { g: "/Halloffame-images/FSO/7.webp" },
-  { g: "/Halloffame-images/FSO/8.webp" },
   { g: "/Halloffame-images/FSO/9.webp" },
   { g: "/Halloffame-images/FSO/10.webp" },
-  { g: "/Halloffame-images/FSO/11.webp" },
+ 
 ];

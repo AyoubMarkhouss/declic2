@@ -70,7 +70,7 @@ const Header: React.FC<{
         </AnimatePresence>
       )}
       <div className="flex fixed z-50 top-0 left-0 h-20 w-full items-center justify-between px-10">
-        <Link href="/portfolio?section=work">
+        <Link href="/">
           <Image
             alt="logo"
             src="/declic-red.png"
@@ -98,9 +98,9 @@ const Header: React.FC<{
                   className="text-black z-0 hidden laptop:block"
                   href={
                     text === "Home"
-                      ? "/portfolio?section=work"
-                      : text === "About us"
                       ? "/"
+                      : text === "About us"
+                      ? "/portfolio"
                       : text === "Hall of fame"
                       ? "/halloffame"
                       : "/contact"
@@ -165,9 +165,9 @@ const SlideTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState<number | null>(null); // No active tab initially
 
   const pages = [
-    { name: "Home", href: "/portfolio?section=work" },
+    { name: "Home", href: "/" },
     { name: "Hall of fame", href: "/halloffame" },
-    { name: "About us", href: "/" },
+    { name: "About us", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
   return (
