@@ -124,6 +124,7 @@ const Audi = () => {
 export default Audi;
 
 const images = [
+  { g: "/Halloffame-images/audi/21.webp" },
   { g: "/Halloffame-images/audi/2.webp" },
   { g: "/Halloffame-images/audi/1.webp" },
   { g: "/Halloffame-images/audi/3.webp" },

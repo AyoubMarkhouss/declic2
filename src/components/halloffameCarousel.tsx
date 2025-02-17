@@ -118,8 +118,8 @@ function HalloffameCarousel() {
         </Slider>
       </div>
 
-      {brand === "seat" && <Seat />}
       {brand === "audi" && <Audi />}
+      {brand === "seat" && <Seat />}
       {brand === "midas" && <Midas />}
       {brand === "renault" && <Renault />}
       {brand === "dacia" && <Dacia />}
@@ -135,8 +135,8 @@ function HalloffameCarousel() {
 export default HalloffameCarousel;
 
 const brandsLink = [
-  { brand: "seat", logo: seat },
   { brand: "audi", logo: audi },
+  { brand: "seat", logo: seat },  
   { brand: "midas", logo: midas },
   { brand: "renault", logo: renault },
   { brand: "dacia", logo: dacia },
