@@ -201,6 +201,22 @@ export const en = {
           "As part of our partnership with the Fête du Cinéma, Volkswagen Maroc made a bold statement in cinemas through innovative branding and an immersive exhibition. From visual elements to carefully designed décor, every space was transformed to reflect the spirit of the brand and the event. The audience was immersed in a unique atmosphere where the worlds of Volkswagen and cinema harmoniously merged. A true sensory journey that allowed everyone to experience cinema in a fresh way, while showcasing the brand’s core values: innovation, passion, and sharing.",
       },
     },
+    audia1: {
+      title: "Audi Valentine’s Day",
+      description:
+        "For Valentine’s Day, Declic and Audi Maroc shifted the spotlight away from traditional gifts by transforming the Audi A1 into the ultimate declaration of love. In a market saturated with flowers and chocolates, an Audi A1, wrapped in a red bow and featuring the message “I Love You,” toured Casablanca on a trailer, capturing the attention of passersby and creating a strong visual and viral impact. This activation leveraged surprise and aspiration, positioning the Audi A1 as both a desirable object and an exceptional gift, while maximizing the brand’s organic exposure on the streets and across social media.",
+      activation: {
+        title: "The Activation",
+        p1: "Visibility & Awareness : An Audi A1 was placed on a trailer and driven through key areas of Casablanca, drawing attention with its striking red bow and bold “I Love You” message. This eye-catching setup was designed to create surprise, spark word-of-mouth, and encourage social media sharing.",
+        p2: "Conversion & Promotional Offer : Alongside the activation, a digital and offline campaign was launched to capitalize on the generated interest. The offer highlighted an attractive price and one year of free fuel for any Audi A1 purchase during the campaign period. This promotional incentive reinforced purchase intent, transforming attention into action by encouraging prospects to visit dealerships and complete their acquisition.",
+        p3: "This approach combined high-impact visual marketing with a strong commercial incentive, ensuring both buzz and effective conversion.",
+      },
+      socialmedia: {
+        title: "Social Media",
+        description:
+          "To maximize engagement, we launched a live stream on our social media channels, allowing our audience to follow the Audi A1’s journey across Casablanca in real time. This interactive experience enhanced the activation’s virality, prompting users to share and comment live. At the same time, a media campaign promoted the exclusive offer—an attractive price and one year of free fuel—effectively turning audience interest into purchase intent.",
+      },
+    },
   },
 
   clients: {

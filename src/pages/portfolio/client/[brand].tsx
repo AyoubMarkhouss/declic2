@@ -227,6 +227,14 @@ const work: WorkItem[] = [
     link: "/portfolio/project/vw",
     brand: "Volkswagen Morocco",
   },
+  {
+    title: "Audi Saint Valentin",
+    image: "/AudiA1/audi-a1-cover.webp",
+    category: "automotive",
+
+    link: "/portfolio/project/audia1",
+    brand: "Audi",
+  },
   // {
   //   title: "Project 4",
   //   image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",

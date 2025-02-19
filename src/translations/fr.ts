@@ -201,6 +201,22 @@ export const fr = {
           "Dans le cadre de notre partenariat avec la Fête du Cinéma, Volkswagen Maroc a déployé une présence marquante dans les salles de cinéma à travers un branding innovant et une exposition immersive. Des éléments visuels aux décors soigneusement pensés, chaque espace a été transformé pour refléter l’esprit de la marque et de l’événement. Le public a ainsi été plongé dans une ambiance unique, où l’univers de Volkswagen et du cinéma se mêlent harmonieusement. Un véritable voyage sensoriel qui a permis de vivre l’expérience cinématographique d’une manière nouvelle, tout en mettant en avant les valeurs de la marque : innovation, passion et partage.",
       },
     },
+    audia1: {
+      title: "Audi Saint Valentin",
+      description:
+        "Pour la Saint-Valentin, Declic et Audi Maroc ont détourné l’attention des cadeaux traditionnels en transformant l’Audi A1 en l’ultime déclaration d’amour. Dans un contexte saturé par les fleurs et le chocolat, une Audi A1, ornée d’un nœud rouge et du message “I Love You”, a parcouru Casablanca sur une remorque, captant l’attention des passants et générant un fort impact visuel et viral. Cette activation a joué sur l’effet de surprise et l’aspiration, positionnant l’Audi A1 comme un objet de désir et un cadeau d’exception, tout en maximisant l’exposition organique de la marque dans les rues et sur les réseaux sociaux.",
+      activation: {
+        title: "L’activation",
+        p1: "Visibilité & Notoriété : Une Audi A1 a été placée sur une remorque et a circulé dans les zones stratégiques de Casablanca, attirant l’attention grâce à son nœud rouge et au message “I Love You”. Ce dispositif visuel percutant visait à créer un effet de surprise, générer du bouche-à-oreille et inciter au partage sur les réseaux sociaux.",
+        p2: "Conversion & Offre Promotionnelle : En parallèle, une campagne digitale et offline a été lancée pour capter l’intérêt généré. L’offre mettait en avant un prix attractif et un an de carburant offert pour tout achat d’une Audi A1 durant la période de l’activation. Ce levier promotionnel renforçait l’envie d’achat et transformait l’attention en action, en incitant les prospects à visiter les concessions et à finaliser leur acquisition.",
+        p3: "Cette approche combinait donc une stratégie d’impact visuel immédiat avec une incitation commerciale forte, garantissant à la fois un buzz marketing et une conversion efficace.",
+      },
+      socialmedia: {
+        title: "Réseaux sociaux",
+        description:
+          "Pour maximiser l’engagement, nous avons lancé un live sur nos réseaux sociaux, permettant à notre communauté de suivre en direct le parcours du camion transportant l’Audi A1 à travers Casablanca. Ce dispositif interactif a renforcé l’effet viral de l’activation, incitant les utilisateurs à partager et commenter en temps réel. En parallèle, une campagne média a été déployée pour mettre en avant l’offre promotionnelle exclusive : un prix attractif et un an de carburant offert, transformant ainsi l’intérêt suscité en intention d’achat concrète.",
+      },
+    },
   },
 
   clients: {
