@@ -13,6 +13,9 @@ export default function Sheepsection() {
           {...(!isMobile && { autoPlay: true })}
           loop
           muted
+          playsInline
+          webkit-playsinline="true"
+          disablePictureInPicture
           className="object-cover pointer-events-none cursor-not-allowed absolute bottom-0 w-full h-full"
         />
       </div>
