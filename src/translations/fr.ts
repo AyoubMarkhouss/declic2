@@ -216,6 +216,10 @@ export const fr = {
         description:
           "Pour maximiser l’engagement, nous avons lancé un live sur nos réseaux sociaux, permettant à notre communauté de suivre en direct le parcours du camion transportant l’Audi A1 à travers Casablanca. Ce dispositif interactif a renforcé l’effet viral de l’activation, incitant les utilisateurs à partager et commenter en temps réel. En parallèle, une campagne média a été déployée pour mettre en avant l’offre promotionnelle exclusive : un prix attractif et un an de carburant offert, transformant ainsi l’intérêt suscité en intention d’achat concrète.",
       },
+      buzz:{
+        title: "Le Buzz",
+        description:"L’activation a déclenché un buzz phénoménal sur les réseaux sociaux, générant des millions de vues en une seule journée. Le passage de l’Audi A1 a été massivement partagé, y compris par de nombreux influenceurs, amplifiant l’impact de la campagne. Sur TikTok, Instagram, Facebook et LinkedIn, la question faisait débat : véritable déclaration d’amour ou coup de com’ ingénieux ? Ce mystère a attisé la curiosité et multiplié les interactions, propulsant Audi Maroc au cœur des conversations et confirmant l’A1 comme le cadeau ultime de la Saint-Valentin.",
+      }
     },
   },
 

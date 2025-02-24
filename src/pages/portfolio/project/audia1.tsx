@@ -332,6 +332,71 @@ const Audia1 = () => {
             </div> */}
           </div>
         </div>
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          className="fontmed laptop:text-7xl  bg-redeclic text-white  fontmed justify-center tablet:justify-start text-4xl w-full h-24  px-20 flex  items-center"
+        >
+          {t.project.audia1.buzz.title}
+        </TextAnimate>
+        <div className="px-5 laptop:px-20 flex flex-col gap-y-5  py-10">
+          <div className="grid grid-cols-1 laptop:grid-cols-2 gap-y-5 gap-x-5">
+            <div className="flex flex-col justify-center gap-y-5">
+              <p className=" text-justify laptop:text-lg desktop:text-xl">
+                {t.project.audia1.buzz.description}
+              </p>
+            </div>
+            <div className="flex items-center justify-center">
+              <Iphone15Pro
+                className="hidden laptop:block h-[500px] desktop:h-[550px]"
+                iframevid="https://www.youtube.com/embed/2cXOOZyqPJk?si=tuqZZq6557SjqXpn?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+              />
+
+              <iframe
+                className="laptop:hidden  object-cover h-screen w-full overflow-hidden"
+                src="https://www.youtube.com/embed/2cXOOZyqPJk?si=tuqZZq6557SjqXpn?controls=0&modestbranding=1&autoplay=1&mute=1&rel=0&loop=1"
+                title="Dailymotion video player"
+                frameBorder={0}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+            {/* 
+            <div className="">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                className="w-full laptop:max-w-2xl desktop:max-w-5xl"
+                setApi={setApi}
+              >
+                <CarouselContent>
+                  {staticpost.map((jj, index) => (
+                    <CarouselItem key={index}>
+                      <div className="p-1">
+                        <Image
+                          alt="static"
+                          src={jj.img}
+                          width={1000}
+                          height={1000}
+                          className="w-full h-64 laptop:h-[390px] desktop:h-[600px] object-contain"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="hidden tablet:block">
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </div>
+                <div className=" py-2 text-center text-sm text-muted-foreground">
+                  {current} / {count}
+                </div>
+              </Carousel>
+            </div> */}
+          </div>
+        </div>
       </div>
       <Footer />
     </>

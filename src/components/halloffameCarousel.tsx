@@ -75,7 +75,7 @@ function HalloffameCarousel() {
       </div>
     );
   }
-  const [brand, setBrand] = useState<string>("ainIfran");
+  const [brand, setBrand] = useState<string>("audi");
   const settings = {
     infinite: true,
     speed: 500,

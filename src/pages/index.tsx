@@ -225,19 +225,14 @@ export default function Home() {
         </div>
         <div className="relative h-[470px] bg-white flex gap-y-7 flex-col justify-center items-center overflow-hidden">
           <div className="absolute cursor-not-allowed inset-0">
-            {/* <video
-              src="/goat-HD.webm"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="object-cover pointer-events-none absolute bottom-0 w-full h-full"
-            /> */}
             <video
               src="/goat-HD.webm"
               {...(!isMobile && { autoPlay: true })}
               loop
               muted
+              playsInline
+              webkit-playsinline="true"
+              disablePictureInPicture
               className="object-cover pointer-events-none absolute bottom-0 w-full h-full"
             />
           </div>
@@ -249,6 +244,7 @@ export default function Home() {
             <a href="/portfolio">{t.home.discover}</a>
           </button>
         </div>
+
         <Footer />
       </div>
     </>
@@ -271,12 +267,13 @@ type WorkItem = {
 
 const work: WorkItem[] = [
   {
-    title: "L'Clicka Dialna",
-    image: "/AboutUs/ClickaDialna.jpg",
-    category: "entertainment",
-    link: "/portfolio/project/clickadialna",
-    brand: "L'Clicka Dialna",
+    title: "Audi Saint Valentin",
+    image: "/AudiA1/audi-a1-cover.webp",
+    category: "automotive",
+    link: "/portfolio/project/audia1",
+    brand: "Audi",
   },
+
   {
     title: "Porsche Festival 2024",
     image: "/Porschefestival/Slider_porsche_desktop.webp",
@@ -299,11 +296,11 @@ const work: WorkItem[] = [
     brand: "SEAT Morocco",
   },
   {
-    title: "Fast Pro",
-    image: "/AboutUs/FastPro.webp",
-    category: "automotiveMaintenance",
-    link: "/portfolio/project/fastpro",
-    brand: "Fast Pro",
+    title: "L'Clicka Dialna",
+    image: "/AboutUs/ClickaDialna.jpg",
+    category: "entertainment",
+    link: "/portfolio/project/clickadialna",
+    brand: "L'Clicka Dialna",
   },
   {
     title: "Aïn Ifrane",
@@ -340,11 +337,12 @@ const work: WorkItem[] = [
     link: "/portfolio/project/vw",
     brand: "VW Cinema",
   },
+
   {
-    title: "Audi Saint Valentin",
-    image: "/AudiA1/audi-a1-cover.webp",
-    category: "automotive",
-    link: "/portfolio/project/audia1",
-    brand: "Audi",
+    title: "Fast Pro",
+    image: "/AboutUs/FastPro.webp",
+    category: "automotiveMaintenance",
+    link: "/portfolio/project/fastpro",
+    brand: "Fast Pro",
   },
 ];

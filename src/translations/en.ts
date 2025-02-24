@@ -216,6 +216,10 @@ export const en = {
         description:
           "To maximize engagement, we launched a live stream on our social media channels, allowing our audience to follow the Audi A1’s journey across Casablanca in real time. This interactive experience enhanced the activation’s virality, prompting users to share and comment live. At the same time, a media campaign promoted the exclusive offer—an attractive price and one year of free fuel—effectively turning audience interest into purchase intent.",
       },
+      buzz:{
+        title: "The Buzz",
+        description:"The activation triggered a phenomenal social media buzz, generating millions of views in just one day. The sight of the Audi A1 being transported across the city was widely shared, with many influencers amplifying the campaign’s reach. Across TikTok, Instagram, Facebook, and LinkedIn, the debate was on: a genuine love gesture or a brilliant marketing stunt? This intrigue fueled even more engagement, making Audi Maroc the center of conversation and solidifying the A1 as the ultimate Valentine’s Day gift.",
+      },
     },
   },
 
